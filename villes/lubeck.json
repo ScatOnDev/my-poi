@@ -1,0 +1,297 @@
+{
+  "city": "Lübeck",
+  "center": { "lat": 53.869, "lng": 10.684 },
+  "zoom": 11,
+  "pois": [
+    {
+      "id": "holstentor",
+      "name": "Holstentor",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 53.8663,
+      "lng": 10.6805,
+      "teaser": "Porte fortifiée du XVe siècle, symbole de la puissance hanséatique et véritable emblème de Lübeck.",
+      "desc": "Construite entre 1464 et 1478, le Holstentor marquait autrefois l'entrée occidentale de la ville fortifiée et reste aujourd'hui le symbole le plus reconnaissable de Lübeck. Son architecture en brique gothique, avec ses deux tours rondes légèrement penchées et son inscription latine vantant la concorde intérieure et la paix extérieure, témoigne de la richesse accumulée par la ville durant l'âge d'or de la Hanse. À l'intérieur, un musée retrace l'histoire urbaine et portuaire de la cité. Deux lions de bronze grandeur nature veillent sur le monument, entouré d'un petit parc verdoyant. La perspective la plus photographiée se prend depuis la Puppenbrücke, le pont qui enjambe la Trave juste devant. Venez plutôt tôt le matin pour éviter l'affluence des groupes de visiteurs."
+    },
+    {
+      "id": "salzspeicher",
+      "name": "Salzspeicher",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.867,
+      "lng": 10.681,
+      "teaser": "Six entrepôts de brique rouge alignés le long de la Trave, vestiges du commerce hanséatique du sel.",
+      "desc": "Juste à côté du Holstentor, les Salzspeicher forment un alignement de six bâtiments en brique construits entre la Renaissance et le baroque pour stocker le sel destiné à la Scandinavie. Ce commerce, essentiel à la conservation du poisson au Moyen Âge, a largement contribué à la prospérité de Lübeck durant l'ère hanséatique. Les façades se reflètent joliment dans l'eau de la Trave, offrant l'une des vues les plus photogéniques de la ville, particulièrement au coucher du soleil. Le lieu a aussi servi de décor au film muet Nosferatu dans les années 1920. Une courte pause sur la rive opposée permet d'admirer l'ensemble sans se presser, avant de poursuivre vers la vieille ville."
+    },
+    {
+      "id": "rathaus",
+      "name": "Rathaus (Hôtel de ville)",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.8695,
+      "lng": 10.6852,
+      "teaser": "L'un des plus anciens hôtels de ville d'Allemagne encore en fonction, mêlant styles gothique et Renaissance.",
+      "desc": "Le Rathaus de Lübeck compte parmi les hôtels de ville médiévaux les mieux conservés d'Allemagne et illustre le pouvoir de la ville à l'époque où elle dominait la Ligue hanséatique. L'édifice associe plusieurs siècles de constructions successives, avec sa galerie de justice extérieure, ses façades ajourées percées de grandes ouvertures circulaires et son escalier Renaissance donnant sur la rue commerçante voisine. Il se dresse juste à côté de la Marienkirche, formant avec elle l'un des ensembles architecturaux les plus emblématiques du Markt. Le bâtiment abrite toujours l'administration municipale, ce qui limite les visites intérieures à certains créneaux. Prenez le temps d'observer les détails sculptés des façades depuis la place, en particulier la loggia qui donne sur le marché."
+    },
+    {
+      "id": "marienkirche",
+      "name": "Marienkirche",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 53.8697,
+      "lng": 10.685,
+      "teaser": "L'une des plus grandes églises de brique gothique au monde, modèle pour de nombreux édifices baltiques.",
+      "desc": "Bâtie entre 1250 et 1350 au point culminant de l'île qui forme la vieille ville, la Marienkirche incarne à elle seule la puissance et l'ambition de Lübeck au faîte de son influence hanséatique. Son architecture en brique gothique a servi de modèle à de nombreuses églises tout autour de la mer Baltique. Les cloches brisées, tombées lors d'un bombardement de la Seconde Guerre mondiale et laissées volontairement sur le sol du transept, constituent un mémorial poignant contre la guerre. L'intérieur immense abrite aussi une horloge astronomique reconstruite et de nombreuses œuvres d'art restaurées après-guerre. Une visite complète mérite une bonne demi-heure, en réservant un moment de silence face aux cloches brisées."
+    },
+    {
+      "id": "luebecker-dom",
+      "name": "Lübecker Dom",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.8657,
+      "lng": 10.6825,
+      "teaser": "Cathédrale romane fondée au XIIe siècle par Henri le Lion, doyenne des édifices religieux de la ville.",
+      "desc": "Fondée au XIIe siècle par le duc Henri le Lion, la cathédrale de Lübeck figure parmi les plus anciens monuments de la ville, légèrement à l'écart du cœur touristique de l'Altstadt. L'édifice mêle éléments romans et ajouts gothiques ultérieurs, avec un intérieur plus dépouillé que celui de la Marienkirche mais tout aussi imposant par ses dimensions. On y admire un immense orgue, des œuvres d'art gothiques et une petite exposition consacrée à l'histoire de l'édifice. La cathédrale est aussi un lieu de concerts réguliers, notamment d'orgue. Sa position un peu excentrée, au sud de l'île, en fait une étape plus calme, appréciable après l'agitation du Markt et des rues commerçantes."
+    },
+    {
+      "id": "burgtor",
+      "name": "Burgtor",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 53.8735,
+      "lng": 10.6843,
+      "teaser": "Seconde porte fortifiée conservée de Lübeck, marquant l'entrée nord de la vieille ville.",
+      "desc": "Avec le Holstentor, le Burgtor est l'une des deux seules portes fortifiées à avoir survécu à la démolition des remparts de Lübeck au XIXe siècle. Située au nord de l'île historique, elle marquait autrefois l'accès depuis le château disparu de la ville et le chemin vers le Holstein. Moins photographiée que sa célèbre voisine, elle offre néanmoins un aperçu tout aussi authentique de l'architecture défensive hanséatique, avec sa silhouette élancée en brique. Le quartier environnant, plus résidentiel, permet une promenade tranquille le long des anciens fossés transformés en parc. C'est un bon point de départ pour rejoindre le Drägerpark et les rives de la Wakenitz, à l'est de la ville."
+    },
+    {
+      "id": "heiligengeist-hospital",
+      "name": "Heiligen-Geist-Hospital",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 53.8712,
+      "lng": 10.6835,
+      "teaser": "Hospice médiéval du XIIIe siècle, l'un des plus anciens établissements caritatifs d'Europe encore préservés.",
+      "desc": "Fondé au XIIIe siècle sur la place du Koberg, le Heiligen-Geist-Hospital compte parmi les plus anciens établissements de bienfaisance d'Europe encore conservés dans leur ensemble architectural d'origine. La grande salle voûtée, autrefois dortoir des malades et des indigents, impressionne par ses proportions et ses fresques médiévales partiellement conservées. De petites cellules individuelles, ajoutées plus tard, témoignent de l'évolution des pratiques hospitalières au fil des siècles. Le bâtiment accueille aujourd'hui expositions et, en fin d'année, l'un des marchés de Noël les plus atmosphériques de la ville, installé sous les voûtes historiques. Une visite se combine facilement avec une balade sur la place du Koberg, juste devant l'entrée."
+    },
+    {
+      "id": "fuechtingshof-gaenge",
+      "name": "Füchtingshof et les Gänge historiques",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 53.8688,
+      "lng": 10.687,
+      "teaser": "Cour d'habitations du XVIIe siècle, exemple emblématique des passages et courettes cachés de la vieille ville.",
+      "desc": "Derrière les façades bourgeoises de la vieille ville se cachent des dizaines de Gänge, ces petits passages menant à des cours intérieures autrefois destinées aux artisans et aux plus modestes. Le Füchtingshof, fondé au XVIIe siècle par un marchand pour loger des veuves de capitaines et de marins, en est l'un des exemples les mieux conservés, avec ses maisonnettes basses alignées autour d'une cour pavée fleurie. Ces ensembles, aujourd'hui encore partiellement habités, révèlent un visage plus intime de Lübeck que les grands monuments du Markt. La discrétion de ces lieux impose de rester silencieux et respectueux, puisque des habitants y vivent toujours. Cherchez les portes cochères entrouvertes le long de la Glockengießerstraße pour en découvrir d'autres."
+    },
+    {
+      "id": "buddenbrookhaus",
+      "name": "Buddenbrookhaus",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 53.8698,
+      "lng": 10.6836,
+      "teaser": "Maison natale des Mann, immortalisée par Thomas Mann dans son roman Les Buddenbrook.",
+      "desc": "Cette maison bourgeoise de la Mengstraße a appartenu aux grands-parents de Thomas et Heinrich Mann et a directement inspiré le décor du roman Les Buddenbrook, qui vaudra à Thomas Mann le prix Nobel de littérature. Le musée qui y est aménagé retrace le destin de la famille Mann et son ancrage dans la bourgeoisie marchande hanséatique, tout en explorant la genèse du roman et son écho dans la ville. Les salles reconstituées permettent d'imaginer le quotidien d'une grande famille de négociants au XIXe siècle. C'est une étape incontournable pour les amateurs de littérature, mais aussi pour comprendre l'esprit patricien qui a longtemps façonné Lübeck. Comptez environ une heure pour la visite complète."
+    },
+    {
+      "id": "guenter-grass-haus",
+      "name": "Günter-Grass-Haus",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.8683,
+      "lng": 10.6857,
+      "teaser": "Musée consacré à l'œuvre littéraire et artistique de l'écrivain et artiste Günter Grass.",
+      "desc": "Consacré à Günter Grass, écrivain et artiste plasticien récompensé par le prix Nobel de littérature, ce musée retrace le parcours d'une figure majeure de la littérature allemande d'après-guerre, connue notamment pour Le Tambour. L'exposition met en valeur le lien étroit entre son écriture et son travail graphique, puisque Grass illustrait lui-même nombre de ses ouvrages. Installé dans une maison de marchand rénovée, le musée complète le parcours des trois prix Nobel liés à Lübeck, aux côtés du Buddenbrookhaus et du Willy-Brandt-Haus. La visite s'adresse particulièrement aux amateurs de littérature du XXe siècle, moins aux visiteurs pressés. Un jardin intérieur offre une pause tranquille après la découverte des salles d'exposition."
+    },
+    {
+      "id": "willy-brandt-haus",
+      "name": "Willy-Brandt-Haus",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.8703,
+      "lng": 10.6822,
+      "teaser": "Centre de documentation consacré à l'ancien chancelier allemand, natif de Lübeck et prix Nobel de la paix.",
+      "desc": "Né à Lübeck, Willy Brandt est devenu chancelier de la République fédérale d'Allemagne et a reçu le prix Nobel de la paix pour sa politique de rapprochement avec l'Europe de l'Est. Ce centre de documentation retrace son parcours, depuis sa jeunesse dans la ville jusqu'à son rôle sur la scène internationale, à travers documents d'époque, photographies et objets personnels. L'exposition replace aussi son action dans le contexte plus large de l'histoire allemande du XXe siècle, entre exil, guerre froide et réunification. C'est un complément naturel à la visite du Buddenbrookhaus pour qui s'intéresse aux personnalités qui ont marqué la ville. La visite, plus institutionnelle que ludique, conviendra surtout aux passionnés d'histoire contemporaine."
+    },
+    {
+      "id": "europaeisches-hansemuseum",
+      "name": "Europäisches Hansemuseum",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 53.8716,
+      "lng": 10.6787,
+      "teaser": "Grand musée consacré à l'histoire de la Ligue hanséatique, sur le site d'un ancien couvent dominicain.",
+      "desc": "Ouvert dans un bâtiment contemporain construit sur les fondations d'un ancien couvent dominicain, l'Europäisches Hansemuseum propose le parcours le plus complet sur l'histoire de la Ligue hanséatique, ce réseau de villes marchandes qui a dominé le commerce en mer Baltique et en mer du Nord durant plusieurs siècles. Reconstitutions grandeur nature, objets archéologiques et dispositifs interactifs permettent de comprendre comment Lübeck est devenue la ville reine de cette alliance commerciale. Le musée aborde aussi bien la vie quotidienne des marchands que les enjeux politiques et économiques de l'époque. Comptez une à deux heures de visite. Sa position, un peu excentrée près du Burgtor, en fait une bonne étape en fin de parcours dans le nord de la vieille ville."
+    },
+    {
+      "id": "niederegger-marzipan-salon",
+      "name": "Niederegger Marzipan-Salon",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.8694,
+      "lng": 10.6848,
+      "teaser": "Institution historique du massepain lübeckois, avec salon de dégustation et petite exposition sur la place du Markt.",
+      "desc": "Fondée au début du XIXe siècle, la maison Niederegger a bâti la réputation internationale du massepain de Lübeck, une spécialité que la ville revendique fièrement depuis des générations. La boutique du Markt propose un salon où déguster gâteaux et confiseries, ainsi qu'une petite exposition présentant des sculptures en massepain et l'histoire de la fabrication artisanale. Sans être un musée à proprement parler, le lieu offre une pause gourmande bienvenue au cœur du parcours touristique, à deux pas du Rathaus et de la Marienkirche. C'est aussi l'endroit idéal pour rapporter un souvenir comestible de son séjour. Prévoyez un peu d'attente le week-end, la boutique étant très fréquentée par les visiteurs de passage."
+    },
+    {
+      "id": "huexstrasse",
+      "name": "Hüxstraße",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.868,
+      "lng": 10.686,
+      "teaser": "Rue pavée aux boutiques indépendantes et cafés, plus intime que les grandes artères commerçantes voisines.",
+      "desc": "Parallèle aux grandes rues commerçantes du centre, la Hüxstraße cultive une atmosphère plus intime, avec ses boutiques indépendantes, ses ateliers d'artisans et ses cafés installés dans d'anciennes maisons de marchands. C'est un bon endroit pour échapper un moment à l'agitation du Markt tout en restant au cœur de la vieille ville. Les façades colorées et les vitrines soignées en font une rue agréable à parcourir sans but précis, entre deux visites de monuments. Le quartier prolonge naturellement une promenade depuis la Marienkirche vers l'est de l'Altstadt. Privilégiez une visite en fin de matinée en semaine pour profiter des boutiques sans la foule du week-end."
+    },
+    {
+      "id": "koenigstrasse",
+      "name": "Königstraße",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.87,
+      "lng": 10.6825,
+      "teaser": "Grand axe nord-sud de la vieille ville, bordé de plusieurs maisons de personnalités célèbres.",
+      "desc": "La Königstraße traverse l'île historique du nord au sud et concentre plusieurs adresses liées aux personnalités qui ont marqué Lübeck, entre maisons de marchands, musées consacrés aux trois prix Nobel de la ville et façades bourgeoises bien conservées. C'est un axe pratique pour organiser sa visite à pied, en reliant plusieurs quartiers sans avoir à emprunter les petites ruelles plus sinueuses. L'ambiance y est plus résidentielle et moins touristique que sur le Markt, avec un rythme de visite plus tranquille. La rue permet aussi de rejoindre facilement la cathédrale au sud ou le quartier du Burgtor au nord. Une bonne option pour une longue balade continue plutôt qu'un parcours fragmenté."
+    },
+    {
+      "id": "travemuende-altstadt",
+      "name": "Vieille ville de Travemünde",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.958,
+      "lng": 10.869,
+      "teaser": "Petit centre historique de la station balnéaire, à l'embouchure de la Trave dans la mer Baltique.",
+      "desc": "Rattaché administrativement à Lübeck bien que distant d'une vingtaine de kilomètres, Travemünde a longtemps servi d'avant-port à la ville hanséatique avant de devenir une station balnéaire prisée sur la Baltique. Son petit centre historique, avec ses maisons de pêcheurs et ses ruelles resserrées, contraste avec l'ambiance plus élégante de la promenade du front de mer voisine. On y ressent une atmosphère bien différente de l'Altstadt de Lübeck, plus maritime et estivale. C'est une bonne option pour prolonger la visite de la ville par une demi-journée au bord de la mer, accessible en train régional ou en bateau depuis le centre historique. Prévoyez une tenue adaptée au vent, souvent présent sur la côte."
+    },
+    {
+      "id": "wallanlagen",
+      "name": "Wallanlagen",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 53.8685,
+      "lng": 10.6765,
+      "teaser": "Parc aménagé sur l'ancien tracé des fortifications, entre étangs et pelouses ombragées à l'ouest de la vieille ville.",
+      "desc": "Là où s'élevaient autrefois les bastions de la ville fortifiée s'étend aujourd'hui un parc verdoyant, aménagé le long des anciens fossés devenus étangs. Le Wallanlagen offre un contraste bienvenu avec la densité minérale de l'Altstadt toute proche, avec ses pelouses, ses arbres centenaires et ses vues dégagées sur la silhouette de la vieille ville depuis l'autre rive. Familles et joggeurs s'y croisent, profitant aussi d'une scène en plein air et de quelques aires de jeux. C'est un bon endroit pour une pause pique-nique entre deux visites de monuments, ou pour observer le panorama des tours de la ville sous un angle différent. Le secteur du Malerwinkel, tout proche, prolonge agréablement la promenade."
+    },
+    {
+      "id": "draegerpark",
+      "name": "Drägerpark",
+      "cat": "nature",
+      "interest": 2,
+      "lat": 53.873,
+      "lng": 10.692,
+      "teaser": "Parc paisible sur la rive est de la Wakenitz, avec vue sur les clochers de la vieille ville.",
+      "desc": "Sur la rive orientale de la Wakenitz, à l'écart de l'agitation touristique, le Drägerpark offre un cadre plus sauvage que les jardins du centre-ville. Les grands arbres et les sentiers ombragés en font un lieu de promenade apprécié des familles avec enfants, avec une belle perspective sur les tours de l'Altstadt depuis la rive opposée. C'est une étape à réserver à ceux qui disposent d'un peu plus de temps, ou qui souhaitent simplement s'éloigner un moment des rues commerçantes. Le parc constitue aussi un bon point de départ pour une promenade plus longue le long de la Wakenitz, vers le nord de la ville. L'ambiance y est résolument locale et tranquille."
+    },
+    {
+      "id": "wakenitz-naturschutzgebiet",
+      "name": "Réserve naturelle de la Wakenitz",
+      "cat": "nature",
+      "interest": 2,
+      "lat": 53.865,
+      "lng": 10.705,
+      "teaser": "Rivière et zone humide protégée à l'est de Lübeck, appréciée pour les balades en canoë.",
+      "desc": "À l'est de la vieille ville, la Wakenitz serpente à travers une zone humide classée réserve naturelle, très différente du décor urbain du centre historique. Roseaux, prairies inondables et faune aquatique caractérisent ce paysage plus sauvage, apprécié des amateurs de canoë et de balades à vélo le long des berges. C'est une bonne option pour qui souhaite prendre l'air après une matinée consacrée aux monuments, sans quitter le territoire de la ville. Plusieurs loueurs proposent des embarcations pour explorer la rivière à son rythme, en particulier lors des beaux jours d'été. L'accès se fait facilement depuis le Drägerpark ou les quartiers est de la ville, à pied ou à vélo."
+    },
+    {
+      "id": "travemuende-strand",
+      "name": "Plage de Travemünde",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 53.961,
+      "lng": 10.875,
+      "teaser": "Grande plage de sable sur la mer Baltique, bordée d'une promenade animée et de cabines de plage colorées.",
+      "desc": "À l'embouchure de la Trave, la plage de Travemünde offre un vaste front de mer sur la Baltique, avec ses rangées de cabines de plage colorées typiques du nord de l'Allemagne et sa longue promenade animée en saison. C'est le complément balnéaire idéal à la visite patrimoniale de Lübeck, à une vingtaine de kilomètres du centre historique. L'ambiance y est résolument estivale, entre familles installées sur le sable et promeneurs profitant de la vue sur les ferries qui rejoignent la Scandinavie. La plage se prête aussi bien à une simple balade qu'à une après-midi complète de détente. Prévoyez de quoi vous couvrir : le vent de la Baltique reste frais même en été."
+    },
+    {
+      "id": "petrikirche-turm",
+      "name": "Tour de la Petrikirche",
+      "cat": "panorama",
+      "interest": 4,
+      "lat": 53.8686,
+      "lng": 10.6835,
+      "teaser": "Ancienne église transformée en lieu d'exposition, dont la tour offre la meilleure vue sur les sept clochers de Lübeck.",
+      "desc": "Désacralisée, la Petrikirche accueille aujourd'hui expositions temporaires et événements culturels, mais son principal attrait reste la vue offerte depuis le sommet de sa tour. Un ascenseur permet d'y accéder sans effort, pour découvrir un panorama complet sur l'île de la vieille ville, ses sept clochers caractéristiques, le Holstentor et, par temps clair, la mer Baltique au loin. C'est sans doute le meilleur point de vue de la ville pour comprendre d'un seul regard la géographie particulière de Lübeck, entourée par les bras de la Trave. La montée reste accessible aussi à pied pour les plus courageux. Privilégiez une visite en fin de journée, quand la lumière rasante sculpte davantage le paysage de toits et de tours."
+    },
+    {
+      "id": "malerwinkel",
+      "name": "Malerwinkel",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 53.8705,
+      "lng": 10.6795,
+      "teaser": "Point de vue classique sur la silhouette de la vieille ville depuis la rive opposée de la Trave.",
+      "desc": "Le Malerwinkel, littéralement le coin des peintres, doit son nom aux artistes qui venaient autrefois y peindre la silhouette caractéristique de Lübeck, avec ses clochers de brique se reflétant dans l'eau. Depuis la rive ouest de la Trave, la vue embrasse à la fois le Holstentor, les Salzspeicher et les tours de la Marienkirche, offrant l'une des compositions les plus emblématiques de la ville. C'est un lieu de promenade tranquille, moins fréquenté que le cœur de l'Altstadt, où l'on peut s'attarder sans contrainte de billet ni d'horaire. Le point de vue est particulièrement recherché au lever ou au coucher du soleil, quand la lumière rase accentue les reflets sur l'eau. Un appareil photo n'est jamais superflu ici."
+    },
+    {
+      "id": "travemuende-leuchtturm",
+      "name": "Alter Leuchtturm de Travemünde",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 53.9615,
+      "lng": 10.8715,
+      "teaser": "L'un des plus anciens phares d'Allemagne encore en service, avec vue sur l'embouchure de la Trave.",
+      "desc": "Construit au début du XIXe siècle, le vieux phare de Travemünde compte parmi les plus anciens d'Allemagne toujours en fonction et reste un repère familier pour les navires entrant dans la Trave. On peut grimper jusqu'à sa galerie pour profiter d'une vue dégagée sur l'embouchure du fleuve, les ferries en partance pour la Scandinavie et la plage voisine. Un petit musée aménagé dans la tour retrace l'histoire de la navigation et du sauvetage en mer dans la région. C'est une étape agréable à combiner avec une promenade sur le front de mer, en particulier pour observer le ballet des grands ferries qui croisent régulièrement au large. Prévoyez de la patience en haute saison, l'accès à la tour étant limité en nombre de visiteurs."
+    },
+    {
+      "id": "fleischhauerstrasse",
+      "name": "Fleischhauerstraße",
+      "cat": "nightlife",
+      "interest": 2,
+      "lat": 53.8695,
+      "lng": 10.687,
+      "teaser": "Rue pavée réputée pour ses bars et pubs, l'une des adresses classiques des soirées lübeckoises.",
+      "desc": "Parmi les rues animées le soir dans la vieille ville, la Fleischhauerstraße figure en bonne place, avec sa concentration de bars et de petits pubs installés dans d'anciennes maisons de marchands. L'ambiance y reste conviviale plutôt que festive au sens des grandes métropoles, à l'image d'une ville hanséatique de taille moyenne. C'est une bonne adresse pour terminer une journée de visite autour d'une bière locale, dans un cadre historique préservé. La rue se remplit surtout en fin de semaine et pendant les mois d'été, quand les terrasses peuvent s'installer dehors. En semaine, l'atmosphère reste plus calme et propice à une conversation tranquille entre amis."
+    },
+    {
+      "id": "beckergrube",
+      "name": "Beckergrube",
+      "cat": "nightlife",
+      "interest": 2,
+      "lat": 53.8683,
+      "lng": 10.682,
+      "teaser": "Autre artère prisée en soirée, entre restaurants et bars fréquentés par les habitants comme par les visiteurs.",
+      "desc": "La Beckergrube complète l'offre nocturne de la Fleischhauerstraße toute proche, avec ses restaurants et ses bars appréciés aussi bien des Lübeckois que des visiteurs de passage. La rue conserve son cachet historique tout en accueillant une clientèle plus jeune en soirée, dans une ambiance décontractée. C'est une option pratique pour dîner avant de prolonger la soirée dans le quartier, sans avoir à changer de secteur. L'endroit reste cependant modeste comparé aux scènes nocturnes des grandes villes allemandes, fidèle à l'esprit tranquille de Lübeck. Les jours de beau temps, les terrasses extérieures prennent le pas sur l'intérieur des établissements, prolongeant l'animation tard dans la soirée."
+    },
+    {
+      "id": "museumshafen",
+      "name": "Museumshafen",
+      "cat": "port",
+      "interest": 4,
+      "lat": 53.8676,
+      "lng": 10.68,
+      "teaser": "Port historique où sont amarrés de vieux voiliers et bateaux traditionnels, le long de la Untertrave.",
+      "desc": "Le long de la Untertrave, à deux pas du Holstentor, le Museumshafen rassemble une collection de voiliers et de bateaux traditionnels amarrés en permanence, témoins vivants du passé maritime de la ville. La promenade le long des quais permet d'observer de près ces embarcations historiques tout en profitant de la vue sur les Salzspeicher et la silhouette de l'Altstadt. C'est un rappel concret du rôle central que la navigation a joué dans l'essor de Lübeck durant l'époque hanséatique et bien au-delà. Certains bateaux se visitent lors d'événements ponctuels ou de fêtes maritimes organisées dans l'année. Une flânerie sur les quais complète naturellement la visite du Holstentor et des Salzspeicher tout proches."
+    },
+    {
+      "id": "elbe-luebeck-kanal",
+      "name": "Elbe-Lübeck-Kanal",
+      "cat": "port",
+      "interest": 2,
+      "lat": 53.86,
+      "lng": 10.69,
+      "teaser": "Canal historique reliant la Trave à l'Elbe, à l'origine du statut de grand port intérieur de Lübeck.",
+      "desc": "Achevé à la fin du XIXe siècle, l'Elbe-Lübeck-Kanal relie la Trave au fleuve Elbe et a permis à Lübeck de conserver son rôle de port majeur à une époque où le commerce maritime évoluait rapidement. Aujourd'hui encore emprunté par du trafic fluvial, le canal illustre la continuité entre le passé hanséatique de la ville et son statut actuel de port important sur la Baltique. Les berges se prêtent à une promenade plus industrielle que pittoresque, loin de l'image de carte postale de l'Altstadt, mais révélatrice d'un autre aspect de l'identité de la ville. C'est une étape à réserver aux visiteurs curieux d'histoire économique et de patrimoine industriel plutôt qu'aux amateurs de monuments classiques."
+    },
+    {
+      "id": "travemuende-faehrhafen",
+      "name": "Port de ferries de Travemünde",
+      "cat": "port",
+      "interest": 3,
+      "lat": 53.964,
+      "lng": 10.877,
+      "teaser": "Terminal de ferries reliant l'Allemagne à la Scandinavie et aux pays baltes, au cœur de la station balnéaire.",
+      "desc": "Travemünde abrite l'un des principaux ports de ferries d'Allemagne vers la Scandinavie et les pays baltes, avec un ballet quotidien de grands navires qui contraste avec l'ambiance balnéaire du reste de la station. Observer ces ferries manœuvrer dans l'embouchure étroite de la Trave, parfois à quelques mètres seulement de la promenade, reste une expérience appréciée des visiteurs comme des habitants. Le terminal côtoie directement la plage et le centre historique, ce qui permet de combiner facilement les trois sans déplacement supplémentaire. C'est un bon complément maritime à la visite du vieux phare tout proche. Les horaires de départ, affichés localement, permettent de planifier son passage pour assister à une manœuvre d'accostage ou d'appareillage."
+    },
+    {
+      "id": "passat-schiff",
+      "name": "Passat (voilier musée)",
+      "cat": "port",
+      "interest": 3,
+      "lat": 53.96,
+      "lng": 10.873,
+      "teaser": "Grand voilier-école à quatre mâts amarré à Travemünde, vestige de la marine marchande allemande du XXe siècle.",
+      "desc": "Amarré en permanence à Travemünde, le Passat est un quatre-mâts en acier construit au début du XXe siècle pour le commerce maritime longue distance, avant de devenir navire-école puis musée flottant. Il fait partie des rares grands voiliers de cette génération encore accessibles au public, avec ponts, cabines et gréement ouverts à la visite. Grimper à son bord permet de mesurer concrètement les conditions de navigation et de travail des marins qui parcouraient autrefois les routes commerciales entre l'Europe et l'Amérique du Sud. C'est une visite complémentaire naturelle à celle du port de ferries et du phare, tous deux situés à proximité immédiate. Comptez environ une heure pour explorer l'ensemble du navire à son rythme."
+    }
+  ]
+}
