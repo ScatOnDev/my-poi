@@ -1,0 +1,16 @@
+{
+  "name": "Hambourg — Guide POI",
+  "short_name": "Hambourg POI",
+  "description": "Carte interactive des lieux incontournables de Hambourg, avec géolocalisation en temps réel et lecture audio des descriptions.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#16232F",
+  "theme_color": "#16232F",
+  "lang": "fr",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
