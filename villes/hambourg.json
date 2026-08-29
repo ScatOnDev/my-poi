@@ -29,7 +29,7 @@
     {
       "id": "reeperbahn",
       "name": "Reeperbahn / St. Pauli",
-      "cat": "nightlife",
+      "cat": "culture",
       "interest": 5,
       "lat": 53.5498,
       "lng": 9.9605,
@@ -59,7 +59,7 @@
     {
       "id": "landungsbrucken",
       "name": "Landungsbrücken",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 5,
       "lat": 53.5461,
       "lng": 9.9683,
@@ -99,7 +99,7 @@
     {
       "id": "fischmarkt",
       "name": "Fischmarkt",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 4,
       "lat": 53.5459,
       "lng": 9.9613,
@@ -259,7 +259,7 @@
     {
       "id": "hafencity",
       "name": "HafenCity",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 3,
       "lat": 53.5417,
       "lng": 9.9967,
@@ -269,7 +269,7 @@
     {
       "id": "koehlbrandbruecke",
       "name": "Köhlbrandbrücke (point de vue)",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 2,
       "lat": 53.528,
       "lng": 9.942,
@@ -279,7 +279,7 @@
     {
       "id": "oevelgoenne",
       "name": "Övelgönne / Elbstrand",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 4,
       "lat": 53.546,
       "lng": 9.913,
@@ -289,7 +289,7 @@
     {
       "id": "blankenese",
       "name": "Blankenese (Treppenviertel)",
-      "cat": "quartier",
+      "cat": "panorama",
       "interest": 4,
       "lat": 53.5613,
       "lng": 9.809,
@@ -299,7 +299,7 @@
     {
       "id": "grossefreiheit",
       "name": "Große Freiheit / Beatles-Platz",
-      "cat": "nightlife",
+      "cat": "culture",
       "interest": 4,
       "lat": 53.5502,
       "lng": 9.9576,
@@ -309,7 +309,7 @@
     {
       "id": "schanzenviertel",
       "name": "Schanzenviertel",
-      "cat": "quartier",
+      "cat": "culture",
       "interest": 3,
       "lat": 53.5615,
       "lng": 9.9622,
@@ -349,7 +349,7 @@
     {
       "id": "karolinenviertel",
       "name": "Karolinenviertel",
-      "cat": "quartier",
+      "cat": "shopping",
       "interest": 3,
       "lat": 53.558,
       "lng": 9.97,
@@ -359,7 +359,7 @@
     {
       "id": "ottensen",
       "name": "Ottensen",
-      "cat": "quartier",
+      "cat": "shopping",
       "interest": 3,
       "lat": 53.5525,
       "lng": 9.916,
@@ -369,7 +369,7 @@
     {
       "id": "grindelviertel",
       "name": "Grindelviertel",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 2,
       "lat": 53.57,
       "lng": 9.98,
@@ -379,7 +379,7 @@
     {
       "id": "eppendorf",
       "name": "Eppendorf",
-      "cat": "quartier",
+      "cat": "shopping",
       "interest": 2,
       "lat": 53.59,
       "lng": 9.986,
@@ -405,6 +405,16 @@
       "lng": 9.9339,
       "teaser": "Tour de télécommunications de 279 mètres, surnommée « Tele-Michel ».",
       "desc": "Tour de télécommunications de 279,2 mètres construite en 1968, longtemps le plus haut édifice de Hambourg et surnommée familièrement « Tele-Michel » en clin d'œil à la tour de l'église St. Michaelis. Sa plateforme d'observation, fermée au public depuis 2001 pour des raisons de sécurité incendie, fait aujourd'hui l'objet d'un projet de réouverture partielle très attendu par les Hambourgeois. En attendant, la tour reste visible depuis une grande partie de la ville et constitue un repère pratique pour s'orienter, en particulier depuis le quartier de Sternschanze et le Stadtpark. Le pied de la tour, entouré d'un petit parc, permet néanmoins une pause tranquille loin de l'agitation du centre, davantage comme point de repère visuel que comme destination de visite tant qu'elle reste fermée au public."
+    },
+    {
+      "id": "monckebergstrasse",
+      "name": "Mönckebergstraße",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 53.5518,
+      "lng": 10.001,
+      "teaser": "L'artère commerçante principale de Hambourg, entre gare centrale et Rathaus.",
+      "desc": "Grande artère commerçante inaugurée en 1908, la Mönckebergstraße relie sur près de sept cents mètres la gare centrale (Hauptbahnhof) au Rathaus, coupant en ligne droite à travers le centre historique reconstruit après le grand incendie de 1842. Percée au début du XXe siècle pour désengorger le vieux tissu urbain médiéval, elle concentre aujourd'hui les grandes enseignes internationales, les grands magasins et plusieurs galeries marchandes couvertes, dans un ensemble de façades en briques et pierre de taille assez homogène pour l'époque wilhelminienne. C'est l'artère commerçante la plus fréquentée de la ville, particulièrement animée le samedi, et un point de passage quasi obligé entre la gare et le centre historique. Quelques immeubles remarquables jalonnent le parcours, dont l'ancien grand magasin Karstadt à l'architecture néoclassique imposante. Si l'ambiance y est plus proche d'une grande rue commerçante européenne classique que d'un site touristique à proprement parler, la Mönckebergstraße reste un axe pratique pour combiner shopping et visite du centre historique, à deux pas de la Petrikirche et de la Kunstmeile."
     }
   ]
 }
