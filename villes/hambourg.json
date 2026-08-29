@@ -1,0 +1,410 @@
+{
+  "city": "Hambourg",
+  "center": {
+    "lat": 53.567,
+    "lng": 9.965
+  },
+  "zoom": 12,
+  "pois": [
+    {
+      "id": "speicherstadt",
+      "name": "Speicherstadt",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 53.5443,
+      "lng": 9.9895,
+      "teaser": "Le plus grand quartier d'entrepôts en briques au monde, classé UNESCO.",
+      "desc": "Plus grand ensemble d'entrepôts en briques rouges au monde, classé au patrimoine mondial de l'UNESCO depuis 2015 avec le quartier voisin du Kontorhausviertel. Construit à partir de 1883 sur pilotis dans le port franc de Hambourg, ce dédale de canaux (Fleete), de ponts en fer forgé et de façades néogothiques servait à entreposer épices, tapis, café et cacao venus du monde entier. Aujourd'hui encore, quelques négociants en tapis persans y travaillent, mais la plupart des bâtiments abritent musées, bureaux et lofts. Le Miniatur Wunderland et un musée d'instruments de musique électroniques y ont élu domicile. Se promener le long du Brooksfleet ou du Wandrahmsfleet, surtout à la tombée du jour quand les entrepôts s'illuminent et se reflètent dans l'eau, reste l'une des expériences les plus photogéniques de la ville. Ne manquez pas la vue depuis le pont Poggenmühlenbrücke, carte postale classique de Hambourg."
+    },
+    {
+      "id": "elbphilharmonie",
+      "name": "Elbphilharmonie",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 53.5412,
+      "lng": 9.9836,
+      "teaser": "Salle de concert emblématique posée comme une vague de verre sur l'Elbe.",
+      "desc": "Salle de concert emblématique inaugurée en janvier 2017, posée comme une vague de verre sur un ancien entrepôt de cacao en briques, le Kaispeicher A. Conçue par les architectes suisses Herzog & de Meuron, la façade ondulante en panneaux de verre reflète le ciel et l'eau de l'Elbe selon une infinité de teintes changeantes. La « Plaza », plateforme panoramique gratuite à 37 mètres de hauteur, offre un panorama à 360° sur le port, la Speicherstadt et le centre-ville — l'accès nécessite un billet horodaté gratuit, à retirer sur place ou en ligne tant l'affluence est forte. La grande salle, en amphithéâtre avec dix mille panneaux acoustiques sculptés individuellement, est réputée pour son acoustique exceptionnelle. Le bâtiment est vite devenu, avec la Speicherstadt voisine, le symbole architectural du Hambourg contemporain."
+    },
+    {
+      "id": "reeperbahn",
+      "name": "Reeperbahn / St. Pauli",
+      "cat": "nightlife",
+      "interest": 5,
+      "lat": 53.5498,
+      "lng": 9.9605,
+      "teaser": "L'artère de la vie nocturne, berceau des tout premiers concerts des Beatles.",
+      "desc": "Artère centrale du quartier de Sankt Pauli, la Reeperbahn est le cœur de la vie nocturne hambourgeoise depuis le XIXe siècle, quand elle abritait les corderies (Reeperbahn signifie « chemin des cordiers ») fournissant les navires du port voisin. Bars, clubs, théâtres, cabarets et salles de concert s'y côtoient sur près d'un kilomètre, aux côtés du quartier rouge historique autour de la Herbertstraße. C'est ici, au club Indra puis au Kaiserkeller, que les Beatles ont joué leurs tout premiers concerts entre 1960 et 1962, formant leur son avant leur célébrité mondiale ; une place et une statue leur rendent hommage. De jour, l'ambiance est bien plus calme et permet de découvrir l'architecture du quartier sans la foule nocturne. À réserver plutôt pour une sortie en soirée, avec la prudence habituelle propre à tout quartier de vie nocturne dense."
+    },
+    {
+      "id": "wunderland",
+      "name": "Miniatur Wunderland",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 53.5439,
+      "lng": 9.9874,
+      "teaser": "Le plus grand réseau ferroviaire miniature du monde, dans un entrepôt historique.",
+      "desc": "Le plus grand réseau ferroviaire miniature au monde, installé dans un entrepôt de la Speicherstadt depuis 2001 et sans cesse agrandi. Sur près de seize kilomètres de voies, des sections reconstituent avec un luxe de détails la Scandinavie, l'Amérique, la Suisse, Venise, Hambourg elle-même ou encore un aéroport miniature entièrement fonctionnel dont les avions décollent réellement le long d'un rail invisible. Le passage du jour à la nuit, orchestré toutes les quinze minutes par un jeu d'éclairage progressif révélant des milliers de fenêtres allumées, est un des moments forts de la visite. L'attraction est extrêmement populaire — les files d'attente peuvent dépasser une heure en haute saison — et il est vivement recommandé de réserver un créneau horaire en ligne avant de s'y rendre. Comptez au minimum deux heures de visite."
+    },
+    {
+      "id": "rathaus",
+      "name": "Rathaus (Hôtel de ville)",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 53.5507,
+      "lng": 9.993,
+      "teaser": "Hôtel de ville néo-Renaissance aux 647 pièces, cœur du centre historique.",
+      "desc": "Siège du Sénat et du Parlement de la ville-État de Hambourg, cet imposant édifice néo-Renaissance achevé en 1897 compte 647 pièces, soit davantage que le palais de Buckingham. Construit sur plus de 4000 pilotis en bois après l'incendie qui ravagea le quartier en 1842, il domine la place du marché (Rathausmarkt) avec sa tour de 112 mètres et sa façade richement ornée de statues des empereurs allemands. La fontaine de l'Hygie, érigée en mémoire de l'épidémie de choléra de 1892, orne la cour intérieure. Des visites guidées permettent d'admirer les salons d'apparat et la salle plénière du Parlement lorsque celle-ci n'est pas en session. La place devant le Rathaus est un point de repère central pour s'orienter dans la vieille ville."
+    },
+    {
+      "id": "landungsbrucken",
+      "name": "Landungsbrücken",
+      "cat": "port",
+      "interest": 5,
+      "lat": 53.5461,
+      "lng": 9.9683,
+      "teaser": "Ponton historique, point de départ des croisières dans le port de Hambourg.",
+      "desc": "Ponton d'embarquement historique long de 700 mètres construit à partir de 1839 et couvert de dix pavillons Art nouveau, porte d'entrée traditionnelle du port de Hambourg, l'un des plus grands d'Europe. C'est de là que partent la plupart des croisières touristiques dans le port et les liaisons en vedette vers Övelgönne, Blankenese ou la rive sud de l'Elbe. Le tunnel de l'Elbe (Alter Elbtunnel), ouvrage de 1911 accessible à pied ou à vélo par d'immenses ascenseurs, permet de rejoindre à 24 mètres sous le fleuve le chantier naval de Steinwerder et offre une vue spectaculaire sur le front de mer. Le quai reste un lieu de vie permanent, entre marchands de poisson frit et bateaux musées amarrés à quai."
+    },
+    {
+      "id": "planten",
+      "name": "Planten un Blomen",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 53.5605,
+      "lng": 9.9847,
+      "teaser": "47 hectares de parcs, jardin japonais et spectacle nocturne d'eau et de lumière.",
+      "desc": "Vaste parc paysager de 47 hectares aménagé au cœur de la ville sur l'emplacement des anciennes fortifications, dont le nom signifie « plantes et fleurs » en bas allemand. Il regroupe un jardin japonais réputé pour son authenticité, une roseraie, des serres tropicales, un jardin botanique ancien et de vastes pelouses appréciées des Hambourgeois pour le pique-nique. En soirée d'été, le parc accueille gratuitement le Wasserlichtkonzert, un spectacle son et lumière sur le grand bassin où jets d'eau, projections lumineuses et musique classique s'enchaînent chaque soir à la tombée de la nuit. Une aire de jeux thématique sur la piraterie et une patinoire extérieure en hiver en font un espace apprécié toute l'année, en transition vers les lacs de l'Alster tout proches."
+    },
+    {
+      "id": "michel",
+      "name": "St. Michaelis (der Michel)",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 53.5445,
+      "lng": 9.9773,
+      "teaser": "L'église baroque emblématique de Hambourg, surnommée affectueusement « der Michel ».",
+      "desc": "Église baroque la plus célèbre de Hambourg et véritable symbole de la ville, visible depuis le port et surnommée affectueusement « der Michel ». Construite au XVIIIe siècle puis reconstruite après un incendie en 1906, sa tour de cuivre culminant à 132 mètres a longtemps servi de repère aux marins entrant dans le port. L'intérieur baroque tout en blanc et or, l'un des plus vastes d'Allemagne du Nord, accueille encore aujourd'hui offices et concerts d'orgue réguliers. Une plateforme d'observation accessible par ascenseur ou par 453 marches offre, par temps clair, une vue dégagée sur l'ensemble du port, la Speicherstadt et l'Elbphilharmonie. Le carillon joue plusieurs fois par jour une mélodie traditionnelle, rythmant la vie du quartier historique environnant."
+    },
+    {
+      "id": "alster",
+      "name": "Alster (Binnen- / Außenalster)",
+      "cat": "nature",
+      "interest": 5,
+      "lat": 53.5559,
+      "lng": 9.9931,
+      "teaser": "Deux lacs urbains au cœur de la ville, entre balades et sorties en voilier.",
+      "desc": "Deux lacs artificiels formés par l'endiguement de la rivière Alster au Moyen Âge, séparés par les ponts Lombardsbrücke et Kennedybrücke, au cœur même de la ville. Le petit lac intérieur (Binnenalster), bordé par les arcades commerçantes et les grands hôtels, offre l'une des vues les plus célèbres sur le Rathaus, particulièrement depuis les bateaux-mouches qui y circulent. Le grand lac extérieur (Außenalster), bien plus vaste, est entouré d'un parcours de sept kilomètres très fréquenté par joggeurs et cyclistes, et bordé de villas cossues. Location de voiliers, kayaks et pédalos y est possible pour qui souhaite profiter du plan d'eau. En hiver, lorsque le gel le permet, le lac se transforme parfois en immense patinoire improvisée, un événement festif salué par toute la ville."
+    },
+    {
+      "id": "fischmarkt",
+      "name": "Fischmarkt",
+      "cat": "port",
+      "interest": 4,
+      "lat": 53.5459,
+      "lng": 9.9613,
+      "teaser": "Marché aux poissons dominical historique, ambiance populaire dès potron-minet.",
+      "desc": "Marché aux poissons historique de Sankt Pauli, institution hambourgeoise depuis 1703, tenu chaque dimanche matin au bord de l'Elbe, de 5h (7h en hiver) jusqu'à 9h30 environ — traditionnellement pour permettre aux noceurs de la Reeperbahn de prolonger la nuit. L'ambiance y est unique : marchands haranguant la foule avec un humour typiquement hambourgeois pour vendre poissons, fruits, fleurs et bric-à-brac à des prix cassés, dans une cohue bon enfant mêlant familles matinales, touristes et fêtards encore en tenue de soirée. La Fischauktionshalle, halle aux enchères de 1896 restaurée, accueille en parallèle des concerts live dès potron-minet. Prévoir des espèces et ne pas hésiter à goûter un Fischbrötchen sur le pouce face au fleuve."
+    },
+    {
+      "id": "chilehaus",
+      "name": "Chilehaus",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.5488,
+      "lng": 10.0021,
+      "teaser": "Chef-d'œuvre expressionniste en briques, taillé comme la proue d'un navire.",
+      "desc": "Chef-d'œuvre de l'architecture expressionniste construit entre 1922 et 1924 par l'architecte Fritz Höger pour l'armateur Henry B. Sloman, dont la fortune provenait du commerce avec le Chili — d'où son nom. Sa façade en briques sombres émaillées, taillée en pointe comme la proue d'un paquebot à l'angle de Fischertwiete, en fait l'un des exemples les plus spectaculaires de brique expressionniste au monde. Le bâtiment, classé avec l'ensemble du Kontorhausviertel au patrimoine mondial de l'UNESCO en 2015, comptait dix étages de bureaux organisés autour de cours intérieures baignées de lumière, une prouesse pour l'époque. Il continue d'abriter des bureaux et quelques commerces, à deux pas de la Speicherstadt. Sa silhouette, meilleure vue depuis l'angle de la Burchardstraße, en fait un détour architectural incontournable."
+    },
+    {
+      "id": "deichstrasse",
+      "name": "Deichstraße",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 53.5461,
+      "lng": 9.9917,
+      "teaser": "Rue de maisons à colombages du XVIIe siècle, ouverte sur un canal historique.",
+      "desc": "L'une des rares rues de Hambourg à avoir échappé au grand incendie de 1842 et aux bombardements de la Seconde Guerre mondiale, la Deichstraße conserve ses maisons de marchands à colombages et pignons, certaines datant du XVIIe siècle. Les façades côté rue contrastent avec l'arrière des bâtiments, ouvert sur le petit canal du Nikolaifleet, où les négociants faisaient jadis livrer directement leurs marchandises par bateau. Cette double vie illustre parfaitement le fonctionnement du vieux port hanséatique avant la construction de la Speicherstadt. Aujourd'hui la rue accueille cafés, restaurants traditionnels et petites boutiques, dans une atmosphère intime. La vue depuis le pont sur le Nikolaifleet, façades se reflétant dans l'eau, est particulièrement photogénique en fin d'après-midi."
+    },
+    {
+      "id": "krameramtsstuben",
+      "name": "Krameramtsstuben",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 53.546,
+      "lng": 9.9789,
+      "teaser": "Maisons à colombages du XVIIe siècle nichées près de l'église St. Michaelis.",
+      "desc": "Ensemble de maisons à colombages du XVIIe siècle construites pour loger les veuves des membres de la guilde des merciers (Krameramt), nichées dans une ruelle pavée juste à côté de l'église St. Michaelis. Ces habitations exiguës sur plusieurs niveaux, parmi les plus anciennes de Hambourg encore debout, témoignent du bâti populaire de la ville avant les grands incendies et destructions du XIXe et XXe siècles. L'une des maisons se visite comme musée meublé d'époque, tandis que les autres abritent boutiques d'artisanat et un petit restaurant traditionnel. Le passage se traverse en quelques minutes mais offre un contraste saisissant avec la tour baroque du Michel qui le surplombe, symbole du grand commerce face à ces modestes logements ouvriers."
+    },
+    {
+      "id": "nikolai",
+      "name": "Mahnmal St. Nikolai",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.549,
+      "lng": 9.9945,
+      "teaser": "Ruine-mémorial d'une église détruite en 1943, l'un des lieux de mémoire les plus forts.",
+      "desc": "Vestige de l'ancienne église Saint-Nicolas, autrefois l'un des plus hauts édifices du monde avec sa flèche néogothique de 147 mètres, détruite lors des bombardements alliés de juillet 1943 pendant l'opération Gomorrhe qui rasa une grande partie de la ville. Seuls la tour et quelques pans de mur calcinés ont été conservés volontairement en ruine, transformés en mémorial dédié aux victimes de la guerre et du national-socialisme. Un ascenseur permet de monter à 76 mètres pour une vue sur le centre-ville, tandis qu'une crypte souterraine présente une exposition documentaire sobre sur la destruction de Hambourg. Le contraste entre la dentelle de pierre gothique encore debout et le vide laissé par l'effondrement de la nef en fait l'un des lieux de mémoire les plus forts d'Allemagne du Nord."
+    },
+    {
+      "id": "bismarck",
+      "name": "Bismarck-Denkmal",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 53.5486,
+      "lng": 9.9739,
+      "teaser": "Statue monumentale de granit dominant l'entrée du port depuis 1906.",
+      "desc": "Gigantesque statue de granit de 34,3 mètres représentant le chancelier Otto von Bismarck en chevalier médiéval, érigée entre 1901 et 1906 sur une butte du parc Alter Elbpark dominant le port. Longtemps la plus grande statue d'Europe, elle fut financée par les grands négociants hambourgeois reconnaissants envers l'artisan de l'unité allemande et de la puissance commerciale du pays. Sa position surélevée, face à l'estuaire de l'Elbe, en faisait un repère pour les navires entrant dans le port. Le monument, aujourd'hui entouré de projets de réaménagement destinés à en contextualiser l'histoire coloniale et nationaliste, reste un point de vue agréable sur le fleuve, à courte distance de marche de la Reeperbahn et des Landungsbrücken."
+    },
+    {
+      "id": "petrikirche",
+      "name": "Petrikirche (St. Petri)",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 53.551,
+      "lng": 9.9925,
+      "teaser": "La plus ancienne église principale de Hambourg, mentionnée dès 1195.",
+      "desc": "La plus ancienne des cinq grandes églises principales de Hambourg, mentionnée dès 1195, reconstruite dans le style néogothique après le grand incendie de 1842 qui détruisit la quasi-totalité du centre-ville. Sa tour culmine à 132 mètres et son horloge, l'une des plus grandes d'Europe, rythme la vie du quartier commerçant tout proche de la Mönckebergstraße. Le portail sud conserve une poignée de porte en bronze datant du XIVe siècle, l'un des plus anciens objets d'art conservés dans la ville. L'intérieur, sobre et lumineux, contraste avec la richesse baroque du Michel et accueille régulièrement concerts d'orgue et expositions. Sa tour, gravissable, propose une vue alternative moins fréquentée que celle du Michel sur les toits du centre-ville."
+    },
+    {
+      "id": "jungfernstieg",
+      "name": "Jungfernstieg",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 53.5537,
+      "lng": 9.9928,
+      "teaser": "Promenade emblématique du Binnenalster, l'une des plus élégantes avenues d'Allemagne.",
+      "desc": "Promenade emblématique bordant la rive sud du Binnenalster, aménagée dès le XVIIe siècle et considérée comme l'une des plus élégantes avenues commerçantes d'Allemagne. Les Alsterarkaden voisines, galeries marchandes couvertes construites après l'incendie de 1842, abritent boutiques de luxe et cafés avec vue sur l'eau. C'est de l'embarcadère du Jungfernstieg que partent les bateaux de l'Alstertouristik pour les croisières sur les deux lacs de l'Alster, une manière reposante de découvrir le centre-ville depuis l'eau. Le nœud de transport en commun du même nom, l'un des plus fréquentés de la ville, rend l'endroit très pratique comme point de repère central. Les soirs d'été, les terrasses le long du quai profitent d'une des plus belles vues urbaines de Hambourg."
+    },
+    {
+      "id": "katharinen",
+      "name": "St. Katharinen",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 53.5457,
+      "lng": 9.993,
+      "teaser": "Église à la flèche baroque verte, à la charnière entre centre et Speicherstadt.",
+      "desc": "Cinquième des grandes églises principales de Hambourg, dressée depuis le XIVe siècle à la lisière du vieux port et aujourd'hui de la Speicherstadt, aisément reconnaissable à sa flèche baroque verte de cuivre culminant à 115 mètres, généreusement dorée à son sommet. Fortement endommagée par les bombardements de 1943, elle fut reconstruite à l'identique dans les décennies suivantes et reste un lieu de culte et de concerts actif, réputé pour son acoustique et son orgue. Sa position, à la charnière entre le centre historique, la Speicherstadt et le nouveau quartier de HafenCity, en fait un repère visuel commode pour s'orienter entre ces trois zones aux ambiances très différentes. Un moment de calme apprécié entre deux étapes plus animées du parcours."
+    },
+    {
+      "id": "kunsthalle",
+      "name": "Hamburger Kunsthalle",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 53.5535,
+      "lng": 10.0043,
+      "teaser": "Sept siècles de peinture européenne, dont Caspar David Friedrich.",
+      "desc": "L'un des plus grands musées d'art d'Allemagne, réunissant sept siècles de peinture européenne dans un bâtiment historique du XIXe siècle prolongé en 1997 par un cube de béton contemporain signé Oswald Mathias Ungers. Les collections couvrent aussi bien les maîtres anciens flamands et hollandais que le romantisme allemand — la salle consacrée à Caspar David Friedrich, dont le célèbre Voyageur au-dessus de la mer de nuages, est l'un des points forts — jusqu'à l'art moderne et contemporain dans l'aile Ungers. Le musée organise régulièrement de grandes expositions temporaires internationales. Sa situation juste derrière la gare centrale en fait une étape facile à intégrer à un parcours en ville, sur la Kunstmeile qui regroupe plusieurs institutions culturelles majeures."
+    },
+    {
+      "id": "imm",
+      "name": "Internationales Maritimes Museum",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5432,
+      "lng": 9.9902,
+      "teaser": "Dix mille ans d'histoire de la navigation sur dix étages d'un entrepôt de 1878.",
+      "desc": "Installé dans un ancien entrepôt de la Speicherstadt datant de 1878, ce musée retrace dix mille ans d'histoire de la navigation sur dix étages thématiques, de l'Antiquité aux porte-conteneurs modernes. La collection, réunie à l'origine par le collectionneur privé Peter Tamm, comprend plus de 26 000 modèles réduits de navires, des figures de proue, des uniformes, instruments de navigation et œuvres d'art maritime. Un étage entier est consacré à la marine marchande hambourgeoise et à l'histoire du port lui-même, en résonance directe avec le quartier qui l'entoure. La visite complète, dense et verticale, demande facilement deux à trois heures. Une adresse qui intéressera particulièrement les passionnés de modélisme naval et d'histoire maritime, à quelques pas du Miniatur Wunderland."
+    },
+    {
+      "id": "deichtorhallen",
+      "name": "Deichtorhallen",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5478,
+      "lng": 10.0011,
+      "teaser": "Anciennes halles de marché Art nouveau, aujourd'hui temple de l'art contemporain.",
+      "desc": "Deux anciennes halles de marché aux légumes et aux fleurs datant du début du XXe siècle, remarquables pour leurs structures métalliques et verrières Art nouveau, reconverties depuis 1989 en l'une des plus grandes institutions d'art contemporain et de photographie d'Europe. La Halle Sud est dédiée à l'art contemporain, la Halle Nord à la photographie, avec une programmation d'expositions temporaires internationales renouvelée plusieurs fois par an. L'architecture industrielle elle-même, avec ses volumes immenses baignés de lumière naturelle, constitue un cadre d'exposition remarquable indépendamment des œuvres présentées. Le site se situe sur la Kunstmeile, à deux pas de la Kunsthalle et de la gare centrale, dans un quartier en pleine mutation entre HafenCity et centre historique."
+    },
+    {
+      "id": "mkg",
+      "name": "Museum für Kunst und Gewerbe",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5534,
+      "lng": 10.0075,
+      "teaser": "Musée des arts décoratifs, du design et de l'Art nouveau depuis 1877.",
+      "desc": "Musée des arts décoratifs et du design fondé en 1877, l'un des plus anciens musées d'arts appliqués d'Europe continentale, installé dans un bâtiment néo-Renaissance juste derrière la gare centrale. Les collections couvrent l'Art nouveau et l'Art déco, le design du XXe siècle, la mode, la porcelaine, la photographie et un remarquable département d'art est-asiatique et islamique. La salle Art nouveau, avec son mobilier et ses verreries d'époque, compte parmi les plus belles d'Europe dans ce genre. Le musée accueille aussi régulièrement des expositions de design contemporain et de mode. Sa localisation, à deux pas de la Kunsthalle et de la gare centrale, permet de l'associer facilement à une matinée culturelle dans ce même quartier."
+    },
+    {
+      "id": "planetarium",
+      "name": "Planetarium Hamburg",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5945,
+      "lng": 10.0126,
+      "teaser": "Astronomie et spectacles immersifs dans un ancien château d'eau de 1930.",
+      "desc": "Installé depuis 1930 dans un ancien château d'eau du parc de Winterhude, haut de plus de 50 mètres, c'est l'un des planétariums les plus anciens encore en activité au monde et l'un des plus modernes d'Europe depuis sa rénovation technique complète. Les projections en dôme immersif combinent astronomie grand public, musique et spectacles multimédias, avec une programmation variée allant des séances familiales aux concerts électroniques sous les étoiles. L'architecture du bâtiment lui-même, tour de brique néoclassique dominant le Stadtpark voisin, vaut le coup d'œil même sans billet de séance. Une terrasse et un restaurant au sommet offrent une vue dégagée sur le parc et le nord de la ville, à combiner avec une promenade dans le Stadtpark."
+    },
+    {
+      "id": "capsandiego",
+      "name": "Cap San Diego",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5427,
+      "lng": 9.9838,
+      "teaser": "Cargo musée de 1961, amarré face à l'Elbphilharmonie.",
+      "desc": "Cargo mixte construit en 1961 aux chantiers navals Deutsche Werft de Hambourg, l'un des derniers représentants encore en état de navigation de la grande époque du fret maritime hambourgeois vers l'Amérique du Sud. Amarré en permanence à l'Überseebrücke depuis 1986 et transformé en musée flottant, le navire se visite de la salle des machines jusqu'à la passerelle de commandement, en passant par les cabines d'équipage conservées dans leur état d'origine. Il reste occasionnellement utilisé pour de courtes croisières commémoratives sur l'Elbe et propose même quelques cabines en location pour une nuit insolite à quai. Sa silhouette blanche et rouge, amarrée face à l'Elbphilharmonie, en fait un point de repère visuel fort du front de mer."
+    },
+    {
+      "id": "rickmer",
+      "name": "Rickmer Rickmers",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 53.5458,
+      "lng": 9.97,
+      "teaser": "Trois-mâts de 1896 amarré aux Landungsbrücken, coque rouge emblématique.",
+      "desc": "Trois-mâts barque construit en 1896 aux chantiers Rickmers de Bremerhaven, amarré en permanence aux Landungsbrücken depuis 1987 et transformé en musée flottant emblématique du front de mer hambourgeois. Le navire, qui transporta autrefois riz et autres marchandises entre l'Asie et l'Europe avant de servir de navire-école, se visite pont par pont, de la cale à la timonerie, avec du mobilier et des équipements d'époque remarquablement conservés. Sa coque rouge distinctive, immédiatement reconnaissable depuis le ponton des Landungsbrücken, en fait l'un des sujets photographiques les plus populaires du port. Un restaurant à bord permet de prolonger l'expérience avec vue sur l'Elbe. Idéal pour une immersion maritime courte et accessible sans s'éloigner du cœur touristique."
+    },
+    {
+      "id": "hafencity",
+      "name": "HafenCity",
+      "cat": "port",
+      "interest": 3,
+      "lat": 53.5417,
+      "lng": 9.9967,
+      "teaser": "Plus vaste projet de reconversion urbaine d'Europe, au bord de l'eau.",
+      "desc": "Plus vaste projet de reconversion urbaine d'Europe, HafenCity transforme depuis le début des années 2000 d'anciens quais et entrepôts portuaires en un nouveau quartier mêlant logements, bureaux, culture et espaces publics au bord de l'eau, sur une surface équivalente à celle du centre historique. L'Elbphilharmonie en constitue la pièce maîtresse la plus visible, mais le quartier compte aussi de nombreux immeubles d'architecture contemporaine primée, de larges promenades le long des bassins et l'Überseequartier, pôle commerçant en plein développement. Les quais restent volontairement bas et non protégés contre les crues, une particularité qui oblige les habitants à composer avec les marées de l'Elbe. Un contraste architectural saisissant avec la Speicherstadt voisine, juste de l'autre côté du canal."
+    },
+    {
+      "id": "koehlbrandbruecke",
+      "name": "Köhlbrandbrücke (point de vue)",
+      "cat": "port",
+      "interest": 2,
+      "lat": 53.528,
+      "lng": 9.942,
+      "teaser": "Pont suspendu rouge emblématique du port industriel, culminant à 53 mètres.",
+      "desc": "Pont routier suspendu de près de 4 kilomètres reliant les deux rives du port sur le bras du Köhlbrand, achevé en 1974 et culminant à 53 mètres pour laisser passer les plus grands porte-conteneurs sous son tablier. Silhouette rouge immédiatement reconnaissable depuis de nombreux points de la ville, il est considéré comme l'un des repères visuels du port industriel hambourgeois, régulièrement photographié au coucher du soleil depuis les berges de Wilhelmsburg ou Waltershof. Le pont n'est pas ouvert aux piétons, mais plusieurs points de vue aménagés le long de l'Elbe permettent de l'admirer avec en arrière-plan le ballet des grues portuaires. Sa démolition programmée à moyen terme en fait un sujet photographique dont la disparition annoncée attire déjà les passionnés."
+    },
+    {
+      "id": "oevelgoenne",
+      "name": "Övelgönne / Elbstrand",
+      "cat": "port",
+      "interest": 4,
+      "lat": 53.546,
+      "lng": 9.913,
+      "teaser": "Plage sur l'Elbe et maisons de capitaines, face au ballet des porte-conteneurs.",
+      "desc": "Ancien village de pêcheurs et de pilotes de l'Elbe aujourd'hui absorbé par l'agglomération, Övelgönne aligne le long du fleuve de charmantes maisons de capitaines des XVIIIe et XIXe siècles aux jardins soignés, tandis qu'à leurs pieds s'étend une plage de sable où les Hambourgeois viennent pique-niquer et regarder défiler les porte-conteneurs à quelques mètres du rivage. Le musée du port (Museumshafen Oevelgönne) y rassemble une flottille de bateaux traditionnels restaurés, remorqueurs et péniches historiques amarrés à quai. La promenade piétonne et cyclable qui longe la rive, très prisée les soirs d'été pour observer le coucher de soleil, relie facilement le quartier à Blankenese plus à l'ouest, accessible en une vingtaine de minutes de bateau-bus depuis les Landungsbrücken."
+    },
+    {
+      "id": "blankenese",
+      "name": "Blankenese (Treppenviertel)",
+      "cat": "quartier",
+      "interest": 4,
+      "lat": 53.5613,
+      "lng": 9.809,
+      "teaser": "Village de pêcheurs perché sur des collines, ses 5000 marches et ses ruelles.",
+      "desc": "Ancien village de pêcheurs et de pilotes fluviaux perché sur les collines morainiques surplombant l'Elbe, Blankenese est aujourd'hui l'un des quartiers résidentiels les plus prisés de Hambourg, connu pour son labyrinthe pittoresque de ruelles, escaliers et venelles pavées — le fameux Treppenviertel compte près de 5000 marches réparties sur une trentaine de rues sans accès automobile. Les maisons de capitaines aux jardins fleuris s'étagent à flanc de colline jusqu'au bord du fleuve, offrant à chaque détour de nouvelles perspectives sur l'Elbe et le trafic des porte-conteneurs. Le sommet du Süllberg, ancienne colline fortifiée aujourd'hui coiffée d'un restaurant panoramique, constitue le meilleur point de vue. Accessible en une trentaine de minutes en S-Bahn, l'un des moments les plus dépaysants d'une visite de Hambourg."
+    },
+    {
+      "id": "grossefreiheit",
+      "name": "Große Freiheit / Beatles-Platz",
+      "cat": "nightlife",
+      "interest": 4,
+      "lat": 53.5502,
+      "lng": 9.9576,
+      "teaser": "Rue mythique où les Beatles ont façonné leur son entre 1960 et 1962.",
+      "desc": "Rue transversale de la Reeperbahn dont le nom signifie « grande liberté », historiquement associée à la liberté de culte et de commerce accordée par le Danemark voisin au XVIIe siècle, devenue au XXe siècle l'épicentre des clubs musicaux de Sankt Pauli. C'est dans ses clubs, notamment le Kaiserkeller et le Top Ten Club, que les Beatles ont façonné leur son de 1960 à 1962 lors de résidences énergiques qui ont marqué durablement le groupe. Le Beatles-Platz, place circulaire en forme de disque vinyle à l'entrée de la rue, honore ce passage avec des silhouettes en acier des cinq membres du groupe, dont Stuart Sutcliffe, mort peu après leur départ de Hambourg. La rue reste l'une des plus animées de la vie nocturne hambourgeoise, à découvrir plutôt en soirée."
+    },
+    {
+      "id": "schanzenviertel",
+      "name": "Schanzenviertel",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.5615,
+      "lng": 9.9622,
+      "teaser": "Ancien quartier squatté devenu foyer de la scène alternative hambourgeoise.",
+      "desc": "Ancien quartier ouvrier autour de la Schanzenstraße, devenu à partir des années 1980 un foyer de la scène alternative et squattée de Hambourg, aujourd'hui gentrifié mais toujours marqué par cette identité contestataire, symbolisée par l'ancien Bunker Feldstraße, immense blockhaus antiaérien de la Seconde Guerre mondiale récemment coiffé d'un jardin public et d'un hôtel. Le quartier concentre bars indépendants, friperies, restaurants du monde entier et une intense vie nocturne étudiante autour de la gare de Sternschanze, sans l'aspect spectacle organisé de la Reeperbahn toute proche. Le marché hebdomadaire de la Schanzenstraße et les nombreuses terrasses animées les soirs d'été en font un lieu de vie autant que de sortie, particulièrement vivant du jeudi au samedi soir."
+    },
+    {
+      "id": "stadtpark",
+      "name": "Stadtpark Hamburg",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 53.5911,
+      "lng": 10.0201,
+      "teaser": "148 hectares de pelouses, lac de baignade et amphithéâtre en plein air.",
+      "desc": "Vaste parc urbain de 148 hectares aménagé entre 1908 et 1914 dans le quartier de Winterhude, conçu comme un espace de loisirs populaire à une époque où la ville manquait cruellement d'espaces verts accessibles à tous. On y trouve de grandes pelouses ouvertes, un lac de baignade surveillé en été, un amphithéâtre en plein air accueillant concerts et cinéma d'été, ainsi que le Planetarium logé dans l'ancien château d'eau du parc. Les grandes allées bordées d'arbres centenaires en constituent les repères visuels principaux. Très fréquenté par les familles et joggeurs du quartier, le parc offre une échappée verte loin de l'agitation du centre, tout en restant accessible en une quinzaine de minutes de S-Bahn."
+    },
+    {
+      "id": "hagenbeck",
+      "name": "Hagenbecks Tierpark",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 53.5943,
+      "lng": 9.9346,
+      "teaser": "Zoo pionnier des enclos ouverts, plus de 1900 animaux sans barreaux.",
+      "desc": "Zoo fondé en 1907 par Carl Hagenbeck, pionnier mondial de la présentation des animaux dans des enclos ouverts reconstituant leur habitat naturel plutôt que derrière des barreaux, une révolution qui a influencé la conception zoologique dans le monde entier. Le parc abrite aujourd'hui plus de 1900 animaux de 210 espèces, répartis en panoramas thématiques (savane africaine, Asie, Arctique) séparés par des fossés invisibles plutôt que des grillages. Un pavillon tropical immersif et un aquarium complètent la visite. Situé dans le quartier de Stellingen au nord-ouest de la ville, à une trentaine de minutes du centre en métro, c'est l'une des sorties familiales les plus populaires de la région hambourgeoise, à prévoir sur une demi-journée au minimum tant le site est vaste."
+    },
+    {
+      "id": "jenischpark",
+      "name": "Jenischpark",
+      "cat": "nature",
+      "interest": 2,
+      "lat": 53.5555,
+      "lng": 9.878,
+      "teaser": "Parc à l'anglaise sur les hauteurs de l'Elbe, entre villa patricienne et sculpture.",
+      "desc": "Parc paysager à l'anglaise aménagé au début du XIXe siècle sur les hauteurs de l'Elbe, entre les quartiers d'Othmarschen et de Flottbek, réunissant vastes pelouses, arbres centenaires et deux demeures patriciennes ouvertes à la visite : la Jenischhaus, villa classique aux collections de mobilier et de peinture des XVIIIe et XIXe siècles, et l'Ernst-Barlach-Haus, musée dédié au sculpteur expressionniste allemand Ernst Barlach. Le parc descend en pente douce jusqu'aux rives de l'Elbe, offrant une vue dégagée sur le fleuve, dans un cadre nettement plus champêtre que les parcs du centre-ville. Moins connu des visiteurs de passage, il est particulièrement apprécié des Hambourgeois pour les promenades du dimanche, facilement combinable avec une balade jusqu'à Övelgönne."
+    },
+    {
+      "id": "karolinenviertel",
+      "name": "Karolinenviertel",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.558,
+      "lng": 9.97,
+      "teaser": "Ancien abattoir reconverti en pôle de mode indépendante et de design.",
+      "desc": "Petit quartier compact coincé entre le Schanzenviertel et l'ancien abattoir municipal, devenu depuis les années 2000 un pôle de mode indépendante et de design, avec une forte concentration de jeunes créateurs, boutiques vintage et concept-stores installés dans les anciens halls de l'abattoir reconverti (Schlachthof). L'ambiance y est nettement plus posée que dans le Schanzenviertel voisin, avec des cafés spécialisés, des ateliers d'artisans et une scène culinaire éclectique qui reflète la diversité de ses habitants. C'est aussi ici que se concentrent plusieurs enseignes de mode éthique et de seconde main. Le quartier se visite naturellement à pied en prolongement d'une sortie dans le Schanzenviertel, en particulier en fin de semaine lorsque cafés et boutiques sont pleinement animés."
+    },
+    {
+      "id": "ottensen",
+      "name": "Ottensen",
+      "cat": "quartier",
+      "interest": 3,
+      "lat": 53.5525,
+      "lng": 9.916,
+      "teaser": "Ancien village industriel devenu quartier piéton animé, cafés et boutiques.",
+      "desc": "Ancien village industriel annexé à Altona puis à Hambourg, Ottensen a connu une intense reconversion depuis les années 1980, passant d'un quartier ouvrier autour d'usines textiles et de tabac à l'un des quartiers les plus prisés de la ville pour son mélange de rues piétonnes commerçantes, cours intérieures réhabilitées et scène gastronomique variée. La Mottenburger Twiete et la Spritzenplatz concentrent boutiques indépendantes, cafés et restaurants du monde entier dans une atmosphère décontractée très éloignée du tumulte du centre touristique. Le quartier organise régulièrement des marchés et brocantes de rue très fréquentés par les habitants. Sa proximité avec les rives de l'Elbe et le Jenischpark en fait une base agréable pour une après-midi de balade loin des foules."
+    },
+    {
+      "id": "grindelviertel",
+      "name": "Grindelviertel",
+      "cat": "quartier",
+      "interest": 2,
+      "lat": 53.57,
+      "lng": 9.98,
+      "teaser": "Quartier universitaire marqué par l'histoire de la communauté juive hambourgeoise.",
+      "desc": "Quartier universitaire situé entre l'Außenalster et le campus principal de l'Université de Hambourg, marqué par une architecture résidentielle du début du XXe siècle et une histoire intimement liée à la communauté juive hambourgeoise, l'une des plus importantes d'Allemagne avant la Seconde Guerre mondiale. Plusieurs plaques et monuments commémoratifs, dont l'ancien emplacement de la grande synagogue du Bornplatz détruite lors de la Nuit de Cristal, rappellent cette histoire aujourd'hui documentée par le musée voisin dédié aux cultures juives. Le quartier, aujourd'hui animé par une importante population étudiante, mêle immeubles bourgeois cossus, cafés étudiants et librairies. Le Grindelhochhäuser, ensemble de tours résidentielles des années 1950, constitue un exemple caractéristique de l'architecture de la reconstruction ouest-allemande."
+    },
+    {
+      "id": "eppendorf",
+      "name": "Eppendorf",
+      "cat": "quartier",
+      "interest": 2,
+      "lat": 53.59,
+      "lng": 9.986,
+      "teaser": "Quartier bourgeois et résidentiel, marché couvert et rives de l'Alster.",
+      "desc": "Quartier résidentiel chic au nord du centre-ville, réputé pour ses rues commerçantes élégantes autour de l'Eppendorfer Baum et de l'Isestraße, où se tient chaque semaine l'un des marchés alimentaires les plus appréciés de la ville, installé sous les rails du S-Bahn aérien. Les immeubles bourgeois de la fin du XIXe siècle, les boutiques de créateurs et les cafés cossus donnent au quartier une atmosphère résidentielle raffinée, très éloignée de l'agitation du port ou de la Reeperbahn. Les rives de l'Alster toute proche invitent à la promenade ou au jogging le long de l'eau. Un quartier à privilégier pour qui souhaite observer le Hambourg bourgeois au quotidien, entre shopping de proximité et balades tranquilles, plutôt qu'un site touristique à proprement parler."
+    },
+    {
+      "id": "stintfang",
+      "name": "Stintfang",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 53.5473,
+      "lng": 9.9705,
+      "teaser": "Colline surplombant les Landungsbrücken, vue dégagée sur l'entrée du port.",
+      "desc": "Petite colline surplombant les Landungsbrücken et l'entrée du port, aménagée en promenade publique offrant l'une des vues les plus dégagées sur l'estuaire de l'Elbe, les quais historiques et le trafic incessant de porte-conteneurs, remorqueurs et bateaux de croisière. Le site doit son nom aux petits poissons (Stint) autrefois pêchés à cet endroit avant que les quais ne soient aménagés. Une auberge de jeunesse historique occupe le sommet de la colline, dont la terrasse est ouverte à tous pour profiter de la vue en prenant un verre. C'est un point de vue idéal pour observer les grands paquebots de croisière manœuvrer dans le port, à deux pas seulement des Landungsbrücken et du départ des croisières portuaires."
+    },
+    {
+      "id": "heinrichhertzturm",
+      "name": "Heinrich-Hertz-Turm",
+      "cat": "panorama",
+      "interest": 2,
+      "lat": 53.5644,
+      "lng": 9.9339,
+      "teaser": "Tour de télécommunications de 279 mètres, surnommée « Tele-Michel ».",
+      "desc": "Tour de télécommunications de 279,2 mètres construite en 1968, longtemps le plus haut édifice de Hambourg et surnommée familièrement « Tele-Michel » en clin d'œil à la tour de l'église St. Michaelis. Sa plateforme d'observation, fermée au public depuis 2001 pour des raisons de sécurité incendie, fait aujourd'hui l'objet d'un projet de réouverture partielle très attendu par les Hambourgeois. En attendant, la tour reste visible depuis une grande partie de la ville et constitue un repère pratique pour s'orienter, en particulier depuis le quartier de Sternschanze et le Stadtpark. Le pied de la tour, entouré d'un petit parc, permet néanmoins une pause tranquille loin de l'agitation du centre, davantage comme point de repère visuel que comme destination de visite tant qu'elle reste fermée au public."
+    }
+  ]
+}

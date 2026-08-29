@@ -1,10 +1,11 @@
-var CACHE_NAME = 'hamburg-poi-v3';
+var CACHE_NAME = 'hamburg-poi-v4';
 var APP_SHELL = [
   '/',
   '/index.html',
   '/manifest.json',
   '/icon-192.png',
-  '/icon-512.png'
+  '/icon-512.png',
+  '/villes/hambourg.json'
 ];
 
 self.addEventListener('install', function(event){
