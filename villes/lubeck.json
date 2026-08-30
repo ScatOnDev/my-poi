@@ -1,6 +1,9 @@
 {
   "city": "Lübeck",
-  "center": { "lat": 53.869, "lng": 10.684 },
+  "center": {
+    "lat": 53.869,
+    "lng": 10.684
+  },
   "zoom": 11,
   "pois": [
     {
@@ -136,7 +139,7 @@
     {
       "id": "huexstrasse",
       "name": "Hüxstraße",
-      "cat": "quartier",
+      "cat": "shopping",
       "interest": 3,
       "lat": 53.868,
       "lng": 10.686,
@@ -146,7 +149,7 @@
     {
       "id": "koenigstrasse",
       "name": "Königstraße",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 3,
       "lat": 53.87,
       "lng": 10.6825,
@@ -156,7 +159,7 @@
     {
       "id": "travemuende-altstadt",
       "name": "Vieille ville de Travemünde",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 3,
       "lat": 53.958,
       "lng": 10.869,
@@ -236,7 +239,7 @@
     {
       "id": "fleischhauerstrasse",
       "name": "Fleischhauerstraße",
-      "cat": "nightlife",
+      "cat": "culture",
       "interest": 2,
       "lat": 53.8695,
       "lng": 10.687,
@@ -246,7 +249,7 @@
     {
       "id": "beckergrube",
       "name": "Beckergrube",
-      "cat": "nightlife",
+      "cat": "culture",
       "interest": 2,
       "lat": 53.8683,
       "lng": 10.682,
@@ -256,7 +259,7 @@
     {
       "id": "museumshafen",
       "name": "Museumshafen",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 4,
       "lat": 53.8676,
       "lng": 10.68,
@@ -266,7 +269,7 @@
     {
       "id": "elbe-luebeck-kanal",
       "name": "Elbe-Lübeck-Kanal",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 2,
       "lat": 53.86,
       "lng": 10.69,
@@ -276,7 +279,7 @@
     {
       "id": "travemuende-faehrhafen",
       "name": "Port de ferries de Travemünde",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 3,
       "lat": 53.964,
       "lng": 10.877,
@@ -286,7 +289,7 @@
     {
       "id": "passat-schiff",
       "name": "Passat (voilier musée)",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 3,
       "lat": 53.96,
       "lng": 10.873,

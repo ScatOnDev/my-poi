@@ -1,6 +1,9 @@
 {
   "city": "Montluçon",
-  "center": { "lat": 46.3408, "lng": 2.6033 },
+  "center": {
+    "lat": 46.3408,
+    "lng": 2.6033
+  },
   "zoom": 12,
   "pois": [
     {
@@ -116,7 +119,7 @@
     {
       "id": "quartier-saint-pierre",
       "name": "Quartier Saint-Pierre",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 4,
       "lat": 46.34,
       "lng": 2.605,
@@ -126,7 +129,7 @@
     {
       "id": "faubourg-saint-jean",
       "name": "Faubourg Saint-Jean",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 3,
       "lat": 46.336,
       "lng": 2.608,
@@ -136,7 +139,7 @@
     {
       "id": "rue-du-chateau",
       "name": "Rue du Château",
-      "cat": "quartier",
+      "cat": "patrimoine",
       "interest": 3,
       "lat": 46.3408,
       "lng": 2.6045,
@@ -146,7 +149,7 @@
     {
       "id": "centre-ville-pieton",
       "name": "Centre-ville piéton",
-      "cat": "quartier",
+      "cat": "shopping",
       "interest": 2,
       "lat": 46.3385,
       "lng": 2.602,
@@ -216,7 +219,7 @@
     {
       "id": "grand-rue-vie-nocturne",
       "name": "Grand'Rue et ses bars",
-      "cat": "nightlife",
+      "cat": "shopping",
       "interest": 2,
       "lat": 46.3388,
       "lng": 2.603,
@@ -226,7 +229,7 @@
     {
       "id": "cite-medievale-terrasses",
       "name": "Terrasses de la Cité Médiévale",
-      "cat": "nightlife",
+      "cat": "patrimoine",
       "interest": 2,
       "lat": 46.3402,
       "lng": 2.6048,
@@ -236,7 +239,7 @@
     {
       "id": "canal-de-berry",
       "name": "Canal de Berry",
-      "cat": "port",
+      "cat": "fluvial",
       "interest": 2,
       "lat": 46.345,
       "lng": 2.612,

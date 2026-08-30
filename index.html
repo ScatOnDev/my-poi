@@ -62,7 +62,7 @@
 
   .top-actions{display:flex;gap:8px;pointer-events:auto;}
 
-  #locate-btn, #settings-btn{
+  #locate-btn, #settings-btn, #city-btn{
     pointer-events:auto;
     width:44px;height:44px;border-radius:50%;
     background:var(--white);color:var(--navy);
@@ -71,7 +71,7 @@
     transition:background .2s, color .2s, transform .15s;
   }
   #locate-btn.active{background:#2F6FED;color:var(--white);}
-  #locate-btn:active, #settings-btn:active{transform:scale(.92);}
+  #locate-btn:active, #settings-btn:active, #city-btn:active{transform:scale(.92);}
 
   /* ---------- Filter chips ---------- */
   #filters{
@@ -261,6 +261,9 @@
     font-size:15px;line-height:1;
   }
   .modal-card h2{font-size:21px;margin:4px 30px 8px 0;letter-spacing:.01em;}
+  .modal-card h2.section-title{font-size:16px;margin:22px 0 8px;padding-top:16px;border-top:1px solid var(--sand-deep);}
+  .city-item-online .city-count{color:#5B4B8A;font-weight:600;}
+  .local-delete-btn{font-size:16px;padding:4px 6px;margin-left:6px;}
   .modal-card .desc{font-size:14.5px;line-height:1.65;color:#332f2a;margin:0;}
   .modal-card .coords{
     margin-top:14px;font-size:11.5px;color:#8a8478;font-family:'Oswald',sans-serif;letter-spacing:.04em;
@@ -340,12 +343,13 @@
   <div id="map"></div>
 
   <header id="topbar">
-    <button class="brand" id="brand-btn" aria-label="Changer de ville">
+    <div class="brand" id="brand-label">
       <span class="brand-mark">⚓</span>
-      <span class="brand-text" id="brand-text">Hambourg<small>Toucher pour changer de ville</small></span>
-    </button>
+      <span class="brand-text" id="brand-text">Hambourg<small>Ville en cours</small></span>
+    </div>
     <div class="top-actions">
-      <button id="settings-btn" aria-label="Réglages de lecture audio">⚙</button>
+      <button id="city-btn" aria-label="Changer de ville">🌐</button>
+      <button id="settings-btn" aria-label="Réglages">⚙</button>
       <button id="locate-btn" aria-label="Afficher ma position en temps réel">◎</button>
     </div>
   </header>
@@ -401,6 +405,7 @@
   var ACTIVE_CITY_KEY = 'hamburgPoiApp:activeCity';
 
   var cityRegistry = {};
+  var onlineManifest = {}; // slug -> {file, city} : catalogue en ligne, pas encore téléchargé
   var activeCitySlug = 'hambourg';
 
   function slugify(str){
@@ -574,6 +579,7 @@
     var listEl = document.getElementById('city-list');
     if(!listEl) return;
     listEl.innerHTML = '';
+
     Object.keys(cityRegistry).forEach(function(slug){
       var c = cityRegistry[slug];
       var li = document.createElement('li');
@@ -586,6 +592,34 @@
         if(slug !== activeCitySlug){ activateCity(slug); } else { closeModal(); }
       });
       listEl.appendChild(li);
+    });
+
+    Object.keys(onlineManifest).forEach(function(slug){
+      if(cityRegistry[slug]) return; // déjà téléchargée, déjà listée ci-dessus
+      var entry = onlineManifest[slug];
+      var li = document.createElement('li');
+      li.className = 'city-item city-item-online';
+      li.innerHTML =
+        '<span class="city-name">' + entry.city + '</span>' +
+        '<span class="city-count">en ligne</span>';
+      li.addEventListener('click', function(){ fetchOnlineCity(slug); });
+      listEl.appendChild(li);
+    });
+  }
+
+  function fetchOnlineCity(slug){
+    var entry = onlineManifest[slug];
+    if(!entry) return;
+    showToast('Téléchargement de ' + entry.city + '…');
+    fetch('/villes/' + entry.file).then(function(r){
+      if(!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    }).then(function(data){
+      data.builtin = true;
+      cityRegistry[slug] = data;
+      activateCity(slug);
+    }).catch(function(){
+      showToast('Impossible de télécharger ' + entry.city + ' pour le moment.');
     });
   }
 
@@ -629,7 +663,7 @@
     document.getElementById('json-file-input').addEventListener('change', handleCityFileInput);
   }
 
-  document.getElementById('brand-btn').addEventListener('click', openCityPicker);
+  document.getElementById('city-btn').addEventListener('click', openCityPicker);
 
   /* ---------------- List (uniquement les lieux visibles à l'écran) ---------------- */
   var listEl = document.getElementById('poi-list');
@@ -687,17 +721,29 @@
 
   map.on('moveend', renderVisibleList);
 
-  fetch('/villes/hambourg.json').then(function(r){
-    if(!r.ok) throw new Error('http ' + r.status);
-    return r.json();
-  }).then(function(data){
-    data.builtin = true;
-    cityRegistry.hambourg = data;
-  }).catch(function(){
-    showToast('Impossible de charger les données de Hambourg — vérifie ta connexion.');
-  }).then(function(){
+  Promise.all([
+    fetch('/villes/hambourg.json').then(function(r){
+      if(!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    }).then(function(data){
+      data.builtin = true;
+      cityRegistry.hambourg = data;
+    }).catch(function(){
+      showToast('Impossible de charger les données de Hambourg — vérifie ta connexion.');
+    }),
+    fetch('/villes/index.json').then(function(r){
+      if(!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    }).then(function(list){
+      (list || []).forEach(function(entry){
+        var slug = slugify(entry.city);
+        if(!cityRegistry[slug]){ onlineManifest[slug] = entry; }
+      });
+    }).catch(function(){ /* pas grave : Hambourg reste dispo, catalogue simplement absent */ })
+  ]).then(function(){
     var startSlug = cityRegistry[activeCitySlug] ? activeCitySlug : 'hambourg';
     if(cityRegistry[startSlug]){ activateCity(startSlug); }
+    else if(onlineManifest[activeCitySlug]){ fetchOnlineCity(activeCitySlug); }
     else { showToast('Aucune ville disponible pour le moment.'); }
   });
 
@@ -764,6 +810,36 @@
 
   /* ---------------- Réglages audio (popup centré) ---------------- */
   var settingsBtn = document.getElementById('settings-btn');
+  function renderLocalCitiesManager(){
+    var box = document.getElementById('local-cities-box');
+    if(!box) return;
+    var localSlugs = Object.keys(cityRegistry).filter(function(slug){ return !cityRegistry[slug].builtin; });
+    if(!localSlugs.length){
+      box.innerHTML = '<p class="modal-hint">Aucune ville locale chargée depuis un fichier JSON.</p>';
+      return;
+    }
+    var html = '<ul class="city-list">';
+    localSlugs.forEach(function(slug){
+      var c = cityRegistry[slug];
+      html += '<li class="city-item"><span class="city-name">' + c.city + '</span>' +
+        '<span class="city-count">' + c.pois.length + ' lieux</span>' +
+        '<button class="local-delete-btn" data-slug="' + slug + '" aria-label="Supprimer ' + c.city + '">🗑</button></li>';
+    });
+    html += '</ul>';
+    box.innerHTML = html;
+    Array.prototype.forEach.call(box.querySelectorAll('.local-delete-btn'), function(btn){
+      btn.addEventListener('click', function(){
+        var slug = btn.dataset.slug;
+        var name = cityRegistry[slug] ? cityRegistry[slug].city : slug;
+        delete cityRegistry[slug];
+        persistCities();
+        if(activeCitySlug === slug){ activateCity(cityRegistry.hambourg ? 'hambourg' : Object.keys(cityRegistry)[0]); }
+        showToast(name + ' supprimée.');
+        renderLocalCitiesManager();
+      });
+    });
+  }
+
   settingsBtn.addEventListener('click', function(){
     openModal(
       '<h2>Réglages de lecture</h2>' +
@@ -777,10 +853,14 @@
           '<input type="range" id="pitch-slider" min="0.5" max="1.8" step="0.1" value="'+speechPitch+'">' +
         '</div>' +
       '</div>' +
+      '<h2 class="section-title">Mes villes locales</h2>' +
+      '<div id="local-cities-box"></div>' +
       '<p class="token-notice">Token expiré<br>' +
         '<a href="https://github.com/settings/personal-access-tokens/18895724" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/18895724</a>' +
       '</p>'
     );
+
+    renderLocalCitiesManager();
 
     var rateSlider = document.getElementById('rate-slider');
     var pitchSlider = document.getElementById('pitch-slider');

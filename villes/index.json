@@ -1,0 +1,6 @@
+[
+  { "file": "hambourg.json", "city": "Hambourg" },
+  { "file": "lubeck.json", "city": "Lübeck" },
+  { "file": "montlucon.json", "city": "Montluçon" },
+  { "file": "paris.json", "city": "Paris" }
+]
