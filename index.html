@@ -830,10 +830,19 @@
       });
     }).catch(function(){ /* pas grave : Hambourg reste dispo, catalogue simplement absent */ })
   ]).then(function(){
-    var startSlug = cityRegistry[activeCitySlug] ? activeCitySlug : 'hambourg';
-    if(cityRegistry[startSlug]){ activateCity(startSlug); }
-    else if(onlineManifest[activeCitySlug]){ fetchOnlineCity(activeCitySlug); }
-    else { showToast('Aucune ville disponible pour le moment.'); }
+    // Bug corrigé : l'ancienne version retombait sur Hambourg dès que la ville
+    // sauvegardée n'était pas encore dans cityRegistry — ce qui est TOUJOURS
+    // le cas au démarrage pour une ville du catalogue en ligne (elle n'est
+    // téléchargée qu'à la demande). Elle ne testait donc jamais onlineManifest.
+    if(cityRegistry[activeCitySlug]){
+      activateCity(activeCitySlug);
+    } else if(onlineManifest[activeCitySlug]){
+      fetchOnlineCity(activeCitySlug);
+    } else if(cityRegistry.hambourg){
+      activateCity('hambourg');
+    } else {
+      showToast('Aucune ville disponible pour le moment.');
+    }
   });
 
   /* ---------------- Fiche POI (popup centré) ---------------- */
