@@ -923,12 +923,12 @@
     rateSlider.addEventListener('input', function(){
       speechRate = parseFloat(rateSlider.value);
       document.getElementById('rate-val').textContent = speechRate.toFixed(1)+'x';
-      if(speaking && currentPoi) restartSpeechIfPlaying(currentPoi);
+      previewVoiceSettings();
     });
     pitchSlider.addEventListener('input', function(){
       speechPitch = parseFloat(pitchSlider.value);
       document.getElementById('pitch-val').textContent = speechPitch.toFixed(1);
-      if(speaking && currentPoi) restartSpeechIfPlaying(currentPoi);
+      previewVoiceSettings();
     });
   });
 
@@ -1024,6 +1024,23 @@
     if(audioPlayer){ audioPlayer.playbackRate = speechRate; return; }
     clearTimeout(restartTimer);
     restartTimer = setTimeout(function(){ speakPoi(poi); }, 350);
+  }
+
+  var VOICE_PREVIEW_PHRASE = "Cette phrase vous permet d'ajuster confortablement la vitesse et la hauteur de la voix.";
+  var previewTimer = null;
+  function previewVoiceSettings(){
+    if(!('speechSynthesis' in window)) return;
+    clearTimeout(previewTimer);
+    previewTimer = setTimeout(function(){
+      window.speechSynthesis.cancel();
+      var utter = new SpeechSynthesisUtterance(VOICE_PREVIEW_PHRASE);
+      utter.lang = 'fr-FR';
+      var frVoice = pickFrenchVoice(window.speechSynthesis.getVoices());
+      if(frVoice) utter.voice = frVoice;
+      utter.rate = speechRate;
+      utter.pitch = speechPitch;
+      window.speechSynthesis.speak(utter);
+    }, 350);
   }
 
   function toggleSpeech(poi){
