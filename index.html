@@ -344,8 +344,7 @@
 
   <header id="topbar">
     <div class="brand" id="brand-label">
-      <span class="brand-mark">⚓</span>
-      <span class="brand-text" id="brand-text">Hambourg<small>Ville en cours</small></span>
+      <span class="brand-text" id="brand-text">Hambourg</span>
     </div>
     <div class="top-actions">
       <button id="city-btn" aria-label="Changer de ville">🌐</button>
@@ -540,7 +539,7 @@
     interestMax = Math.max.apply(null, interestValues);
 
     var brandText = document.getElementById('brand-text');
-    if(brandText){ brandText.innerHTML = data.city + '<small>Toucher pour changer de ville</small>'; }
+    if(brandText){ brandText.textContent = data.city; }
 
     createMarkers();
     map.setView([data.center.lat, data.center.lng], data.zoom || 12);
