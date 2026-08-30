@@ -14,7 +14,8 @@
       "lat": 46.3413,
       "lng": 2.6041,
       "teaser": "Forteresse du XVe siècle dominant la vieille ville, aujourd'hui musée et terrasse panoramique sur Montluçon.",
-      "desc": "Le château des Ducs de Bourbon domine le centre historique de Montluçon depuis le XVe siècle. Bâti pour asseoir le pouvoir des ducs de Bourbon sur cette place forte du Bourbonnais, l'édifice se reconnaît à ses fenêtres à meneaux et à son imposant donjon carré, vestige des quarante tours qui ceinturaient jadis la ville. Longtemps fermé au public, le donjon abrite désormais une terrasse aménagée en 2018, ouverte en été, qui offre une vue dégagée sur les toits d'ardoise de la cité médiévale et la vallée du Cher. Le château loge également le MuPop, musée consacré aux musiques populaires. Prenez le temps de flâner sur l'esplanade avant la visite : c'est ici que la perspective sur la ville est la plus large. Arrivez plutôt en fin de matinée pour éviter les groupes scolaires."
+      "desc": "Le château des Ducs de Bourbon domine le centre historique de Montluçon depuis le XVe siècle. Bâti pour asseoir le pouvoir des ducs de Bourbon sur cette place forte du Bourbonnais, l'édifice se reconnaît à ses fenêtres à meneaux et à son imposant donjon carré, vestige des quarante tours qui ceinturaient jadis la ville. Longtemps fermé au public, le donjon abrite désormais une terrasse aménagée en 2018, ouverte en été, qui offre une vue dégagée sur les toits d'ardoise de la cité médiévale et la vallée du Cher. Le château loge également le MuPop, musée consacré aux musiques populaires. Prenez le temps de flâner sur l'esplanade avant la visite : c'est ici que la perspective sur la ville est la plus large. Arrivez plutôt en fin de matinée pour éviter les groupes scolaires.",
+      "audio": "audio/montlucon/chateau-des-ducs-de-bourbon.mp3"
     },
     {
       "id": "mupop",
@@ -24,7 +25,8 @@
       "lat": 46.3412,
       "lng": 2.604,
       "teaser": "Plus grande collection française d'instruments de musique, dans un écrin architectural contemporain au cœur du château.",
-      "desc": "Installé dans l'enceinte du château des Ducs de Bourbon, le MuPop rassemble la plus importante collection d'instruments et d'objets musicaux de France, plus de trois mille cinq cents pièces allant de la fin du XVIIIe siècle à nos jours. L'architecture contemporaine du bâtiment tranche volontairement avec les pierres médiévales qui l'entourent, symbole d'un dialogue assumé entre patrimoine ancien et création actuelle. Le parcours se veut sensoriel : dispositifs sonores mobiles, mises en scène immersives et objets rares racontent l'histoire des musiques populaires sous toutes leurs formes. Comptez une à deux heures de visite. Le billet couplé avec le château permet souvent de visiter les deux sites la même journée, une option à privilégier pour optimiser son temps sur place."
+      "desc": "Installé dans l'enceinte du château des Ducs de Bourbon, le MuPop rassemble la plus importante collection d'instruments et d'objets musicaux de France, plus de trois mille cinq cents pièces allant de la fin du XVIIIe siècle à nos jours. L'architecture contemporaine du bâtiment tranche volontairement avec les pierres médiévales qui l'entourent, symbole d'un dialogue assumé entre patrimoine ancien et création actuelle. Le parcours se veut sensoriel : dispositifs sonores mobiles, mises en scène immersives et objets rares racontent l'histoire des musiques populaires sous toutes leurs formes. Comptez une à deux heures de visite. Le billet couplé avec le château permet souvent de visiter les deux sites la même journée, une option à privilégier pour optimiser son temps sur place.",
+      "audio": "audio/montlucon/mupop.mp3"
     },
     {
       "id": "eglise-saint-pierre",
@@ -34,7 +36,8 @@
       "lat": 46.3402,
       "lng": 2.6052,
       "teaser": "Église romane du XIIe siècle réputée pour ses portes sculptées et ses statues classées, au cœur du vieux Montluçon.",
-      "desc": "Édifiée au XIIe siècle, l'église Saint-Pierre est l'un des plus anciens témoins religieux de Montluçon. Elle se distingue par ses portes remarquablement sculptées et par trois statues classées monuments historiques, conservées à l'intérieur. Simple et sobre, la nef offre une atmosphère calme et fraîche, appréciable après une balade dans les ruelles pavées environnantes. L'église donne son nom au quartier Saint-Pierre, cœur battant de la cité médiévale, où se mêlent maisons à pans de bois et petites échoppes artisanales. Prévoyez une visite courte, quinze à vingt minutes suffisent, idéalement en milieu d'après-midi lorsque la lumière traverse les vitraux. C'est une étape naturelle entre le château et la Maison des Douze Apôtres, à quelques pas de là."
+      "desc": "Édifiée au XIIe siècle, l'église Saint-Pierre est l'un des plus anciens témoins religieux de Montluçon. Elle se distingue par ses portes remarquablement sculptées et par trois statues classées monuments historiques, conservées à l'intérieur. Simple et sobre, la nef offre une atmosphère calme et fraîche, appréciable après une balade dans les ruelles pavées environnantes. L'église donne son nom au quartier Saint-Pierre, cœur battant de la cité médiévale, où se mêlent maisons à pans de bois et petites échoppes artisanales. Prévoyez une visite courte, quinze à vingt minutes suffisent, idéalement en milieu d'après-midi lorsque la lumière traverse les vitraux. C'est une étape naturelle entre le château et la Maison des Douze Apôtres, à quelques pas de là.",
+      "audio": "audio/montlucon/eglise-saint-pierre.mp3"
     },
     {
       "id": "eglise-notre-dame",
@@ -44,7 +47,8 @@
       "lat": 46.3391,
       "lng": 2.6038,
       "teaser": "Édifice gothique du XVe siècle qui domine la place du même nom, dans le centre historique.",
-      "desc": "Construite au XVe siècle, l'église Notre-Dame complète avec Saint-Pierre le patrimoine religieux du vieux Montluçon. Sa silhouette gothique marque la place Notre-Dame, l'un des points de repère du centre historique où se croisent commerces, terrasses et passants. L'intérieur, plus modeste que celui de grandes cathédrales, garde un charme provincial authentique, loin de l'affluence touristique. C'est un lieu agréable pour une pause tranquille en plein parcours de visite, avant de repartir vers le château ou les rues commerçantes voisines. Les amateurs d'architecture religieuse apprécieront de comparer son style avec celui de Saint-Pierre, distante de quelques minutes à pied seulement, pour mesurer l'évolution des techniques de construction entre les deux édifices."
+      "desc": "Construite au XVe siècle, l'église Notre-Dame complète avec Saint-Pierre le patrimoine religieux du vieux Montluçon. Sa silhouette gothique marque la place Notre-Dame, l'un des points de repère du centre historique où se croisent commerces, terrasses et passants. L'intérieur, plus modeste que celui de grandes cathédrales, garde un charme provincial authentique, loin de l'affluence touristique. C'est un lieu agréable pour une pause tranquille en plein parcours de visite, avant de repartir vers le château ou les rues commerçantes voisines. Les amateurs d'architecture religieuse apprécieront de comparer son style avec celui de Saint-Pierre, distante de quelques minutes à pied seulement, pour mesurer l'évolution des techniques de construction entre les deux édifices.",
+      "audio": "audio/montlucon/eglise-notre-dame.mp3"
     },
     {
       "id": "place-notre-dame",
@@ -54,7 +58,8 @@
       "lat": 46.339,
       "lng": 2.6037,
       "teaser": "Place centrale animée, point de repère pratique entre les quartiers commerçants et la vieille ville.",
-      "desc": "La place Notre-Dame occupe une position charnière dans le centre de Montluçon, entre les rues commerçantes modernes et les ruelles pavées de la cité médiévale. Bordée par l'église du même nom, elle sert de point de rendez-vous naturel et de repère pour s'orienter en ville. Les terrasses de café qui l'entourent en font un lieu de vie apprécié des Montluçonnais autant que des visiteurs, particulièrement animé les jours de marché. C'est un bon point de départ pour rayonner à pied vers le château, l'église Saint-Pierre ou les rues piétonnes du centre-ville. Une pause ici permet de souffler avant d'attaquer la montée vers la partie haute de la vieille ville."
+      "desc": "La place Notre-Dame occupe une position charnière dans le centre de Montluçon, entre les rues commerçantes modernes et les ruelles pavées de la cité médiévale. Bordée par l'église du même nom, elle sert de point de rendez-vous naturel et de repère pour s'orienter en ville. Les terrasses de café qui l'entourent en font un lieu de vie apprécié des Montluçonnais autant que des visiteurs, particulièrement animé les jours de marché. C'est un bon point de départ pour rayonner à pied vers le château, l'église Saint-Pierre ou les rues piétonnes du centre-ville. Une pause ici permet de souffler avant d'attaquer la montée vers la partie haute de la vieille ville.",
+      "audio": "audio/montlucon/place-notre-dame.mp3"
     },
     {
       "id": "maison-douze-apotres",
@@ -64,7 +69,8 @@
       "lat": 46.3405,
       "lng": 2.6057,
       "teaser": "Célèbre maison à pans de bois du quartier Saint-Pierre, symbole de l'architecture médiévale montluçonnaise.",
-      "desc": "Parmi les maisons à pans de bois qui font le charme du vieux Montluçon, la Maison des Douze Apôtres est sans doute la plus photographiée. Son nom viendrait de la décoration de sa façade, typique de l'habitat bourgeois et artisanal des siècles passés dans cette partie de la ville. Elle se trouve à deux pas de la Fontaine des Lions, dans un enchevêtrement de ruelles pavées qui invite à la flânerie plus qu'à la visite chronométrée. Les façades à colombages environnantes racontent l'histoire d'une ville prospère grâce au commerce et à l'artisanat avant l'ère industrielle. Un passage en fin de journée, quand la lumière rasante éclaire le bois sombre des poutres, offre les plus belles photographies du quartier."
+      "desc": "Parmi les maisons à pans de bois qui font le charme du vieux Montluçon, la Maison des Douze Apôtres est sans doute la plus photographiée. Son nom viendrait de la décoration de sa façade, typique de l'habitat bourgeois et artisanal des siècles passés dans cette partie de la ville. Elle se trouve à deux pas de la Fontaine des Lions, dans un enchevêtrement de ruelles pavées qui invite à la flânerie plus qu'à la visite chronométrée. Les façades à colombages environnantes racontent l'histoire d'une ville prospère grâce au commerce et à l'artisanat avant l'ère industrielle. Un passage en fin de journée, quand la lumière rasante éclaire le bois sombre des poutres, offre les plus belles photographies du quartier.",
+      "audio": "audio/montlucon/maison-douze-apotres.mp3"
     },
     {
       "id": "fontaine-des-lions",
@@ -74,7 +80,8 @@
       "lat": 46.3406,
       "lng": 2.6055,
       "teaser": "Petite fontaine ornementale nichée dans les ruelles du quartier Saint-Pierre, étape incontournable de la balade.",
-      "desc": "Discrète mais appréciée des habitants, la Fontaine des Lions ponctue le parcours à travers les ruelles du quartier Saint-Pierre. Elle fait partie des détails patrimoniaux qui donnent tout son cachet à la cité médiévale, aux côtés des maisons à colombages et des hôtels particuliers voisins. Sa taille modeste ne doit pas faire oublier son ancienneté : elle témoigne de l'aménagement urbain d'une ville qui soignait déjà l'espace public bien avant l'époque contemporaine. C'est une halte rapide, à intégrer naturellement dans une promenade reliant l'église Saint-Pierre à la Maison des Douze Apôtres. Les amateurs de photographie urbaine apprécieront le contraste entre la pierre travaillée de la fontaine et le bois sombre des façades alentour."
+      "desc": "Discrète mais appréciée des habitants, la Fontaine des Lions ponctue le parcours à travers les ruelles du quartier Saint-Pierre. Elle fait partie des détails patrimoniaux qui donnent tout son cachet à la cité médiévale, aux côtés des maisons à colombages et des hôtels particuliers voisins. Sa taille modeste ne doit pas faire oublier son ancienneté : elle témoigne de l'aménagement urbain d'une ville qui soignait déjà l'espace public bien avant l'époque contemporaine. C'est une halte rapide, à intégrer naturellement dans une promenade reliant l'église Saint-Pierre à la Maison des Douze Apôtres. Les amateurs de photographie urbaine apprécieront le contraste entre la pierre travaillée de la fontaine et le bois sombre des façades alentour.",
+      "audio": "audio/montlucon/fontaine-des-lions.mp3"
     },
     {
       "id": "hotel-de-ville",
@@ -84,7 +91,8 @@
       "lat": 46.3383,
       "lng": 2.6025,
       "teaser": "Bâtiment administratif au cœur du centre-ville, exemple d'architecture civile à découvrir en passant.",
-      "desc": "L'Hôtel de Ville marque la limite entre la vieille ville fortifiée et les quartiers plus modernes qui se sont développés autour, notamment à la faveur de l'essor industriel du XIXe siècle. Sa façade illustre cette période où Montluçon, portée par les forges et les hauts fourneaux, s'est dotée d'équipements publics à la mesure de son nouveau statut de ville industrielle. Sans être une attraction majeure en soi, il constitue un repère utile pour s'orienter entre le centre commerçant et la cité médiévale. Les visiteurs curieux d'urbanisme apprécieront le contraste entre ce bâtiment institutionnel et les ruelles médiévales situées à quelques centaines de mètres à peine, résumé à lui seul des deux visages historiques de la ville."
+      "desc": "L'Hôtel de Ville marque la limite entre la vieille ville fortifiée et les quartiers plus modernes qui se sont développés autour, notamment à la faveur de l'essor industriel du XIXe siècle. Sa façade illustre cette période où Montluçon, portée par les forges et les hauts fourneaux, s'est dotée d'équipements publics à la mesure de son nouveau statut de ville industrielle. Sans être une attraction majeure en soi, il constitue un repère utile pour s'orienter entre le centre commerçant et la cité médiévale. Les visiteurs curieux d'urbanisme apprécieront le contraste entre ce bâtiment institutionnel et les ruelles médiévales situées à quelques centaines de mètres à peine, résumé à lui seul des deux visages historiques de la ville.",
+      "audio": "audio/montlucon/hotel-de-ville.mp3"
     },
     {
       "id": "pont-du-cher",
@@ -94,7 +102,8 @@
       "lat": 46.342,
       "lng": 2.6015,
       "teaser": "Franchissement historique de la rivière Cher, avec une vue dégagée sur les berges et la vieille ville.",
-      "desc": "Montluçon s'est développée sur les rives du Cher, et le franchissement de la rivière au niveau du centre-ville reste un passage obligé pour qui explore la ville à pied. Le pont offre une perspective différente sur la cité médiévale, perchée sur son promontoire, et permet de rejoindre facilement les berges aménagées pour la promenade. C'est aussi un bon point d'observation pour comprendre la topographie de la ville, bâtie autour de son cours d'eau depuis le Moyen Âge. Les premières heures du matin, quand la brume flotte encore sur l'eau, offrent une ambiance particulièrement photogénique. Une étape courte mais utile pour relier le centre historique aux quartiers situés sur l'autre rive."
+      "desc": "Montluçon s'est développée sur les rives du Cher, et le franchissement de la rivière au niveau du centre-ville reste un passage obligé pour qui explore la ville à pied. Le pont offre une perspective différente sur la cité médiévale, perchée sur son promontoire, et permet de rejoindre facilement les berges aménagées pour la promenade. C'est aussi un bon point d'observation pour comprendre la topographie de la ville, bâtie autour de son cours d'eau depuis le Moyen Âge. Les premières heures du matin, quand la brume flotte encore sur l'eau, offrent une ambiance particulièrement photogénique. Une étape courte mais utile pour relier le centre historique aux quartiers situés sur l'autre rive.",
+      "audio": "audio/montlucon/pont-du-cher.mp3"
     },
     {
       "id": "musee-resistance",
@@ -104,7 +113,8 @@
       "lat": 46.3395,
       "lng": 2.6015,
       "teaser": "Espace d'exposition consacré à l'Occupation et à la Résistance locale, porté par une association montluçonnaise.",
-      "desc": "Ouvert grâce à l'engagement d'une association bourbonnaise créée en 2012, cet espace muséal retrace l'histoire de l'Occupation et de la Résistance dans la région de Montluçon. Les deux tiers du parcours sont consacrés à cette période sombre mais essentielle de l'histoire locale, avec un éclairage particulier sur des événements marquants survenus dans la ville et ses environs. La visite, plus intimiste qu'un grand musée national, permet de comprendre comment un territoire industriel comme le Bourbonnais a vécu la guerre au quotidien. Elle s'adresse autant aux passionnés d'histoire qu'aux familles souhaitant transmettre cette mémoire aux plus jeunes. Renseignez-vous sur les horaires d'ouverture avant de vous déplacer, ils sont souvent plus restreints que ceux des grands musées."
+      "desc": "Ouvert grâce à l'engagement d'une association bourbonnaise créée en 2012, cet espace muséal retrace l'histoire de l'Occupation et de la Résistance dans la région de Montluçon. Les deux tiers du parcours sont consacrés à cette période sombre mais essentielle de l'histoire locale, avec un éclairage particulier sur des événements marquants survenus dans la ville et ses environs. La visite, plus intimiste qu'un grand musée national, permet de comprendre comment un territoire industriel comme le Bourbonnais a vécu la guerre au quotidien. Elle s'adresse autant aux passionnés d'histoire qu'aux familles souhaitant transmettre cette mémoire aux plus jeunes. Renseignez-vous sur les horaires d'ouverture avant de vous déplacer, ils sont souvent plus restreints que ceux des grands musées.",
+      "audio": "audio/montlucon/musee-resistance.mp3"
     },
     {
       "id": "theatre-ilets",
@@ -114,7 +124,8 @@
       "lat": 46.344,
       "lng": 2.5995,
       "teaser": "Scène de création théâtrale, installée dans le quartier des Îlets en bord de Cher.",
-      "desc": "Le Théâtre des Îlets constitue l'un des pôles culturels majeurs de Montluçon, avec une programmation tournée vers la création théâtrale contemporaine. Il tire son nom du quartier des Îlets, ainsi appelé en raison de la présence d'îles et de bras du Cher qui façonnent le paysage aux abords de la ville. Au-delà des représentations, le lieu accueille régulièrement des résidences d'artistes et des actions de médiation culturelle qui en font un espace vivant, fréquenté aussi bien par les Montluçonnais que par des visiteurs de passage attirés par la programmation. Consultez le calendrier des spectacles avant votre venue : les dates et horaires varient fortement selon les saisons et les tournées."
+      "desc": "Le Théâtre des Îlets constitue l'un des pôles culturels majeurs de Montluçon, avec une programmation tournée vers la création théâtrale contemporaine. Il tire son nom du quartier des Îlets, ainsi appelé en raison de la présence d'îles et de bras du Cher qui façonnent le paysage aux abords de la ville. Au-delà des représentations, le lieu accueille régulièrement des résidences d'artistes et des actions de médiation culturelle qui en font un espace vivant, fréquenté aussi bien par les Montluçonnais que par des visiteurs de passage attirés par la programmation. Consultez le calendrier des spectacles avant votre venue : les dates et horaires varient fortement selon les saisons et les tournées.",
+      "audio": "audio/montlucon/theatre-ilets.mp3"
     },
     {
       "id": "quartier-saint-pierre",
@@ -124,7 +135,8 @@
       "lat": 46.34,
       "lng": 2.605,
       "teaser": "Cœur piéton de la cité médiévale, entre maisons à pans de bois et échoppes artisanales.",
-      "desc": "Le quartier Saint-Pierre concentre l'essentiel du charme médiéval de Montluçon. On y déambule à pied, entre ruelles pavées, maisons à colombages et hôtels particuliers, dans une ambiance largement préservée de la circulation automobile. Au-delà du patrimoine bâti, le quartier vit aussi de ses commerces traditionnels : cavistes, artisans du métal, librairies, torréfacteurs, bouchers et poissonniers y perpétuent un commerce de proximité assez rare dans les centres-villes actuels. C'est le point de départ idéal pour une découverte à pied de la ville, en reliant l'église Saint-Pierre, la Maison des Douze Apôtres et la Fontaine des Lions. Privilégiez une visite en semaine, en dehors des grandes affluences estivales, pour profiter pleinement de l'authenticité des lieux."
+      "desc": "Le quartier Saint-Pierre concentre l'essentiel du charme médiéval de Montluçon. On y déambule à pied, entre ruelles pavées, maisons à colombages et hôtels particuliers, dans une ambiance largement préservée de la circulation automobile. Au-delà du patrimoine bâti, le quartier vit aussi de ses commerces traditionnels : cavistes, artisans du métal, librairies, torréfacteurs, bouchers et poissonniers y perpétuent un commerce de proximité assez rare dans les centres-villes actuels. C'est le point de départ idéal pour une découverte à pied de la ville, en reliant l'église Saint-Pierre, la Maison des Douze Apôtres et la Fontaine des Lions. Privilégiez une visite en semaine, en dehors des grandes affluences estivales, pour profiter pleinement de l'authenticité des lieux.",
+      "audio": "audio/montlucon/quartier-saint-pierre.mp3"
     },
     {
       "id": "faubourg-saint-jean",
@@ -134,7 +146,8 @@
       "lat": 46.336,
       "lng": 2.608,
       "teaser": "Quartier populaire à l'identité ouvrière, hérité de l'essor industriel montluçonnais du XIXe siècle.",
-      "desc": "Moins connu des visiteurs de passage que la cité médiévale, le Faubourg Saint-Jean garde l'empreinte du Montluçon industriel, celui des forges et des hauts fourneaux qui ont façonné la ville au XIXe siècle. Son bâti plus modeste, ses rues plus larges et son ambiance de quartier populaire offrent un contrepoint intéressant à l'image touristique du centre médiéval. S'y promener permet de saisir une autre facette de l'identité montluçonnaise, marquée par une longue tradition ouvrière encore présente dans la mémoire collective. C'est une balade à réserver aux visiteurs curieux d'histoire sociale plutôt qu'aux amateurs de monuments, idéale en complément d'une visite plus classique du centre historique."
+      "desc": "Moins connu des visiteurs de passage que la cité médiévale, le Faubourg Saint-Jean garde l'empreinte du Montluçon industriel, celui des forges et des hauts fourneaux qui ont façonné la ville au XIXe siècle. Son bâti plus modeste, ses rues plus larges et son ambiance de quartier populaire offrent un contrepoint intéressant à l'image touristique du centre médiéval. S'y promener permet de saisir une autre facette de l'identité montluçonnaise, marquée par une longue tradition ouvrière encore présente dans la mémoire collective. C'est une balade à réserver aux visiteurs curieux d'histoire sociale plutôt qu'aux amateurs de monuments, idéale en complément d'une visite plus classique du centre historique.",
+      "audio": "audio/montlucon/faubourg-saint-jean.mp3"
     },
     {
       "id": "rue-du-chateau",
@@ -144,7 +157,8 @@
       "lat": 46.3408,
       "lng": 2.6045,
       "teaser": "Rue pavée en pente qui grimpe vers le château, bordée de façades anciennes typiques.",
-      "desc": "La montée vers le château des Ducs de Bourbon se fait par un réseau de rues pavées en pente, dont la Rue du Château constitue l'un des axes les plus caractéristiques. Le dénivelé, modeste mais réel, rappelle que la forteresse a été construite en position dominante pour des raisons défensives évidentes. Les façades anciennes qui bordent la rue offrent un aperçu de l'architecture civile montluçonnaise, moins spectaculaire que les grandes maisons à colombages du quartier Saint-Pierre mais tout aussi représentative de la ville ancienne. Prévoyez des chaussures confortables : le pavé irrégulier et la pente peuvent surprendre après une journée de marche. C'est le meilleur itinéraire pour rejoindre le château depuis le bas de la vieille ville."
+      "desc": "La montée vers le château des Ducs de Bourbon se fait par un réseau de rues pavées en pente, dont la Rue du Château constitue l'un des axes les plus caractéristiques. Le dénivelé, modeste mais réel, rappelle que la forteresse a été construite en position dominante pour des raisons défensives évidentes. Les façades anciennes qui bordent la rue offrent un aperçu de l'architecture civile montluçonnaise, moins spectaculaire que les grandes maisons à colombages du quartier Saint-Pierre mais tout aussi représentative de la ville ancienne. Prévoyez des chaussures confortables : le pavé irrégulier et la pente peuvent surprendre après une journée de marche. C'est le meilleur itinéraire pour rejoindre le château depuis le bas de la vieille ville.",
+      "audio": "audio/montlucon/rue-du-chateau.mp3"
     },
     {
       "id": "centre-ville-pieton",
@@ -154,7 +168,8 @@
       "lat": 46.3385,
       "lng": 2.602,
       "teaser": "Rues commerçantes piétonnes reliant la vieille ville aux quartiers plus récents, pratiques pour faire une pause.",
-      "desc": "Autour de la place Notre-Dame s'étend un centre-ville largement piétonnisé, où boutiques, cafés et restaurants profitent d'un cadre calme et facile à parcourir à pied. Moins patrimonial que la cité médiévale, ce secteur reste néanmoins utile pour toute visite prolongée de Montluçon : c'est ici que l'on trouve la plupart des commerces du quotidien et des adresses pour se restaurer. Le contraste entre ces rues plus contemporaines et les ruelles médiévales toutes proches illustre bien la superposition des époques qui caractérise la ville. À privilégier pour une pause déjeuner ou un moment de shopping entre deux visites patrimoniales, plutôt que pour son intérêt touristique propre."
+      "desc": "Autour de la place Notre-Dame s'étend un centre-ville largement piétonnisé, où boutiques, cafés et restaurants profitent d'un cadre calme et facile à parcourir à pied. Moins patrimonial que la cité médiévale, ce secteur reste néanmoins utile pour toute visite prolongée de Montluçon : c'est ici que l'on trouve la plupart des commerces du quotidien et des adresses pour se restaurer. Le contraste entre ces rues plus contemporaines et les ruelles médiévales toutes proches illustre bien la superposition des époques qui caractérise la ville. À privilégier pour une pause déjeuner ou un moment de shopping entre deux visites patrimoniales, plutôt que pour son intérêt touristique propre.",
+      "audio": "audio/montlucon/centre-ville-pieton.mp3"
     },
     {
       "id": "parc-wilson",
@@ -164,7 +179,8 @@
       "lat": 46.342,
       "lng": 2.606,
       "teaser": "Jardin à la française aménagé aux abords du château, agréable pour une pause verdoyante en ville.",
-      "desc": "À proximité immédiate du château des Ducs de Bourbon, le Parc Wilson offre un jardin à la française soigneusement entretenu, avec ses allées géométriques et ses massifs fleuris. Montluçon s'enorgueillit d'ailleurs de plusieurs distinctions au concours national des villes fleuries, et ce parc en est l'une des vitrines les plus visibles. C'est un lieu de détente apprécié des familles et des habitants, idéal pour faire une pause après la visite du château ou du musée. Les bancs disposés le long des allées invitent à s'arrêter un moment avant de reprendre l'exploration de la vieille ville toute proche. Le parc est particulièrement agréable au printemps et en été, lorsque les massifs sont en pleine floraison."
+      "desc": "À proximité immédiate du château des Ducs de Bourbon, le Parc Wilson offre un jardin à la française soigneusement entretenu, avec ses allées géométriques et ses massifs fleuris. Montluçon s'enorgueillit d'ailleurs de plusieurs distinctions au concours national des villes fleuries, et ce parc en est l'une des vitrines les plus visibles. C'est un lieu de détente apprécié des familles et des habitants, idéal pour faire une pause après la visite du château ou du musée. Les bancs disposés le long des allées invitent à s'arrêter un moment avant de reprendre l'exploration de la vieille ville toute proche. Le parc est particulièrement agréable au printemps et en été, lorsque les massifs sont en pleine floraison.",
+      "audio": "audio/montlucon/parc-wilson.mp3"
     },
     {
       "id": "bois-de-la-bruyere",
@@ -174,7 +190,8 @@
       "lat": 46.33,
       "lng": 2.615,
       "teaser": "Espace boisé aux portes de la ville, prisé pour la promenade et le grand air.",
-      "desc": "Un peu à l'écart du centre historique, le Bois de la Bruyère offre aux Montluçonnais un espace de nature accessible sans quitter la ville. Sentiers ombragés et grands arbres en font un lieu de promenade apprécié, loin de l'agitation du centre-ville et de ses monuments. C'est une étape à réserver aux visiteurs disposant d'un peu plus de temps, ou à ceux qui souhaitent simplement souffler après une matinée consacrée au patrimoine bâti. L'ambiance y est résolument locale, plus fréquentée par les habitants en quête d'air frais que par les touristes de passage, ce qui en fait aussi une bonne occasion d'observer le quotidien montluçonnais loin des sentiers touristiques habituels."
+      "desc": "Un peu à l'écart du centre historique, le Bois de la Bruyère offre aux Montluçonnais un espace de nature accessible sans quitter la ville. Sentiers ombragés et grands arbres en font un lieu de promenade apprécié, loin de l'agitation du centre-ville et de ses monuments. C'est une étape à réserver aux visiteurs disposant d'un peu plus de temps, ou à ceux qui souhaitent simplement souffler après une matinée consacrée au patrimoine bâti. L'ambiance y est résolument locale, plus fréquentée par les habitants en quête d'air frais que par les touristes de passage, ce qui en fait aussi une bonne occasion d'observer le quotidien montluçonnais loin des sentiers touristiques habituels.",
+      "audio": "audio/montlucon/bois-de-la-bruyere.mp3"
     },
     {
       "id": "les-ilets",
@@ -184,7 +201,8 @@
       "lat": 46.343,
       "lng": 2.6,
       "teaser": "Espace vert au fil du Cher, entre îles fluviales et promenade ombragée près du théâtre.",
-      "desc": "Le secteur des Îlets doit son nom aux petites îles formées par les bras du Cher à cet endroit de son cours. L'ensemble compose un espace vert appréciable pour une promenade au fil de l'eau, à deux pas du Théâtre des Îlets qui a repris le nom du quartier. L'ambiance y est plus aérée que dans le centre historique, avec une végétation qui accompagne le cours de la rivière. C'est un bon complément de visite pour qui souhaite alterner patrimoine bâti et espaces naturels au cours de la même journée. Les amateurs de balade tranquille apprécieront particulièrement cet endroit en fin d'après-midi, lorsque la lumière rasante se reflète sur les bras de la rivière."
+      "desc": "Le secteur des Îlets doit son nom aux petites îles formées par les bras du Cher à cet endroit de son cours. L'ensemble compose un espace vert appréciable pour une promenade au fil de l'eau, à deux pas du Théâtre des Îlets qui a repris le nom du quartier. L'ambiance y est plus aérée que dans le centre historique, avec une végétation qui accompagne le cours de la rivière. C'est un bon complément de visite pour qui souhaite alterner patrimoine bâti et espaces naturels au cours de la même journée. Les amateurs de balade tranquille apprécieront particulièrement cet endroit en fin d'après-midi, lorsque la lumière rasante se reflète sur les bras de la rivière.",
+      "audio": "audio/montlucon/les-ilets.mp3"
     },
     {
       "id": "promenade-berges-du-cher",
@@ -194,7 +212,8 @@
       "lat": 46.3425,
       "lng": 2.601,
       "teaser": "Promenade aménagée le long de la rivière qui traverse Montluçon, pour souffler entre deux visites.",
-      "desc": "La rivière Cher accompagne le développement de Montluçon depuis ses origines, et ses berges offrent aujourd'hui un espace de promenade agréable en plein cœur urbain. On y marche à l'ombre des arbres, avec des vues changeantes sur la cité médiévale perchée sur son promontoire d'un côté, et sur les quartiers plus récents de l'autre. C'est un itinéraire naturel pour relier différents points d'intérêt de la ville sans emprunter les axes routiers, en particulier entre le centre historique et le secteur des Îlets. Les joggeurs et les familles s'y croisent aux heures calmes de la matinée ou en fin de journée, quand la chaleur retombe."
+      "desc": "La rivière Cher accompagne le développement de Montluçon depuis ses origines, et ses berges offrent aujourd'hui un espace de promenade agréable en plein cœur urbain. On y marche à l'ombre des arbres, avec des vues changeantes sur la cité médiévale perchée sur son promontoire d'un côté, et sur les quartiers plus récents de l'autre. C'est un itinéraire naturel pour relier différents points d'intérêt de la ville sans emprunter les axes routiers, en particulier entre le centre historique et le secteur des Îlets. Les joggeurs et les familles s'y croisent aux heures calmes de la matinée ou en fin de journée, quand la chaleur retombe.",
+      "audio": "audio/montlucon/promenade-berges-du-cher.mp3"
     },
     {
       "id": "terrasse-du-donjon",
@@ -204,7 +223,8 @@
       "lat": 46.3413,
       "lng": 2.6042,
       "teaser": "Vue panoramique depuis le sommet du donjon du château, aménagée en 2018 et ouverte l'été.",
-      "desc": "Depuis 2018, le donjon carré du château des Ducs de Bourbon accueille une terrasse panoramique ouverte au public durant la période estivale. La montée jusqu'au sommet est récompensée par une vue à trois cent soixante degrés sur les toits d'ardoise de la vieille ville, la vallée du Cher et les collines environnantes qui annoncent le Massif Central. C'est sans doute le meilleur point de vue pour saisir d'un seul regard la structure de Montluçon, entre cité médiévale compacte et faubourgs plus étendus. Privilégiez une visite en fin de journée pour profiter d'une lumière plus douce et éviter la chaleur de milieu d'après-midi. Vérifiez les horaires d'ouverture saisonniers avant de vous déplacer, la terrasse n'étant pas accessible toute l'année."
+      "desc": "Depuis 2018, le donjon carré du château des Ducs de Bourbon accueille une terrasse panoramique ouverte au public durant la période estivale. La montée jusqu'au sommet est récompensée par une vue à trois cent soixante degrés sur les toits d'ardoise de la vieille ville, la vallée du Cher et les collines environnantes qui annoncent le Massif Central. C'est sans doute le meilleur point de vue pour saisir d'un seul regard la structure de Montluçon, entre cité médiévale compacte et faubourgs plus étendus. Privilégiez une visite en fin de journée pour profiter d'une lumière plus douce et éviter la chaleur de milieu d'après-midi. Vérifiez les horaires d'ouverture saisonniers avant de vous déplacer, la terrasse n'étant pas accessible toute l'année.",
+      "audio": "audio/montlucon/terrasse-du-donjon.mp3"
     },
     {
       "id": "esplanade-du-chateau",
@@ -214,7 +234,8 @@
       "lat": 46.3415,
       "lng": 2.6038,
       "teaser": "Vaste esplanade au pied du château offrant déjà une belle perspective sur la ville basse.",
-      "desc": "Avant même de pénétrer dans le château, l'esplanade qui le précède offre un premier point de vue dégagé sur la ville basse et les toits de la cité médiévale. C'est un lieu de passage obligé pour qui monte vers la forteresse, mais aussi une destination en soi pour profiter d'un moment de calme avec vue, sans les contraintes horaires de la terrasse du donjon. L'espace, plus large que les ruelles environnantes, permet également de prendre du recul pour admirer l'architecture du château dans son ensemble. C'est un bon point de rendez-vous avant une visite groupée, ou simplement une étape pour reprendre son souffle après la montée depuis le centre-ville."
+      "desc": "Avant même de pénétrer dans le château, l'esplanade qui le précède offre un premier point de vue dégagé sur la ville basse et les toits de la cité médiévale. C'est un lieu de passage obligé pour qui monte vers la forteresse, mais aussi une destination en soi pour profiter d'un moment de calme avec vue, sans les contraintes horaires de la terrasse du donjon. L'espace, plus large que les ruelles environnantes, permet également de prendre du recul pour admirer l'architecture du château dans son ensemble. C'est un bon point de rendez-vous avant une visite groupée, ou simplement une étape pour reprendre son souffle après la montée depuis le centre-ville.",
+      "audio": "audio/montlucon/esplanade-du-chateau.mp3"
     },
     {
       "id": "grand-rue-vie-nocturne",
@@ -224,7 +245,8 @@
       "lat": 46.3388,
       "lng": 2.603,
       "teaser": "Artère commerçante qui prend une ambiance plus animée en soirée, entre bars et restaurants.",
-      "desc": "En journée dédiée au commerce, la Grand'Rue et ses abords changent d'ambiance à la tombée de la nuit, quand bars et restaurants ouvrent leurs terrasses. Montluçon n'est pas une ville réputée pour sa vie nocturne au sens festif du terme, mais ce secteur reste l'endroit le plus animé en soirée, notamment le week-end. C'est ici que se concentrent la plupart des adresses pour dîner ou prendre un verre après une journée de visite. L'ambiance reste familiale et détendue plutôt que festive, à l'image d'une ville moyenne de province. Une bonne option pour clôturer une journée de découverte du patrimoine sans avoir à se déplacer loin du centre historique."
+      "desc": "En journée dédiée au commerce, la Grand'Rue et ses abords changent d'ambiance à la tombée de la nuit, quand bars et restaurants ouvrent leurs terrasses. Montluçon n'est pas une ville réputée pour sa vie nocturne au sens festif du terme, mais ce secteur reste l'endroit le plus animé en soirée, notamment le week-end. C'est ici que se concentrent la plupart des adresses pour dîner ou prendre un verre après une journée de visite. L'ambiance reste familiale et détendue plutôt que festive, à l'image d'une ville moyenne de province. Une bonne option pour clôturer une journée de découverte du patrimoine sans avoir à se déplacer loin du centre historique.",
+      "audio": "audio/montlucon/grand-rue-vie-nocturne.mp3"
     },
     {
       "id": "cite-medievale-terrasses",
@@ -234,7 +256,8 @@
       "lat": 46.3402,
       "lng": 2.6048,
       "teaser": "Ruelles historiques qui s'animent aux beaux jours, entre petits restaurants et terrasses en plein air.",
-      "desc": "Aux beaux jours, les ruelles de la cité médiévale changent de visage en soirée : les commerces artisanaux laissent place à quelques restaurants qui installent leurs tables en extérieur, entre les maisons à colombages. L'atmosphère, intimiste et patrimoniale, tranche avec celle plus commerçante de la Grand'Rue, pour un dîner dans un décor historique préservé. C'est une option à privilégier pour les visiteurs en quête d'une ambiance authentique plutôt que festive, dans un cadre où l'architecture médiévale prend une autre dimension à la lumière du soir. Réservez si possible en amont durant la haute saison, le nombre de tables en extérieur restant limité par l'étroitesse des ruelles."
+      "desc": "Aux beaux jours, les ruelles de la cité médiévale changent de visage en soirée : les commerces artisanaux laissent place à quelques restaurants qui installent leurs tables en extérieur, entre les maisons à colombages. L'atmosphère, intimiste et patrimoniale, tranche avec celle plus commerçante de la Grand'Rue, pour un dîner dans un décor historique préservé. C'est une option à privilégier pour les visiteurs en quête d'une ambiance authentique plutôt que festive, dans un cadre où l'architecture médiévale prend une autre dimension à la lumière du soir. Réservez si possible en amont durant la haute saison, le nombre de tables en extérieur restant limité par l'étroitesse des ruelles.",
+      "audio": "audio/montlucon/cite-medievale-terrasses.mp3"
     },
     {
       "id": "canal-de-berry",
@@ -244,7 +267,8 @@
       "lat": 46.345,
       "lng": 2.612,
       "teaser": "Ancien canal industriel qui a accompagné l'essor de Montluçon, vestige du passé fluvial de la ville.",
-      "desc": "Sans façade maritime, Montluçon doit néanmoins une partie de son histoire industrielle au Canal de Berry, qui a contribué au XIXe siècle à l'essor des forges et des hauts fourneaux locaux en facilitant le transport du charbon et du minerai. Aujourd'hui largement désaffecté pour la navigation commerciale, il subsiste par endroits comme un témoignage discret de cette époque où l'eau structurait l'activité économique de la région. Ce n'est pas un site touristique majeur, mais plutôt un point d'intérêt pour qui s'intéresse au patrimoine industriel et à l'histoire économique de la ville. Les amateurs d'archéologie industrielle pourront y consacrer un détour bref en complément d'une visite plus classique du centre historique."
+      "desc": "Sans façade maritime, Montluçon doit néanmoins une partie de son histoire industrielle au Canal de Berry, qui a contribué au XIXe siècle à l'essor des forges et des hauts fourneaux locaux en facilitant le transport du charbon et du minerai. Aujourd'hui largement désaffecté pour la navigation commerciale, il subsiste par endroits comme un témoignage discret de cette époque où l'eau structurait l'activité économique de la région. Ce n'est pas un site touristique majeur, mais plutôt un point d'intérêt pour qui s'intéresse au patrimoine industriel et à l'histoire économique de la ville. Les amateurs d'archéologie industrielle pourront y consacrer un détour bref en complément d'une visite plus classique du centre historique.",
+      "audio": "audio/montlucon/canal-de-berry.mp3"
     }
   ]
 }

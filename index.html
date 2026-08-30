@@ -937,6 +937,7 @@
   var speechRate = 0.98;
   var speechPitch = 1.0;
   var currentPoi = null;
+  var audioPlayer = null; // lecture d'un fichier audio pré-enregistré, quand disponible
 
   if('speechSynthesis' in window){
     window.speechSynthesis.getVoices();
@@ -953,6 +954,7 @@
 
   function stopSpeech(){
     if('speechSynthesis' in window){ window.speechSynthesis.cancel(); }
+    if(audioPlayer){ audioPlayer.pause(); audioPlayer = null; }
     speaking = false;
     currentPoi = null;
     updateListenButtonUI();
@@ -971,7 +973,7 @@
     return fr[0];
   }
 
-  function speakPoi(poi){
+  function speakWithSynthesis(poi){
     window.speechSynthesis.cancel();
     var utter = new SpeechSynthesisUtterance(poi.name + '. ' + poi.desc);
     utter.lang = 'fr-FR';
@@ -989,16 +991,43 @@
     updateListenButtonUI();
   }
 
+  function speakPoi(poi){
+    // Fichier audio pré-enregistré (voix neuronale de meilleure qualité) si ce lieu en a un.
+    if(poi.audio){
+      if('speechSynthesis' in window){ window.speechSynthesis.cancel(); }
+      if(audioPlayer){ audioPlayer.pause(); }
+      audioPlayer = new Audio(poi.audio);
+      audioPlayer.playbackRate = speechRate; // le ton n'est pas ajustable sur un fichier pré-enregistré
+      audioPlayer.onended = function(){ speaking = false; currentPoi = null; audioPlayer = null; updateListenButtonUI(); };
+      audioPlayer.onerror = function(){
+        showToast("Fichier audio introuvable, lecture via la synthèse vocale à la place.");
+        audioPlayer = null;
+        speakWithSynthesis(poi);
+      };
+      audioPlayer.play().catch(function(){
+        audioPlayer = null;
+        speakWithSynthesis(poi);
+      });
+      speaking = true;
+      currentPoi = poi;
+      updateListenButtonUI();
+      return;
+    }
+    speakWithSynthesis(poi);
+  }
+
   // Le Web Speech API ne permet pas de changer la vitesse/le ton d'une lecture
   // déjà lancée : on relance donc la lecture depuis le début avec les nouveaux réglages.
+  // (Pour un fichier pré-enregistré, la vitesse s'ajuste en direct sans relancer.)
   var restartTimer = null;
   function restartSpeechIfPlaying(poi){
+    if(audioPlayer){ audioPlayer.playbackRate = speechRate; return; }
     clearTimeout(restartTimer);
     restartTimer = setTimeout(function(){ speakPoi(poi); }, 350);
   }
 
   function toggleSpeech(poi){
-    if(!('speechSynthesis' in window)){
+    if(!poi.audio && !('speechSynthesis' in window)){
       showToast("La lecture audio n'est pas prise en charge par ce navigateur.");
       return;
     }
