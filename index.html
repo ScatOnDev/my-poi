@@ -55,7 +55,7 @@
     background:linear-gradient(180deg, rgba(22,35,47,.92) 0%, rgba(22,35,47,.55) 70%, rgba(22,35,47,0) 100%);
     pointer-events:none;
   }
-  .brand{display:flex;align-items:center;gap:8px;color:var(--white);text-align:left;}
+  .brand{display:flex;align-items:center;gap:8px;color:var(--white);text-align:left;cursor:pointer;}
   .brand-mark{font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4));}
   .brand-text{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.08em;line-height:1.1;font-size:15px;text-transform:uppercase;}
   .brand-text small{display:block;font-family:'Work Sans',sans-serif;font-weight:400;letter-spacing:.02em;font-size:11px;opacity:.85;text-transform:none;}
@@ -752,6 +752,7 @@
   }
 
   document.getElementById('city-btn').addEventListener('click', openCityPicker);
+  document.getElementById('brand-label').addEventListener('click', openCityPicker);
 
   /* ---------------- List (uniquement les lieux visibles à l'écran) ---------------- */
   var listEl = document.getElementById('poi-list');
