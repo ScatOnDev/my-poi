@@ -55,24 +55,30 @@
     background:linear-gradient(180deg, rgba(22,35,47,.92) 0%, rgba(22,35,47,.55) 70%, rgba(22,35,47,0) 100%);
     pointer-events:none;
   }
-  .brand{display:flex;align-items:center;gap:10px;color:var(--white);pointer-events:auto;text-align:left;}
+  .brand{display:flex;align-items:center;gap:8px;color:var(--white);text-align:left;}
   .brand-mark{font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4));}
-  .brand-text{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.08em;line-height:1.1;font-size:16px;text-transform:uppercase;}
+  .brand-text{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.08em;line-height:1.1;font-size:15px;text-transform:uppercase;}
   .brand-text small{display:block;font-family:'Work Sans',sans-serif;font-weight:400;letter-spacing:.02em;font-size:11px;opacity:.85;text-transform:none;}
 
-  .top-actions{display:flex;gap:8px;pointer-events:auto;}
-  .left-group{display:flex;align-items:center;gap:10px;pointer-events:auto;}
+  .top-actions, .left-group{
+    display:flex;align-items:center;gap:2px;
+    pointer-events:auto;
+    background:rgba(255,253,248,.16);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    border-radius:999px;
+    padding:6px;
+  }
+  .left-group{padding-right:14px;gap:6px;}
 
   #locate-btn, #settings-btn, #city-btn{
-    pointer-events:auto;
-    width:44px;height:44px;border-radius:50%;
-    background:var(--white);color:var(--navy);
+    width:36px;height:36px;border-radius:50%;
+    background:transparent;color:var(--white);
     display:flex;align-items:center;justify-content:center;
-    font-size:19px;box-shadow:0 3px 10px rgba(0,0,0,.3);
-    transition:background .2s, color .2s, transform .15s;
+    font-size:17px;
+    transition:transform .15s, color .15s;
   }
-  #locate-btn.active{background:#2F6FED;color:var(--white);}
-  #locate-btn:active, #settings-btn:active, #city-btn:active{transform:scale(.92);}
+  #locate-btn.active{color:#6FA0FF;}
+  #locate-btn:active, #settings-btn:active, #city-btn:active{transform:scale(.88);}
 
   /* ---------- Filter chips ---------- */
   #filters{
