@@ -61,6 +61,7 @@
   .brand-text small{display:block;font-family:'Work Sans',sans-serif;font-weight:400;letter-spacing:.02em;font-size:11px;opacity:.85;text-transform:none;}
 
   .top-actions{display:flex;gap:8px;pointer-events:auto;}
+  .left-group{display:flex;align-items:center;gap:10px;pointer-events:auto;}
 
   #locate-btn, #settings-btn, #city-btn{
     pointer-events:auto;
@@ -343,12 +344,7 @@
   <div id="map"></div>
 
   <header id="topbar">
-    <div class="brand" id="brand-label">
-      <span class="brand-text" id="brand-text">Hambourg</span>
-    </div>
-    <div class="top-actions">
-      <button id="city-btn" aria-label="Changer de ville">🌐</button>
-      <button id="settings-btn" aria-label="Réglages">⚙</button>
+    <div class="left-group">
       <button id="locate-btn" aria-label="Afficher ma position en temps réel">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <line x1="12" y1="1" x2="12" y2="4"/>
@@ -359,6 +355,13 @@
           <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
         </svg>
       </button>
+      <div class="brand" id="brand-label">
+        <span class="brand-text" id="brand-text">Hambourg</span>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button id="city-btn" aria-label="Changer de ville">🌐</button>
+      <button id="settings-btn" aria-label="Réglages">⚙</button>
     </div>
   </header>
 
