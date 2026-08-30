@@ -951,12 +951,25 @@
     updateListenButtonUI();
   }
 
+  function pickFrenchVoice(voices){
+    var fr = voices.filter(function(v){ return v.lang && v.lang.toLowerCase().indexOf('fr') === 0; });
+    if(!fr.length) return null;
+    // 1. Voix réseau Google — nettement meilleure qualité que les voix locales embarquées
+    var google = fr.filter(function(v){ return /google/i.test(v.name) && v.localService === false; })[0];
+    if(google) return google;
+    // 2. N'importe quelle voix réseau en français
+    var network = fr.filter(function(v){ return v.localService === false; })[0];
+    if(network) return network;
+    // 3. Repli : première voix française disponible, même locale
+    return fr[0];
+  }
+
   function speakPoi(poi){
     window.speechSynthesis.cancel();
     var utter = new SpeechSynthesisUtterance(poi.name + '. ' + poi.desc);
     utter.lang = 'fr-FR';
     var voices = window.speechSynthesis.getVoices();
-    var frVoice = voices.filter(function(v){ return v.lang && v.lang.toLowerCase().indexOf('fr') === 0; })[0];
+    var frVoice = pickFrenchVoice(voices);
     if(frVoice) utter.voice = frVoice;
     utter.rate = speechRate;
     utter.pitch = speechPitch;
