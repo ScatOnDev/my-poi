@@ -1,0 +1,427 @@
+{
+  "city": "Paris",
+  "center": { "lat": 48.8566, "lng": 2.3522 },
+  "zoom": 12,
+  "pois": [
+    {
+      "id": "tour-eiffel",
+      "name": "Tour Eiffel",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 48.8584,
+      "lng": 2.2945,
+      "teaser": "Structure de fer emblématique construite pour l'Exposition universelle de 1889, symbole absolu de Paris.",
+      "desc": "Érigée par Gustave Eiffel pour l'Exposition universelle de 1889 et destinée à l'origine à être démontée après vingt ans, la tour de fer puddlé est devenue malgré elle le symbole le plus reconnaissable de Paris et, plus largement, de la France entière. Haute de plus de trois cents mètres antenne comprise, elle a longtemps détenu le titre de plus haute structure du monde et continue d'impressionner par la légèreté apparente de sa dentelle métallique, pourtant composée de plus de dix mille tonnes de fer. Trois niveaux sont accessibles au public, chacun offrant une perspective différente sur la capitale, jusqu'au sommet où, par temps clair, le regard porte à plusieurs dizaines de kilomètres à la ronde. La tour scintille chaque heure à la tombée de la nuit grâce à des milliers d'ampoules, un spectacle gratuit visible depuis tout le Champ-de-Mars. Réservez vos billets en ligne à l'avance pour éviter une attente qui peut dépasser plusieurs heures en haute saison, et privilégiez la montée par les escaliers jusqu'au deuxième étage pour un tarif réduit et une expérience plus vivante que l'ascenseur."
+    },
+    {
+      "id": "notre-dame",
+      "name": "Cathédrale Notre-Dame de Paris",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 48.853,
+      "lng": 2.3499,
+      "teaser": "Chef-d'œuvre gothique du XIIe siècle, récemment restaurée après l'incendie de 2019, au cœur de l'Île de la Cité.",
+      "desc": "Commencée au XIIe siècle et achevée près de deux cents ans plus tard, Notre-Dame de Paris demeure l'un des sommets absolus de l'architecture gothique, avec ses tours jumelles, ses arcs-boutants spectaculaires et sa rosace occidentale. L'incendie dévastateur d'avril 2019, qui a détruit la flèche et une grande partie de la charpente médiévale, a suscité une émotion mondiale et déclenché un chantier de restauration exceptionnel, achevé et rouvert au public fin 2024. La cathédrale a retrouvé son éclat d'origine, avec une pierre nettoyée et des vitraux restaurés qui rendent la lumière intérieure plus vive que jamais. L'édifice reste un lieu de culte actif autant qu'un monument historique, situé au centre exact de la ville dont il marque traditionnellement le point zéro des routes de France. Les abords immédiats, aménagés en jardin archéologique, permettent d'admirer le chevet et les arcs-boutants sous un autre angle. L'affluence reste très forte depuis la réouverture : mieux vaut réserver un créneau horaire à l'avance et prévoir un temps d'attente même avec billet, particulièrement le week-end et pendant les vacances scolaires."
+    },
+    {
+      "id": "arc-de-triomphe",
+      "name": "Arc de Triomphe",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8738,
+      "lng": 2.295,
+      "teaser": "Monument napoléonien dominant les Champs-Élysées, avec la tombe du Soldat inconnu et une vue sur les douze avenues.",
+      "desc": "Commandé par Napoléon Ier en 1806 pour célébrer les victoires de la Grande Armée, l'Arc de Triomphe ne sera achevé que sous la Monarchie de Juillet, trente ans plus tard. Ses hauts-reliefs sculptés, dont le célèbre Départ des volontaires de 1792 signé Rude, et les noms de batailles et de généraux gravés sur ses parois racontent une bonne partie de l'histoire militaire française du tournant du XIXe siècle. Depuis 1920, la tombe du Soldat inconnu de la Première Guerre mondiale repose sous l'arche, sa flamme ranimée chaque soir à dix-huit heures trente lors d'une cérémonie ouverte au public. Le monument occupe le centre exact de la place de l'Étoile, d'où rayonnent douze avenues dans une composition urbaine unique au monde. La montée jusqu'à la terrasse sommitale, via un escalier étroit de plus de deux cents marches, offre l'une des plus belles perspectives sur Paris, avec les Champs-Élysées d'un côté et la Grande Arche de la Défense dans l'axe opposé. Empruntez impérativement le passage souterrain pour rejoindre le monument : traverser la place à pied en surface est extrêmement dangereux."
+    },
+    {
+      "id": "sacre-coeur",
+      "name": "Basilique du Sacré-Cœur",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8867,
+      "lng": 2.3431,
+      "teaser": "Basilique romano-byzantine en pierre blanche, dominant Paris depuis la butte Montmartre.",
+      "desc": "Construite entre 1875 et 1914 en vœu national après la défaite de 1870 et les troubles de la Commune, la basilique du Sacré-Cœur se distingue par sa pierre calcaire qui blanchit en réagissant à la pluie, lui donnant cette teinte immaculée si reconnaissable. Son architecture romano-byzantine, avec ses dômes arrondis, tranche volontairement avec le style gothique des grandes cathédrales françaises. Perchée au sommet de la butte Montmartre, point culminant de Paris intra-muros, elle offre depuis son parvis un panorama gratuit sur l'ensemble de la ville, l'un des plus prisés de la capitale, surtout au coucher du soleil. L'intérieur abrite l'une des plus grandes mosaïques de France, représentant le Christ en majesté. Il est aussi possible de monter au dôme moyennant un billet, pour une vue encore plus dégagée. Les marches du parvis sont un lieu de rassemblement informel très animé, surtout en soirée. Prévoyez de bonnes chaussures pour la montée depuis le métro Anvers, ou empruntez le funiculaire inclus dans le ticket de transport parisien pour épargner vos jambes."
+    },
+    {
+      "id": "pantheon",
+      "name": "Panthéon",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8462,
+      "lng": 2.3464,
+      "teaser": "Ancienne église transformée en nécropole des grands hommes, où reposent Voltaire, Marie Curie et Victor Hugo.",
+      "desc": "Édifié à l'origine comme église dédiée à sainte Geneviève, patronne de Paris, le Panthéon a été sécularisé pendant la Révolution pour devenir un temple laïc destiné à accueillir les dépouilles des personnalités ayant marqué l'histoire de France. Voltaire, Rousseau, Victor Hugo, Émile Zola, Jean Moulin ou encore Marie Curie, première femme à y reposer par ses propres mérites, comptent parmi les grandes figures inhumées dans sa crypte. L'édifice conserve une architecture néoclassique majestueuse, inspirée des temples antiques, avec un immense dôme visible de loin dans le ciel du Quartier latin. Le pendule de Foucault, suspendu sous la coupole, y a démontré la rotation de la Terre en 1851 et sa réplique continue d'osciller lentement devant les visiteurs. La terrasse du dôme, accessible sur réservation lors de créneaux limités, offre une vue rare à trois cent soixante degrés sur Paris. Comptez une bonne heure pour la visite complète, crypte comprise, et vérifiez à l'avance la disponibilité des billets pour le dôme, souvent limités en nombre."
+    },
+    {
+      "id": "sainte-chapelle",
+      "name": "Sainte-Chapelle",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8554,
+      "lng": 2.345,
+      "teaser": "Chapelle royale du XIIIe siècle abritant l'un des plus vastes ensembles de vitraux médiévaux d'Europe.",
+      "desc": "Construite en un temps record par Saint Louis au XIIIe siècle pour abriter les reliques de la Passion du Christ qu'il venait d'acquérir, la Sainte-Chapelle frappe par le contraste entre sa chapelle basse, modeste et sombre, et sa chapelle haute, véritable écrin de lumière. Quinze immenses verrières, culminant à quinze mètres de hauteur, racontent en plus de mille scènes l'histoire biblique depuis la Genèse jusqu'à la Résurrection, formant l'un des ensembles de vitraux médiévaux les mieux conservés au monde. L'effet, lorsque le soleil traverse ces parois de verre coloré, reste saisissant malgré les huit siècles écoulés. L'édifice se dresse dans l'enceinte du Palais de la Cité, aujourd'hui Palais de justice, ce qui impose de passer un contrôle de sécurité avant d'y accéder. La visite se combine naturellement avec celle de la Conciergerie voisine, un billet jumelé étant proposé aux deux monuments. Privilégiez une visite en fin de matinée, lorsque le soleil est au plus haut, pour profiter pleinement de l'éclat des vitraux à contre-jour."
+    },
+    {
+      "id": "conciergerie",
+      "name": "Conciergerie",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 48.8557,
+      "lng": 2.3452,
+      "teaser": "Ancien palais royal médiéval devenu prison durant la Révolution, où Marie-Antoinette attendit son exécution.",
+      "desc": "Résidence des rois de France jusqu'au XIVe siècle avant de devenir le siège du Parlement puis une prison, la Conciergerie doit surtout sa notoriété à son rôle pendant la Terreur révolutionnaire, lorsque des milliers de prisonniers, dont la reine Marie-Antoinette, y furent détenus avant leur passage devant le tribunal révolutionnaire et leur exécution. La cellule reconstituée de la reine et la salle des Girondins rappellent cette période sombre de l'histoire de France. L'édifice conserve par ailleurs l'une des plus vastes salles gothiques civiles d'Europe, la salle des Gens d'armes, témoin de la grandeur du palais médiéval avant sa transformation carcérale. La façade sur la Seine, avec ses tours rondes caractéristiques, compte parmi les vues les plus photographiées de l'Île de la Cité depuis les quais. La visite, plus dense en histoire qu'en faste architectural, complète utilement celle de la Sainte-Chapelle toute proche. Un billet combiné aux deux sites permet d'économiser du temps et de l'argent pour qui souhaite visiter l'ensemble du site."
+    },
+    {
+      "id": "palais-royal",
+      "name": "Palais-Royal",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 48.8638,
+      "lng": 2.3375,
+      "teaser": "Ancienne résidence de Richelieu devenue jardin public, célèbre pour les colonnes rayées de Buren.",
+      "desc": "Bâti au XVIIe siècle pour le cardinal de Richelieu avant de revenir à la famille royale, le Palais-Royal a connu de multiples usages au fil des siècles, du théâtre aux galeries marchandes qui ont fait sa réputation avant même les grands magasins modernes. Son jardin intérieur, bordé d'arcades élégantes, offre aujourd'hui un havre de calme au cœur d'un quartier autrement très fréquenté. Dans la cour d'honneur, les colonnes de Buren, installation contemporaine de colonnes tronquées en marbre noir et blanc réalisée dans les années 1980, ont longtemps suscité la polémique avant de devenir un lieu de photographie incontournable, notamment pour les enfants qui adorent sauter entre les colonnes. Les galeries qui entourent le jardin abritent encore quelques boutiques anciennes, entre antiquaires et maisons spécialisées, dans une ambiance feutrée bien différente de l'agitation du Louvre voisin. C'est une étape agréable pour une pause tranquille entre deux visites de musées, à l'abri du bruit de la rue de Rivoli toute proche."
+    },
+    {
+      "id": "place-des-vosges",
+      "name": "Place des Vosges",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8555,
+      "lng": 2.3654,
+      "teaser": "Plus ancienne place royale de Paris, ensemble harmonieux de pavillons de brique et de pierre du XVIIe siècle.",
+      "desc": "Inaugurée en 1612 sous Henri IV, la place des Vosges fut la première place royale de Paris et a servi de modèle à de nombreuses places du même type à travers l'Europe. Ses trente-six pavillons identiques, en brique rouge et pierre blanche sous des toits d'ardoise, encadrent un jardin central planté de tilleuls où les Parisiens aiment pique-niquer les jours de beau temps. Victor Hugo a vécu plusieurs années dans l'un des pavillons, aujourd'hui transformé en petit musée gratuit consacré à l'écrivain. La place a connu bien des usages au fil des siècles, des tournois équestres royaux jusqu'aux duels clandestins, avant de devenir le cadre résidentiel prisé qu'elle est aujourd'hui, au cœur du quartier du Marais. Les arcades qui bordent le jardin abritent galeries d'art et cafés, agréables pour une pause à l'ombre. Le lieu reste étonnamment calme malgré sa proximité avec les rues commerçantes animées du Marais, ce qui en fait une bonne étape pour souffler en milieu de journée."
+    },
+    {
+      "id": "opera-garnier",
+      "name": "Opéra Garnier",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8719,
+      "lng": 2.3316,
+      "teaser": "Opéra flamboyant du Second Empire, avec son grand escalier de marbre et son plafond peint par Chagall.",
+      "desc": "Conçu par l'architecte Charles Garnier et inauguré en 1875, ce palais dédié à l'opéra et au ballet incarne le faste architectural du Second Empire, entre marbres polychromes, dorures abondantes et sculptures profuses sur la façade. Le grand escalier d'honneur, destiné autant à voir qu'à être vu par la société parisienne de l'époque, reste l'un des espaces les plus photographiés du bâtiment. La salle de spectacle elle-même abrite un plafond peint par Marc Chagall en 1964, en contraste volontaire avec le classicisme du reste de l'édifice, surplombant un immense lustre de cristal qui a inspiré l'intrigue du Fantôme de l'Opéra. Un authentique lac souterrain existe d'ailleurs sous le bâtiment, construit pour stabiliser les fondations sur un terrain marécageux. Il est possible de visiter l'intérieur en journée hors représentation, ou d'assister à un spectacle en soirée pour vivre pleinement l'expérience du lieu. La bibliothèque-musée attenante conserve costumes, décors et souvenirs de l'histoire de la danse et de l'opéra parisiens."
+    },
+    {
+      "id": "invalides",
+      "name": "Hôtel des Invalides",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 48.8566,
+      "lng": 2.3125,
+      "teaser": "Ensemble monumental du XVIIe siècle abritant le tombeau de Napoléon sous son dôme doré.",
+      "desc": "Fondé par Louis XIV pour accueillir les soldats invalides de ses guerres, l'Hôtel des Invalides reste un site militaire actif tout en abritant plusieurs musées consacrés à l'histoire de l'armée française. Son dôme doré, visible de loin dans le ciel parisien, coiffe l'église Saint-Louis-des-Invalides où repose, sous un tombeau de porphyre rouge d'une ampleur spectaculaire, la dépouille de Napoléon Ier, ramenée de Sainte-Hélène en 1840. La cour d'honneur, bordée de galeries à arcades, accueille encore aujourd'hui certaines cérémonies militaires officielles. Le musée de l'Armée qui occupe une grande partie du bâtiment couvre l'histoire militaire française depuis le Moyen Âge jusqu'aux deux guerres mondiales, avec une collection d'armes et d'armures particulièrement riche. La façade principale, longue de plus de deux cents mètres, compte parmi les plus imposantes de Paris. L'esplanade qui s'étend devant le bâtiment, jusqu'à la Seine, offre un dégagement rare dans la capitale et une belle perspective sur le dôme. Prévoyez une demi-journée si vous souhaitez visiter l'ensemble des collections du musée de l'Armée."
+    },
+    {
+      "id": "musee-du-louvre",
+      "name": "Musée du Louvre",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 48.8606,
+      "lng": 2.3376,
+      "teaser": "Plus grand musée d'art du monde, ancien palais royal abritant la Joconde et la Vénus de Milo.",
+      "desc": "Ancienne forteresse médiévale devenue résidence royale puis musée à la Révolution, le Louvre est aujourd'hui le musée le plus visité au monde, avec des collections couvrant près de dix mille ans d'histoire de l'art, de l'Antiquité égyptienne aux peintures du XIXe siècle. La Joconde de Léonard de Vinci, protégée derrière une vitre dans la salle des États, attire à elle seule des foules considérables, tout comme la Vénus de Milo ou la Victoire de Samothrace. La célèbre pyramide de verre, installée dans la cour Napoléon dans les années 1980, sert désormais d'entrée principale et constitue elle-même un symbole architectural reconnu. Le bâtiment, qui a connu huit siècles de constructions successives, mérite une attention presque aussi grande que ses collections, en particulier les vestiges du donjon médiéval visibles au sous-sol. Face à l'immensité des collections, mieux vaut choisir un parcours ciblé plutôt que de vouloir tout voir en une seule visite. Réservez un billet horodaté en ligne pour éviter la file d'attente, souvent longue devant la pyramide, et prévoyez d'entrer plutôt par l'accès du Carrousel du Louvre."
+    },
+    {
+      "id": "musee-dorsay",
+      "name": "Musée d'Orsay",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 48.86,
+      "lng": 2.3266,
+      "teaser": "Ancienne gare Belle Époque transformée en musée, référence mondiale pour l'impressionnisme et le postimpressionnisme.",
+      "desc": "Installé dans une ancienne gare construite pour l'Exposition universelle de 1900, le musée d'Orsay conserve l'imposante verrière et l'horloge monumentale qui font le charme si particulier du lieu, où l'architecture industrielle sert d'écrin à l'une des plus belles collections d'art du XIXe siècle au monde. Monet, Renoir, Degas, Van Gogh ou Cézanne y sont représentés en profondeur, permettant de suivre l'évolution de l'impressionnisme jusqu'au postimpressionnisme dans un parcours chronologique cohérent. La grande horloge, visible depuis le café du cinquième étage, offre une vue insolite sur la Seine et le Louvre à travers son cadran transparent, l'un des points de vue les plus photographiés du musée. Le bâtiment lui-même a bien failli être démoli dans les années 1970 avant d'être sauvé et reconverti, ce qui en fait aussi un symbole de la réhabilitation du patrimoine industriel parisien. La visite se prête bien à une demi-journée, en réservant si possible un billet horodaté pour limiter l'attente, particulièrement dense en fin de matinée."
+    },
+    {
+      "id": "centre-pompidou",
+      "name": "Centre Pompidou",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 48.8607,
+      "lng": 2.3522,
+      "teaser": "Musée d'art moderne à l'architecture inversée, tuyaux et structures apparents à l'extérieur du bâtiment.",
+      "desc": "Inauguré en 1977, le Centre Pompidou a marqué les esprits par son architecture radicale, conçue par Renzo Piano et Richard Rogers, qui expose délibérément à l'extérieur les conduits techniques, l'ossature métallique et les escalators habituellement dissimulés dans les bâtiments classiques. Ce parti pris, très critiqué à son ouverture, est aujourd'hui considéré comme une œuvre architecturale majeure du XXe siècle à part entière. À l'intérieur, le musée national d'Art moderne rassemble l'une des plus riches collections d'art du XXe et du XXIe siècle en Europe, de Matisse à Kandinsky en passant par l'art contemporain le plus récent. La place qui s'étend devant le bâtiment est traditionnellement animée par des artistes de rue, musiciens et caricaturistes. L'escalator extérieur en tube transparent, qui grimpe le long de la façade, offre au passage une vue de plus en plus dégagée sur les toits de Paris. Le bâtiment est fermé pour de longs travaux de rénovation depuis 2025 : vérifiez son état de réouverture avant de prévoir votre visite."
+    },
+    {
+      "id": "musee-rodin",
+      "name": "Musée Rodin",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 48.8555,
+      "lng": 2.3153,
+      "teaser": "Hôtel particulier et jardin de sculptures dédiés à Auguste Rodin, avec Le Penseur et Les Bourgeois de Calais.",
+      "desc": "Installé dans l'hôtel Biron, un élégant hôtel particulier du XVIIIe siècle où Auguste Rodin vécut et travailla dans les dernières années de sa vie, ce musée rassemble la plus importante collection de son œuvre, léguée par le sculpteur lui-même à l'État français. Le jardin, aménagé à la française, expose en plein air plusieurs de ses créations les plus célèbres, dont Le Penseur et Les Bourgeois de Calais, dans un cadre bien plus intimiste que celui des grands musées voisins. L'intérieur de l'hôtel présente notamment Le Baiser et une riche sélection d'études préparatoires qui éclairent le processus créatif de l'artiste. Le musée conserve aussi des œuvres de Camille Claudel, sa collaboratrice et compagne, dont le talent longtemps éclipsé par celui de Rodin est aujourd'hui pleinement reconnu. Le jardin, avec ses roseraies et ses bancs à l'ombre des arbres, se prête à une pause agréable même sans visiter les collections intérieures. Un billet dédié au jardin seul, moins cher, existe pour qui souhaite simplement s'y promener."
+    },
+    {
+      "id": "musee-picasso",
+      "name": "Musée Picasso",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 48.8595,
+      "lng": 2.3625,
+      "teaser": "Collection exceptionnelle d'œuvres de Picasso installée dans un hôtel particulier du Marais.",
+      "desc": "Installé dans l'hôtel Salé, une demeure du XVIIe siècle construite pour un collecteur d'impôts sur le sel, le musée Picasso rassemble une collection exceptionnelle constituée essentiellement de dations, ces œuvres cédées à l'État par les héritiers de l'artiste en paiement des droits de succession. Le parcours retrace l'ensemble de la carrière de Picasso, des débuts académiques à Barcelone jusqu'aux dernières années, en passant par le cubisme et la période bleue, offrant une vision bien plus complète de son œuvre que les quelques toiles présentées dans les grands musées généralistes. L'hôtel particulier lui-même, avec son escalier sculpté et ses salons classiques, contraste agréablement avec l'art résolument moderne qu'il abrite. La collection inclut aussi des œuvres d'artistes contemporains de Picasso que lui-même avait rassemblées de son vivant, comme Cézanne ou Matisse. Le musée, moins fréquenté que le Louvre ou Orsay, permet une visite plus posée. Il se situe au cœur du Marais, ce qui permet de combiner facilement la visite avec une flânerie dans le quartier environnant."
+    },
+    {
+      "id": "institut-du-monde-arabe",
+      "name": "Institut du Monde Arabe",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 48.8437,
+      "lng": 2.3563,
+      "teaser": "Institution culturelle dédiée au monde arabe, célèbre pour sa façade high-tech aux moucharabiehs mécaniques.",
+      "desc": "Fondé pour promouvoir la connaissance du monde arabe et de sa culture, l'Institut du Monde Arabe se distingue avant tout par son architecture signée Jean Nouvel, dont la façade sud est composée de centaines de diaphragmes métalliques inspirés des moucharabiehs traditionnels, qui s'ouvrent et se referment automatiquement pour réguler la lumière naturelle. Ce dispositif, spectaculaire lorsqu'il fonctionne, reste l'une des innovations architecturales les plus commentées de Paris depuis son inauguration en 1987. Le musée présente une collection couvrant l'histoire, l'art et les sciences du monde arabo-musulman depuis l'Antiquité jusqu'à l'art contemporain. Mais le principal attrait pour beaucoup de visiteurs reste la terrasse du neuvième étage, accessible gratuitement, qui offre l'une des vues les plus dégagées sur l'Île de la Cité, Notre-Dame et le fleuve. Un café-restaurant y est installé, idéal pour une pause avec vue en fin de journée. L'accès à la terrasse ne nécessite pas de billet pour le musée, ce qui en fait une étape rapide et gratuite à ne pas manquer."
+    },
+    {
+      "id": "catacombes-de-paris",
+      "name": "Catacombes de Paris",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 48.8338,
+      "lng": 2.3324,
+      "teaser": "Anciennes carrières souterraines transformées en ossuaire, abritant les restes de plusieurs millions de Parisiens.",
+      "desc": "À la fin du XVIIIe siècle, la saturation des cimetières parisiens et les risques sanitaires qu'elle engendrait ont conduit les autorités à transférer des millions d'ossements vers d'anciennes carrières de calcaire creusées sous la ville depuis l'époque romaine. Ce vaste ossuaire souterrain, aménagé avec un certain sens de la mise en scène, présente des murs entiers composés de tibias et de crânes soigneusement empilés, accompagnés d'inscriptions poétiques ou philosophiques sur la mort. Le parcours ouvert au public ne représente qu'une infime partie du réseau de carrières qui s'étend sous Paris, le reste demeurant interdit d'accès pour des raisons de sécurité, ce qui n'empêche pas certains explorateurs urbains clandestins de s'y aventurer. La visite, à quinze mètres sous terre et sur près de deux kilomètres de galeries, impose une température fraîche constante toute l'année et un escalier de plusieurs dizaines de marches à la sortie. Réservez impérativement votre billet en ligne à l'avance : les places sont limitées chaque jour et l'attente sur place peut dépasser plusieurs heures sans réservation."
+    },
+    {
+      "id": "cimetiere-pere-lachaise",
+      "name": "Cimetière du Père-Lachaise",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 48.8617,
+      "lng": 2.3934,
+      "teaser": "Plus grand cimetière parisien, véritable musée à ciel ouvert où reposent Chopin, Piaf et Jim Morrison.",
+      "desc": "Ouvert en 1804 sur une colline à l'est de Paris, le Père-Lachaise fut le premier grand cimetière paysager moderne et reste aujourd'hui le plus visité au monde, tant pour son atmosphère romantique que pour les célébrités qui y reposent. Chopin, Édith Piaf, Oscar Wilde, Jim Morrison ou encore Molière comptent parmi les figures dont les tombes attirent chaque année des milliers de visiteurs, certaines devenues de véritables lieux de pèlerinage, notamment celle du chanteur des Doors. Au-delà de ces sépultures célèbres, le cimetière se visite aussi pour son architecture funéraire remarquable, entre chapelles néogothiques, mausolées Art nouveau et allées pavées ombragées par des arbres centenaires, qui en font un espace de promenade apprécié même par ceux qui ne cherchent aucune tombe particulière. Le mur des Fédérés rappelle par ailleurs l'exécution des derniers communards en 1871. Le site, très étendu et vallonné, se parcourt idéalement avec un plan détaillé ou une application dédiée, faute de quoi retrouver une tombe précise peut s'avérer difficile. Prévoyez de bonnes chaussures pour les pavés irréguliers."
+    },
+    {
+      "id": "montmartre",
+      "name": "Montmartre",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 48.8867,
+      "lng": 2.3407,
+      "teaser": "Ancien village d'artistes perché sur sa butte, entre ruelles pavées, vignes urbaines et place des peintres.",
+      "desc": "Longtemps village indépendant avant son rattachement à Paris au XIXe siècle, Montmartre a conservé jusqu'à aujourd'hui une atmosphère de bourgade à l'écart de l'agitation urbaine, avec ses ruelles pavées en pente, ses escaliers et son unique vigne encore en production dans la capitale. Le quartier a hébergé nombre d'artistes majeurs, de Renoir à Picasso en passant par Toulouse-Lautrec, attirés par les loyers modestes et l'atmosphère bohème qui régnait autour du cabaret du Moulin Rouge et des ateliers du Bateau-Lavoir. La place du Tertre, où des peintres continuent de proposer portraits et caricatures aux passants, perpétue à sa manière cette tradition artistique, même si l'ambiance y est devenue résolument touristique. Les amateurs de calme trouveront davantage leur bonheur dans les petites rues adjacentes, moins fréquentées, où subsiste un vrai charme villageois. Le funiculaire, inclus dans un ticket de métro classique, permet de rejoindre la basilique du Sacré-Cœur sans gravir les nombreuses marches de la butte. Une visite en fin de journée, quand les groupes touristiques se dispersent, permet de retrouver une ambiance plus authentique du quartier."
+    },
+    {
+      "id": "le-marais",
+      "name": "Le Marais",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 48.8571,
+      "lng": 2.36,
+      "teaser": "Quartier historique du Marais juif et LGBT parisien, entre hôtels particuliers du XVIIe siècle et boutiques branchées.",
+      "desc": "Marécage asséché au Moyen Âge puis quartier aristocratique privilégié sous l'Ancien Régime, le Marais a conservé l'une des plus fortes concentrations d'hôtels particuliers historiques de Paris, ayant échappé aux grands travaux de rénovation urbaine du Second Empire qui ont transformé le reste de la capitale. Délaissé par l'aristocratie après la Révolution, le quartier est devenu au XIXe et XXe siècle un centre important de la communauté juive parisienne, particulièrement visible autour de la rue des Rosiers avec ses boulangeries et ses restaurants traditionnels. Il s'est aussi affirmé depuis les années 1980 comme le cœur historique de la vie LGBT parisienne, avec de nombreux bars et lieux de rencontre autour de la rue Sainte-Croix-de-la-Bretonnerie. Cette double identité, historique et festive, cohabite aujourd'hui avec des boutiques de mode indépendantes et des galeries d'art contemporain qui ont largement gentrifié le quartier ces dernières décennies. Les ruelles étroites, fermées à une grande partie de la circulation automobile, se prêtent particulièrement bien à une flânerie sans itinéraire précis, entre découvertes architecturales et pauses gourmandes."
+    },
+    {
+      "id": "quais-de-seine",
+      "name": "Quais de Seine",
+      "cat": "fluvial",
+      "interest": 4,
+      "lat": 48.8566,
+      "lng": 2.341,
+      "teaser": "Berges classées à l'UNESCO, aménagées en promenades piétonnes et plages éphémères au cœur de Paris.",
+      "desc": "Les rives de la Seine à Paris sont inscrites au patrimoine mondial de l'UNESCO depuis 1991, reconnaissance de l'ensemble architectural exceptionnel qui borde le fleuve sur plusieurs kilomètres, entre ponts historiques, quais de pierre et bâtiments emblématiques comme le Louvre ou Notre-Dame. D'anciennes voies rapides ont été progressivement rendues aux piétons et aux cyclistes ces dernières années, transformant les berges en promenades très prisées, ponctuées de bars éphémères, de terrains de pétanque et, l'été, d'une opération de plages artificielles avec sable et transats. Les célèbres bouquinistes, installés dans leurs boîtes vertes le long du parapet depuis des siècles, complètent ce paysage si particulier, entre vieux livres, gravures anciennes et souvenirs touristiques. Une croisière en bateau-mouche reste la façon la plus simple de découvrir d'un coup d'œil l'essentiel du patrimoine parisien, en passant sous une trentaine de ponts. Pour une expérience plus authentique et moins chère, une simple promenade à pied ou à vélo le long des quais, au coucher du soleil, offre une perspective tout aussi spectaculaire sur les monuments illuminés."
+    },
+    {
+      "id": "pont-alexandre-iii",
+      "name": "Pont Alexandre III",
+      "cat": "fluvial",
+      "interest": 4,
+      "lat": 48.8639,
+      "lng": 2.3136,
+      "teaser": "Pont le plus richement décoré de Paris, orné de sculptures dorées, entre Invalides et Grand Palais.",
+      "desc": "Construit pour l'Exposition universelle de 1900 et nommé en l'honneur du tsar Alexandre III, en hommage à l'alliance franco-russe de l'époque, ce pont à arche unique franchit la Seine sans le moindre pilier dans l'eau, prouesse technique remarquable pour son temps. Ses lampadaires Art nouveau, ses guirlandes de bronze doré et ses statues allégoriques représentant les fleuves de France et les périodes historiques du pays en font sans doute le pont le plus richement orné de la capitale, souvent qualifié de plus beau pont de Paris. Il relie l'esplanade des Invalides au Grand Palais et au Petit Palais, offrant un axe de perspective particulièrement soigné, très prisé pour les photographies de mariage et les prises de vue cinématographiques. La vue depuis le centre du pont embrasse à la fois la tour Eiffel en amont et l'Île de la Cité en aval, l'un des panoramas fluviaux les plus complets de la ville. La traversée à pied, en particulier à la tombée du jour lorsque les lampadaires s'allument, reste une expérience gratuite et mémorable."
+    },
+    {
+      "id": "pont-neuf",
+      "name": "Pont Neuf",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 48.8566,
+      "lng": 2.3412,
+      "teaser": "Malgré son nom, le plus ancien pont de Paris encore debout, achevé sous Henri IV.",
+      "desc": "Achevé en 1607 sous le règne d'Henri IV, le Pont Neuf porte un nom trompeur puisqu'il s'agit en réalité du plus ancien pont de Paris parmi ceux encore en place aujourd'hui. Il fut aussi le premier pont parisien construit sans maisons ni boutiques sur son tablier, une innovation qui permit pour la première fois d'admirer librement le fleuve depuis l'ouvrage lui-même, et qui en fit rapidement un lieu de badauds, de bateleurs et de marchands ambulants. Le pont enjambe la Seine en deux tronçons de part et d'autre de la pointe occidentale de l'Île de la Cité, où se trouve la statue équestre d'Henri IV, reconstituée après avoir été détruite à la Révolution. De petites niches en demi-lune, aménagées le long du parapet, offrent des points de vue tranquilles sur le fleuve, à l'écart de la circulation. Le square du Vert-Galant, en contrebas à la pointe de l'île, constitue un havre de verdure apprécié pour un pique-nique les pieds presque dans l'eau, avec une vue rapprochée sur les bateaux qui passent."
+    },
+    {
+      "id": "canal-saint-martin",
+      "name": "Canal Saint-Martin",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 48.8709,
+      "lng": 2.366,
+      "teaser": "Canal du XIXe siècle aux écluses pittoresques et passerelles de fer, cœur d'un quartier prisé des jeunes Parisiens.",
+      "desc": "Creusé au début du XIXe siècle sur ordre de Napoléon pour approvisionner Paris en eau potable et faciliter le transport de marchandises, le canal Saint-Martin a largement perdu sa vocation industrielle pour devenir l'un des lieux de promenade favoris des jeunes Parisiens, en particulier les jours de beau temps où les berges se couvrent de pique-niqueurs. Ses écluses manuelles, toujours en activité, et ses passerelles métalliques à caillebotis, immortalisées au cinéma, donnent au lieu un charme industriel bien différent du reste de la capitale. Le quartier alentour, entre la République et la Villette, a connu une forte gentrification ces dernières décennies, avec une multiplication de cafés, boutiques indépendantes et bars à la mode le long des quais pavés. Une partie du canal passe en souterrain plus au sud, avant de ressurgir à l'air libre au niveau de la place de la Bastille. Il est possible de louer un pédalo ou de faire une croisière commentée pour découvrir le passage des écluses depuis l'eau, une expérience assez différente d'une simple balade sur les quais."
+    },
+    {
+      "id": "bassin-de-la-villette",
+      "name": "Bassin de la Villette",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 48.8836,
+      "lng": 2.3823,
+      "teaser": "Plus grand plan d'eau artificiel de Paris, prolongement du canal Saint-Martin, très animé les week-ends d'été.",
+      "desc": "Prolongement naturel du canal Saint-Martin vers le nord-est de Paris, le bassin de la Villette constitue le plus vaste plan d'eau artificiel de la capitale, aménagé au début du XIXe siècle dans le cadre du même projet napoléonien d'approvisionnement en eau. Ses larges quais, bien plus dégagés que ceux du canal en amont, en ont fait ces dernières années l'un des lieux de vie en plein air les plus populaires de Paris, avec un cinéma en plein air gratuit chaque été, des cafés flottants et des activités nautiques comme le canoë ou le paddle. Le quartier environnant, longtemps industriel et populaire, s'est considérablement transformé avec l'arrivée de nouveaux habitants attirés par cet accès à l'eau rare dans la capitale. Le bassin mène directement au parc de la Villette et à la Cité des sciences un peu plus au nord, permettant d'enchaîner facilement plusieurs visites dans le même secteur. Les soirées d'été y sont particulièrement animées, avec une ambiance plus locale et décontractée que dans les quartiers touristiques du centre."
+    },
+    {
+      "id": "ile-saint-louis",
+      "name": "Île Saint-Louis",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 48.8512,
+      "lng": 2.3565,
+      "teaser": "Petite île résidentielle sur la Seine, restée presque intacte depuis le XVIIe siècle, réputée pour ses glaciers.",
+      "desc": "Contrairement à sa voisine l'Île de la Cité, dominée par ses grands monuments, l'Île Saint-Louis a conservé une vocation presque exclusivement résidentielle depuis son lotissement au XVIIe siècle, avec des hôtels particuliers alignés le long d'une rue principale unique qui traverse l'île de part en part. Cette échelle plus intime, presque villageoise, en fait une parenthèse tranquille au beau milieu du tumulte touristique environnant, appréciée pour une simple flânerie sans monument précis à cocher. La rue Saint-Louis-en-l'Île concentre boutiques d'artisans, galeries et surtout le glacier historique dont les files d'attente, été comme hiver, sont devenues elles-mêmes une attraction touristique à part entière. Les quais qui ceinturent l'île offrent des vues rapprochées sur la Seine, moins fréquentées que celles de l'île voisine, avec de petits emplacements pour s'asseoir directement au bord de l'eau. Les deux îles sont reliées par un pont piéton, le pont Saint-Louis, souvent animé par des musiciens de rue en soirée. Une glace à la main en admirant le fleuve reste l'une des expériences les plus simples et appréciées de la capitale."
+    },
+    {
+      "id": "jardin-du-luxembourg",
+      "name": "Jardin du Luxembourg",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 48.8462,
+      "lng": 2.3372,
+      "teaser": "Jardin à la française du XVIIe siècle, poumon vert du Quartier latin autour du palais du Sénat.",
+      "desc": "Aménagé au début du XVIIe siècle pour Marie de Médicis, qui souhaitait un jardin rappelant ceux de sa Florence natale, le jardin du Luxembourg reste l'un des espaces verts les plus fréquentés de la rive gauche, entre étudiants venus réviser sur les célèbres chaises vertes et familles profitant du grand bassin où les enfants font naviguer de petits voiliers loués sur place. Le palais du Luxembourg, qui borde le jardin, abrite aujourd'hui le Sénat français et ne se visite qu'à de rares occasions. Le jardin mêle habilement les parterres à la française, très géométriques, et des zones plus arborées à l'anglaise, ponctuées de statues et de fontaines, dont la célèbre fontaine Médicis, appréciée pour son atmosphère romantique et ombragée. Des ruches pédagogiques et un verger conservatoire de variétés anciennes de pommes complètent cet ensemble déjà riche. C'est un lieu idéal pour une pause pique-nique ou simplement pour observer la vie parisienne au ralenti, entre parties d'échecs, joueurs de tennis sur les courts du jardin et jogging matinal des habitants du quartier."
+    },
+    {
+      "id": "jardin-des-tuileries",
+      "name": "Jardin des Tuileries",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 48.8634,
+      "lng": 2.3275,
+      "teaser": "Jardin royal classique reliant le Louvre à la place de la Concorde, dessiné par Le Nôtre.",
+      "desc": "Aménagé sur les plans d'André Le Nôtre à la fin du XVIIe siècle, le jardin des Tuileries prolonge l'axe historique qui relie le Louvre à la place de la Concorde et, plus loin encore, à l'Arc de Triomphe et à la Grande Arche de la Défense. Son tracé rigoureusement géométrique, avec ses grandes allées rectilignes, ses bassins circulaires et ses statues classiques, en fait un exemple emblématique du jardin à la française, longtemps réservé à la noblesse avant d'être ouvert au public après la Révolution. Le jardin abrite aussi plusieurs sculptures modernes, notamment des œuvres de Rodin et de Maillol disséminées entre les parterres, ainsi que le musée de l'Orangerie qui conserve les célèbres Nymphéas de Monet dans deux salles ovales conçues spécifiquement pour ces toiles monumentales. Une grande roue et des manèges saisonniers animent parfois le jardin en période de fêtes foraines. Les chaises disposées librement autour des bassins permettent de s'installer où bon vous semble pour observer les enfants faire naviguer des petits bateaux, une scène presque immuable depuis des générations."
+    },
+    {
+      "id": "parc-des-buttes-chaumont",
+      "name": "Parc des Buttes-Chaumont",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 48.8799,
+      "lng": 2.3822,
+      "teaser": "Parc accidenté du XIXe siècle aménagé sur d'anciennes carrières, avec falaises artificielles et temple perché.",
+      "desc": "Créé sous le Second Empire par le baron Haussmann sur d'anciennes carrières de gypse et une ancienne décharge à ciel ouvert, le parc des Buttes-Chaumont surprend par son relief accidenté, très inhabituel pour un parc parisien, avec ses falaises artificielles, ses grottes et son lac entourant une île rocheuse. Un petit temple néoclassique, inspiré du temple de Vesta à Tivoli, couronne le point culminant du parc et offre l'une des plus belles vues gratuites sur le nord de Paris, jusqu'à la basilique du Sacré-Cœur par temps clair. Deux passerelles suspendues permettent de rejoindre l'île, dont l'une, surnommée le pont des Suicidés en raison de son histoire tragique au XIXe siècle, est aujourd'hui sécurisée. Le parc reste moins fréquenté par les touristes que les grands jardins du centre, ce qui en fait un lieu apprécié des habitants du quartier pour le sport et la détente. Ses pentes herbeuses, idéales pour un pique-nique avec vue, complètent un ensemble paysager parmi les plus originaux de la capitale."
+    },
+    {
+      "id": "bois-de-boulogne",
+      "name": "Bois de Boulogne",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 48.8637,
+      "lng": 2.25,
+      "teaser": "Vaste bois à l'ouest de Paris, avec lacs, hippodromes et le jardin d'acclimatation pour les familles.",
+      "desc": "Ancien territoire de chasse royale transformé en immense parc paysager sous Napoléon III, le bois de Boulogne s'étend sur près de mille hectares à l'ouest de la capitale, offrant un dépaysement complet à quelques minutes seulement des beaux quartiers parisiens. Deux grands lacs, plusieurs hippodromes dont le célèbre Longchamp, des jardins spécialisés comme le Pré Catelan ou le jardin des Serres d'Auteuil, et le jardin d'acclimatation, parc d'attractions familial historique récemment modernisé, composent un ensemble suffisamment vaste pour occuper une journée entière. Le bois abrite aussi la Fondation Louis Vuitton, bâtiment contemporain spectaculaire signé Frank Gehry, entièrement dédié à l'art moderne et contemporain. La location de barques sur le lac inférieur reste une activité classique et appréciée en famille les jours de beau temps. Le site, très étendu, se découvre plus facilement à vélo qu'à pied, plusieurs itinéraires balisés permettant de relier les différents points d'intérêt sans se perdre dans les nombreuses allées boisées."
+    },
+    {
+      "id": "bois-de-vincennes",
+      "name": "Bois de Vincennes",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 48.828,
+      "lng": 2.4336,
+      "teaser": "Plus grand espace vert de Paris, avec château médiéval, zoo moderne et lac aux airs de campagne.",
+      "desc": "Plus vaste encore que son pendant occidental, le bois de Vincennes s'étend à l'est de Paris et associe un patrimoine historique remarquable, avec le donjon médiéval du château de Vincennes visible de loin, à des équipements de loisirs modernes comme le parc zoologique de Paris, entièrement rénové avec ses grandes volières immersives. Le lac Daumesnil, avec ses deux îles reliées par des passerelles rustiques, offre une atmosphère presque champêtre, très appréciée pour la location de barques ou simplement une promenade au bord de l'eau. L'hippodrome de Vincennes accueille régulièrement des courses de trot, tandis que le parc floral, plus discret, propose des jardins thématiques et des concerts en plein air l'été. Moins fréquenté par les touristes internationaux que le bois de Boulogne, le site reste un lieu de détente très prisé des familles de l'est parisien, notamment le week-end. La location de vélos permet de couvrir facilement l'ensemble du site, bien trop vaste pour être parcouru entièrement à pied en une seule visite."
+    },
+    {
+      "id": "promenade-plantee",
+      "name": "Promenade Plantée",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 48.8486,
+      "lng": 2.3746,
+      "teaser": "Ancienne voie ferrée reconvertie en jardin surélevé, précurseur de la célèbre High Line new-yorkaise.",
+      "desc": "Aménagée dans les années 1990 sur le tracé d'une ancienne ligne de chemin de fer désaffectée, la Promenade plantée fut la première réalisation de ce type au monde, ouvrant la voie à des projets similaires bien plus tard, dont la célèbre High Line de New York s'inspirera directement. Le tronçon le plus spectaculaire surplombe l'avenue Daumesnil sur plusieurs mètres de hauteur, offrant une perspective inhabituelle sur les immeubles haussmanniens et les arcades du Viaduc des Arts, aujourd'hui occupées par des ateliers d'artisans d'art. La promenade se poursuit ensuite au niveau du sol puis en léger creux jusqu'au bois de Vincennes, sur près de cinq kilomètres au total, ponctuée de bassins, de roseraies et de tunnels végétalisés. C'est un itinéraire agréable pour rejoindre à pied ou à vélo le bois de Vincennes depuis le centre de Paris, loin de la circulation et du bruit de la ville. Peu fréquentée par les touristes, la promenade offre un aperçu authentique du Paris du quotidien, hors des sentiers battus habituels."
+    },
+    {
+      "id": "avenue-des-champs-elysees",
+      "name": "Avenue des Champs-Élysées",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 48.8698,
+      "lng": 2.3079,
+      "teaser": "La plus célèbre avenue du monde, entre grandes enseignes internationales, cinémas et défilé du 14 juillet.",
+      "desc": "Souvent surnommée la plus belle avenue du monde, les Champs-Élysées relient la place de la Concorde à l'Arc de Triomphe sur près de deux kilomètres, traçant l'un des axes les plus prestigieux de la capitale. La partie basse, plantée de jardins, contraste avec la section haute, entièrement dédiée au commerce, où se concentrent grandes enseignes internationales, concessions automobiles emblématiques et cinémas historiques. L'avenue accueille chaque année le défilé militaire du 14 juillet ainsi que l'arrivée du Tour de France cycliste, deux événements qui en font régulièrement le centre de l'attention médiatique nationale. Si l'avenue elle-même a perdu une partie de son prestige commercial face à la concurrence d'autres quartiers plus pointus, elle reste un passage quasi obligé pour une première visite de Paris, ne serait-ce que pour l'ambiance et la perspective vers l'Arc de Triomphe. Les illuminations de Noël, installées chaque année dans les arbres qui bordent l'avenue, attirent des foules considérables en fin d'année. Prévoyez des prix nettement plus élevés qu'ailleurs dans la ville pour la restauration sur place."
+    },
+    {
+      "id": "rue-du-faubourg-saint-honore",
+      "name": "Rue du Faubourg Saint-Honoré",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 48.8697,
+      "lng": 2.3167,
+      "teaser": "Adresse historique de la haute couture parisienne, entre boutiques de luxe et Palais de l'Élysée.",
+      "desc": "Depuis le XIXe siècle, la rue du Faubourg Saint-Honoré concentre certaines des maisons de couture et de luxe les plus prestigieuses de Paris, dans un cadre plus feutré et moins bondé que les Champs-Élysées voisins. Les vitrines soigneusement mises en scène des grandes maisons françaises et internationales en font une destination de choix pour le lèche-vitrines haut de gamme, même sans intention d'achat. La rue longe aussi le Palais de l'Élysée, résidence officielle du président de la République française, reconnaissable à sa garde républicaine postée devant les grilles, ce qui explique la présence discrète mais réelle de dispositifs de sécurité dans le secteur. L'atmosphère reste résolument élégante et calme, très différente de l'agitation touristique des grands boulevards. Quelques galeries d'art et antiquaires complètent l'offre commerciale le long de la rue, pour les amateurs d'objets anciens. C'est une promenade agréable pour qui souhaite observer le Paris chic sans nécessairement dépenser, en combinant la balade avec la proximité des Champs-Élysées et du jardin des Tuileries."
+    },
+    {
+      "id": "galeries-lafayette-haussmann",
+      "name": "Galeries Lafayette Haussmann",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 48.873,
+      "lng": 2.3319,
+      "teaser": "Grand magasin historique sous coupole Art nouveau, avec terrasse offrant une vue gratuite sur Paris.",
+      "desc": "Ouvertes au début du XXe siècle, les Galeries Lafayette du boulevard Haussmann comptent parmi les grands magasins les plus emblématiques de Paris, célèbres pour leur immense coupole de verre de style Art nouveau qui inonde de lumière naturelle l'ensemble des étages centraux. L'établissement rassemble des centaines de marques de mode, de la haute couture aux enseignes plus accessibles, sur plusieurs bâtiments reliés entre eux. Au-delà du shopping, le magasin attire aussi les visiteurs pour sa terrasse d'accès gratuit au dernier étage, qui offre une vue surprenante sur les toits parisiens, l'Opéra Garnier tout proche et, au loin, la tour Eiffel et le Sacré-Cœur. La période de Noël transforme le magasin en véritable spectacle, avec un sapin géant installé sous la coupole et des vitrines animées très prisées des familles. Le service de détaxe pour les visiteurs internationaux reste actif, sous conditions de montant d'achat. Un passage par la terrasse, même sans intention d'achat, mérite le détour pour la vue autant que pour l'architecture intérieure du magasin."
+    },
+    {
+      "id": "le-bon-marche",
+      "name": "Le Bon Marché",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 48.8512,
+      "lng": 2.3248,
+      "teaser": "Premier grand magasin du monde, fondé en 1852, aujourd'hui référence du chic discret rive gauche.",
+      "desc": "Fondé en 1852 par Aristide Boucicaut, le Bon Marché est considéré comme le tout premier grand magasin moderne au monde, ayant inventé nombre de concepts aujourd'hui universels dans le commerce, du prix fixe affiché à l'entrée libre sans obligation d'achat. Émile Zola s'en est directement inspiré pour son roman Au Bonheur des Dames, décrivant les bouleversements que ce nouveau type de commerce a apportés dans les habitudes des Parisiens du XIXe siècle. Situé rive gauche, dans un quartier plus résidentiel et moins touristique que les grands magasins des boulevards Haussmann, le Bon Marché cultive une image de chic discret, avec une sélection de marques plus pointue et une clientèle davantage locale. La Grande Épicerie attenante, référence gastronomique parisienne, complète l'expérience pour les amateurs de produits fins et de spécialités internationales rares. L'architecture intérieure, avec ses structures métalliques apparentes influencées par Gustave Eiffel, mérite également le coup d'œil. Une visite ici offre une expérience de shopping parisien plus authentique et moins bondée que sur les grandes artères touristiques."
+    },
+    {
+      "id": "rue-de-rivoli",
+      "name": "Rue de Rivoli",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 48.858,
+      "lng": 2.345,
+      "teaser": "Longue artère commerçante aux arcades régulières, reliant Concorde, Louvre et Marais sous les mêmes façades.",
+      "desc": "Percée sur ordre de Napoléon Ier au début du XIXe siècle, la rue de Rivoli s'étend sur près de trois kilomètres depuis la place de la Concorde jusqu'au Marais, bordée sur une bonne partie de son tracé par des arcades régulières abritant boutiques, cafés et enseignes de souvenirs. Cette architecture uniforme, imposée par décret impérial, en fait l'un des premiers exemples d'urbanisme planifié à grande échelle dans la capitale, bien avant les grands travaux haussmanniens. La section proche du Louvre concentre plutôt des boutiques touristiques et des enseignes internationales, tandis que le tronçon plus oriental, vers le Marais, devient progressivement plus local et varié, avec librairies indépendantes et petites échoppes. La rue longe aussi le jardin des Tuileries sur toute sa longueur ouest, ce qui en fait un axe pratique pour combiner shopping et promenade verte. Les arcades offrent un abri appréciable les jours de pluie, permettant de continuer à flâner sans se soucier de la météo, un avantage non négligeable dans une ville où les averses restent fréquentes."
+    },
+    {
+      "id": "tour-montparnasse",
+      "name": "Tour Montparnasse",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 48.8422,
+      "lng": 2.3219,
+      "teaser": "Unique gratte-ciel du centre de Paris, avec un observatoire au 56e étage offrant l'une des meilleures vues de la ville.",
+      "desc": "Achevée en 1973, la tour Montparnasse reste le seul véritable gratte-ciel du centre de Paris, sa construction ayant suscité une telle controverse esthétique qu'elle a conduit à l'interdiction de bâtiments de grande hauteur dans le centre historique pour les décennies suivantes. Ce statut d'exception en fait paradoxalement l'un des meilleurs points de vue de la ville, puisque c'est le seul depuis lequel on peut admirer Paris avec, en son centre, la tour Eiffel elle-même clairement visible, contrairement aux autres points de vue où elle est l'objet principal du panorama plutôt qu'un élément du paysage. L'observatoire du cinquante-sixième étage, entièrement vitré, et la terrasse à ciel ouvert du dernier niveau offrent une vue à trois cent soixante degrés sur l'ensemble de l'agglomération parisienne, jusqu'à la Défense d'un côté et Vincennes de l'autre par temps clair. L'ascenseur le plus rapide d'Europe permet de rejoindre le sommet en moins d'une minute. Contrairement aux files d'attente de la tour Eiffel, l'accès reste généralement rapide, ce qui en fait une alternative pratique pour les visiteurs pressés en quête d'un panorama complet sur la capitale."
+    },
+    {
+      "id": "grande-arche-de-la-defense",
+      "name": "Grande Arche de la Défense",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 48.8918,
+      "lng": 2.236,
+      "teaser": "Arche monumentale contemporaine, point final de l'axe historique parisien, avec panorama sur le quartier d'affaires.",
+      "desc": "Inaugurée en 1989 pour le bicentenaire de la Révolution française, la Grande Arche marque l'extrémité occidentale du grand axe historique qui traverse Paris depuis le Louvre en passant par les Tuileries, la Concorde et l'Arc de Triomphe. Ce cube monumental évidé, suffisamment vaste pour y loger la cathédrale Notre-Dame en son centre, symbolise à sa manière une porte ouverte sur le monde, en écho volontaire à l'arche napoléonienne dont elle prolonge la perspective à plusieurs kilomètres de distance. L'édifice se dresse au cœur du quartier d'affaires de la Défense, premier quartier d'affaires d'Europe continentale, entouré de tours modernes qui tranchent radicalement avec le Paris haussmannien du centre historique. Le toit de l'arche, accessible en ascenseur panoramique, offre une vue inhabituelle sur l'ensemble de l'axe historique parisien dans une seule direction et sur le quartier d'affaires dans l'autre, un contraste saisissant entre tradition et modernité. Le quartier environnant, très animé en semaine aux heures de bureau, devient nettement plus calme le week-end."
+    },
+    {
+      "id": "parc-de-belleville",
+      "name": "Parc de Belleville",
+      "cat": "panorama",
+      "interest": 3,
+      "lat": 48.8722,
+      "lng": 2.3833,
+      "teaser": "Petit parc en pente sur la colline de Belleville, offrant l'une des plus belles vues gratuites sur Paris.",
+      "desc": "Aménagé dans les années 1980 sur les pentes de la colline de Belleville, l'un des points culminants de Paris intra-muros, ce parc en escalier reste largement méconnu des visiteurs internationaux malgré une vue exceptionnelle sur la capitale, comparable à celle du Sacré-Cœur mais sans la foule qui l'accompagne. Depuis le belvédère aménagé au sommet, le regard porte sur l'ensemble du centre de Paris, avec la tour Eiffel bien visible à l'horizon par temps dégagé. Le quartier de Belleville, historiquement populaire et multiculturel, a longtemps accueilli des vagues successives d'immigration, ce qui se ressent encore aujourd'hui dans la diversité de ses commerces et de ses restaurants alentour. Le parc lui-même, avec ses terrasses successives, ses vignes et ses jeux pour enfants, reste avant tout fréquenté par les habitants du quartier plutôt que par les touristes, ce qui en fait une étape agréable pour observer un Paris plus authentique. L'accès gratuit et l'absence quasi totale de file d'attente en font une alternative reposante aux grands points de vue plus fréquentés de la capitale."
+    },
+    {
+      "id": "trocadero",
+      "name": "Parvis des Droits de l'Homme (Trocadéro)",
+      "cat": "panorama",
+      "interest": 4,
+      "lat": 48.8629,
+      "lng": 2.2878,
+      "teaser": "Esplanade du Palais de Chaillot offrant la vue la plus emblématique et photographiée sur la tour Eiffel.",
+      "desc": "Aménagée à l'emplacement d'un ancien palais construit pour l'Exposition universelle de 1878, l'esplanade du Trocadéro, officiellement nommée parvis des Droits de l'Homme, s'étend entre les deux ailes incurvées du Palais de Chaillot, construit lui pour l'exposition de 1937. Sa position en hauteur, juste en face de la tour Eiffel de l'autre côté de la Seine, en fait le point de vue le plus photographié de la capitale, en particulier au moment où la tour scintille chaque heure à la tombée de la nuit. Les fontaines du jardin du Trocadéro, en contrebas, complètent la composition avec leurs jeux d'eau qui remontent parfois jusqu'à plusieurs dizaines de mètres de hauteur en été. Le Palais de Chaillot abrite par ailleurs plusieurs musées, dont celui de l'Homme et celui de l'Architecture, moins fréquentés que l'esplanade elle-même. L'affluence y est considérable à toute heure, particulièrement au coucher du soleil : prévoyez de partager le lieu avec de nombreux photographes et vendeurs ambulants, et gardez un œil sur vos affaires dans la foule."
+    }
+  ]
+}
