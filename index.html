@@ -272,6 +272,16 @@
   .modal-card .li-tags{margin-bottom:8px;}
   .modal-card .audio-controls{margin-top:0;}
 
+  .segmented{
+    display:flex;background:var(--sand);border-radius:9px;padding:3px;margin:4px 0 6px;
+  }
+  .seg-btn{
+    flex:1 1 0;padding:8px 6px;border-radius:7px;
+    font-size:12.5px;font-weight:600;color:#8a8478;
+    transition:background .15s, color .15s;
+  }
+  .seg-btn.active{background:var(--white);color:var(--navy);box-shadow:0 1px 3px rgba(0,0,0,.15);}
+
   .city-list{margin:4px 0 14px;}
   .city-item{
     display:flex;align-items:center;gap:10px;
@@ -586,36 +596,63 @@
   });
 
   /* ---------------- Changer de ville ---------------- */
+  var cityListFilter = 'online'; // 'online' ou 'local'
+
   function renderCityList(){
     var listEl = document.getElementById('city-list');
     if(!listEl) return;
     listEl.innerHTML = '';
 
-    Object.keys(cityRegistry).forEach(function(slug){
-      var c = cityRegistry[slug];
-      var li = document.createElement('li');
-      li.className = 'city-item' + (slug === activeCitySlug ? ' active' : '');
-      li.innerHTML =
-        '<span class="city-name">' + c.city + '</span>' +
-        '<span class="city-count">' + c.pois.length + ' lieu' + (c.pois.length > 1 ? 'x' : '') + '</span>' +
-        (slug === activeCitySlug ? '<span class="city-check">✓</span>' : '');
-      li.addEventListener('click', function(){
-        if(slug !== activeCitySlug){ activateCity(slug); } else { closeModal(); }
+    if(cityListFilter === 'online'){
+      Object.keys(cityRegistry).forEach(function(slug){
+        var c = cityRegistry[slug];
+        if(!c.builtin) return;
+        var li = document.createElement('li');
+        li.className = 'city-item' + (slug === activeCitySlug ? ' active' : '');
+        li.innerHTML =
+          '<span class="city-name">' + c.city + '</span>' +
+          '<span class="city-count">' + c.pois.length + ' lieu' + (c.pois.length > 1 ? 'x' : '') + '</span>' +
+          (slug === activeCitySlug ? '<span class="city-check">✓</span>' : '');
+        li.addEventListener('click', function(){
+          if(slug !== activeCitySlug){ activateCity(slug); } else { closeModal(); }
+        });
+        listEl.appendChild(li);
       });
-      listEl.appendChild(li);
-    });
 
-    Object.keys(onlineManifest).forEach(function(slug){
-      if(cityRegistry[slug]) return; // déjà téléchargée, déjà listée ci-dessus
-      var entry = onlineManifest[slug];
-      var li = document.createElement('li');
-      li.className = 'city-item city-item-online';
-      li.innerHTML =
-        '<span class="city-name">' + entry.city + '</span>' +
-        '<span class="city-count">en ligne</span>';
-      li.addEventListener('click', function(){ fetchOnlineCity(slug); });
-      listEl.appendChild(li);
-    });
+      Object.keys(onlineManifest).forEach(function(slug){
+        if(cityRegistry[slug]) return; // déjà téléchargée, déjà listée ci-dessus
+        var entry = onlineManifest[slug];
+        var li = document.createElement('li');
+        li.className = 'city-item city-item-online';
+        li.innerHTML =
+          '<span class="city-name">' + entry.city + '</span>' +
+          '<span class="city-count">en ligne</span>';
+        li.addEventListener('click', function(){ fetchOnlineCity(slug); });
+        listEl.appendChild(li);
+      });
+
+      if(!listEl.children.length){
+        listEl.innerHTML = '<li class="empty-hint">Aucune ville en ligne pour le moment.</li>';
+      }
+    } else {
+      var localSlugs = Object.keys(cityRegistry).filter(function(slug){ return !cityRegistry[slug].builtin; });
+      if(!localSlugs.length){
+        listEl.innerHTML = '<li class="empty-hint">Aucune ville locale — charge un fichier JSON ci-dessous.</li>';
+      }
+      localSlugs.forEach(function(slug){
+        var c = cityRegistry[slug];
+        var li = document.createElement('li');
+        li.className = 'city-item' + (slug === activeCitySlug ? ' active' : '');
+        li.innerHTML =
+          '<span class="city-name">' + c.city + '</span>' +
+          '<span class="city-count">' + c.pois.length + ' lieu' + (c.pois.length > 1 ? 'x' : '') + '</span>' +
+          (slug === activeCitySlug ? '<span class="city-check">✓</span>' : '');
+        li.addEventListener('click', function(){
+          if(slug !== activeCitySlug){ activateCity(slug); } else { closeModal(); }
+        });
+        listEl.appendChild(li);
+      });
+    }
   }
 
   function fetchOnlineCity(slug){
@@ -655,6 +692,7 @@
       var slug = slugify(data.city);
       cityRegistry[slug] = data;
       persistCities();
+      cityListFilter = 'local';
       activateCity(slug);
       showToast(data.city + ' chargée (' + data.pois.length + ' lieux).');
     };
@@ -665,6 +703,10 @@
   function openCityPicker(){
     openModal(
       '<h2>Changer de ville</h2>' +
+      '<div class="segmented" id="city-filter-toggle">' +
+        '<button class="seg-btn' + (cityListFilter === 'online' ? ' active' : '') + '" data-filter="online">En ligne</button>' +
+        '<button class="seg-btn' + (cityListFilter === 'local' ? ' active' : '') + '" data-filter="local">Local storage</button>' +
+      '</div>' +
       '<ul id="city-list" class="city-list"></ul>' +
       '<label class="link-btn" for="json-file-input">📂 Charger un fichier JSON</label>' +
       '<input type="file" id="json-file-input" accept="application/json,.json" style="display:none;">' +
@@ -672,6 +714,15 @@
     );
     renderCityList();
     document.getElementById('json-file-input').addEventListener('change', handleCityFileInput);
+    Array.prototype.forEach.call(document.querySelectorAll('#city-filter-toggle .seg-btn'), function(btn){
+      btn.addEventListener('click', function(){
+        cityListFilter = btn.dataset.filter;
+        Array.prototype.forEach.call(document.querySelectorAll('#city-filter-toggle .seg-btn'), function(b){
+          b.classList.toggle('active', b === btn);
+        });
+        renderCityList();
+      });
+    });
   }
 
   document.getElementById('city-btn').addEventListener('click', openCityPicker);
