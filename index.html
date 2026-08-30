@@ -637,8 +637,8 @@
         if(cityRegistry[slug]) return; // déjà téléchargée, déjà listée ci-dessus
         var entry = onlineManifest[slug];
         var countLabel = (typeof entry.count === 'number')
-          ? entry.count + ' lieu' + (entry.count > 1 ? 'x' : '') + ' · en ligne'
-          : 'en ligne';
+          ? entry.count + ' lieu' + (entry.count > 1 ? 'x' : '')
+          : '';
         var li = document.createElement('li');
         li.className = 'city-item city-item-online';
         li.innerHTML =
