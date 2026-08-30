@@ -107,7 +107,7 @@
   }
   .legend-bar{
     width:70px;height:8px;border-radius:4px;flex:0 0 auto;
-    background:linear-gradient(90deg, hsl(0,68%,45%), hsl(40,68%,45%), hsl(85,60%,42%), hsl(130,68%,38%));
+    background:linear-gradient(90deg, #EBD6D4, #4A1218);
     box-shadow:0 1px 3px rgba(0,0,0,.4);
   }
 
@@ -381,7 +381,7 @@
   </header>
 
   <nav id="filters" aria-label="Filtrer par thème"></nav>
-  <div class="legend"><span class="legend-bar"></span><span>Rouge = moindre intérêt · vert = incontournable</span></div>
+  <div class="legend"><span class="legend-bar"></span><span>Clair = moindre intérêt · foncé = incontournable</span></div>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
@@ -389,7 +389,7 @@
     <button id="sheet-handle" class="sheet-handle" aria-expanded="false">
       <span class="handle-bar"></span>
       <span class="handle-label" id="handle-label">0 lieu visible</span>
-      <span class="handle-sub" id="handle-sub">Rouge → vert = intérêt croissant</span>
+      <span class="handle-sub" id="handle-sub">Clair → foncé = intérêt croissant</span>
     </button>
 
     <div class="sheet-body">
@@ -471,9 +471,12 @@
 
   function colorForInterest(interest){
     var t = (interestMax === interestMin) ? 1 : (interest - interestMin) / (interestMax - interestMin);
-    var hue = Math.round(130 * t); // 0 = rouge (moindre intérêt) ... 130 = vert (incontournable)
-    var light = 45 - Math.round(6 * t); // le vert foncé reste un peu plus sombre que le rouge, pour la lisibilité du glyphe blanc
-    return 'hsl('+hue+',68%,'+light+'%)';
+    var light = [235,214,212]; // #EBD6D4 — moindre intérêt
+    var dark  = [74,18,24];    // #4A1218 — incontournable
+    var r = Math.round(light[0] + (dark[0]-light[0])*t);
+    var g = Math.round(light[1] + (dark[1]-light[1])*t);
+    var b = Math.round(light[2] + (dark[2]-light[2])*t);
+    return 'rgb('+r+','+g+','+b+')';
   }
 
   /* ---------------- Map init ---------------- */
@@ -627,11 +630,14 @@
       Object.keys(onlineManifest).forEach(function(slug){
         if(cityRegistry[slug]) return; // déjà téléchargée, déjà listée ci-dessus
         var entry = onlineManifest[slug];
+        var countLabel = (typeof entry.count === 'number')
+          ? entry.count + ' lieu' + (entry.count > 1 ? 'x' : '') + ' · en ligne'
+          : 'en ligne';
         var li = document.createElement('li');
         li.className = 'city-item city-item-online';
         li.innerHTML =
           '<span class="city-name">' + entry.city + '</span>' +
-          '<span class="city-count">en ligne</span>';
+          '<span class="city-count">' + countLabel + '</span>';
         li.addEventListener('click', function(){ fetchOnlineCity(slug); });
         listEl.appendChild(li);
       });
@@ -705,6 +711,11 @@
     reader.readAsText(file);
   }
 
+  function updateLoadJsonVisibility(){
+    var box = document.getElementById('load-json-box');
+    if(box){ box.style.display = (cityListFilter === 'local') ? '' : 'none'; }
+  }
+
   function openCityPicker(){
     openModal(
       '<h2>Changer de ville</h2>' +
@@ -713,11 +724,14 @@
         '<button class="seg-btn' + (cityListFilter === 'local' ? ' active' : '') + '" data-filter="local">Local storage</button>' +
       '</div>' +
       '<ul id="city-list" class="city-list"></ul>' +
-      '<label class="link-btn" for="json-file-input">📂 Charger un fichier JSON</label>' +
-      '<input type="file" id="json-file-input" accept="application/json,.json" style="display:none;">' +
-      '<p class="modal-hint">Demande à Claude de générer le JSON d\'une nouvelle ville dans ce projet, puis charge-le ici.</p>'
+      '<div id="load-json-box">' +
+        '<label class="link-btn" for="json-file-input">📂 Charger un fichier JSON</label>' +
+        '<input type="file" id="json-file-input" accept="application/json,.json" style="display:none;">' +
+        '<p class="modal-hint">Demande à Claude de générer le JSON d\'une nouvelle ville dans ce projet, puis charge-le ici.</p>' +
+      '</div>'
     );
     renderCityList();
+    updateLoadJsonVisibility();
     document.getElementById('json-file-input').addEventListener('change', handleCityFileInput);
     Array.prototype.forEach.call(document.querySelectorAll('#city-filter-toggle .seg-btn'), function(btn){
       btn.addEventListener('click', function(){
@@ -726,6 +740,7 @@
           b.classList.toggle('active', b === btn);
         });
         renderCityList();
+        updateLoadJsonVisibility();
       });
     });
   }

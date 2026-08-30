@@ -1,6 +1,6 @@
 [
-  { "file": "hambourg.json", "city": "Hambourg" },
-  { "file": "lubeck.json", "city": "Lübeck" },
-  { "file": "montlucon.json", "city": "Montluçon" },
-  { "file": "paris.json", "city": "Paris" }
+  { "file": "hambourg.json", "city": "Hambourg", "count": 41 },
+  { "file": "lubeck.json", "city": "Lübeck", "count": 29 },
+  { "file": "montlucon.json", "city": "Montluçon", "count": 24 },
+  { "file": "paris.json", "city": "Paris", "count": 42 }
 ]
