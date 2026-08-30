@@ -1,12 +1,12 @@
-var CACHE_NAME = 'hamburg-poi-v4';
+var CACHE_NAME = 'hamburg-poi-v5';
+
+// Chemins calculés depuis la portée (scope) du service worker plutôt que
+// depuis la racine du domaine : indispensable quand l'app est servie sous
+// un sous-dossier (ex: GitHub Pages -> username.github.io/repo/).
+var BASE = self.registration.scope;
 var APP_SHELL = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/villes/hambourg.json'
-];
+  '', 'index.html', 'manifest.json', 'icon-192.png', 'icon-512.png', 'villes/hambourg.json'
+].map(function(p){ return BASE + p; });
 
 self.addEventListener('install', function(event){
   event.waitUntil(
@@ -26,7 +26,6 @@ self.addEventListener('activate', function(event){
 
 self.addEventListener('fetch', function(event){
   var url = event.request.url;
-  var sameOrigin = url.indexOf(self.location.origin) === 0;
 
   // Ne jamais mettre en cache les tuiles de carte en direct — respecte la politique
   // d'usage des tuiles d'OpenStreetMap (pas de mise en cache tierce prolongée).
@@ -35,13 +34,10 @@ self.addEventListener('fetch', function(event){
   }
 
   // Coquille de l'application : réseau d'abord (toujours la dernière version en ligne),
-  // cache uniquement en secours si hors-ligne. Comparaison exacte, uniquement pour les
-  // fichiers de l'app elle-même — pas de correspondance approximative qui capterait
+  // cache uniquement en secours si hors-ligne. Comparaison exacte contre la liste
+  // précalculée depuis le scope — pas de correspondance approximative qui capterait
   // aussi les appels vers des API externes (Overpass, etc.).
-  var isShell = sameOrigin && APP_SHELL.some(function(path){
-    return url === self.location.origin + path;
-  });
-  if(isShell){
+  if(APP_SHELL.indexOf(url) !== -1){
     event.respondWith(
       fetch(event.request).then(function(response){
         var copy = response.clone();

@@ -6,10 +6,10 @@
 <title>Hambourg — Guide POI</title>
 <meta name="description" content="Carte interactive des lieux incontournables de Hambourg, avec géolocalisation en temps réel et lecture audio des descriptions.">
 
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#16232F">
-<link rel="icon" href="/icon-192.png" type="image/png">
-<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -361,7 +361,12 @@
       </div>
     </div>
     <div class="top-actions">
-      <button id="settings-btn" aria-label="Réglages">⚙</button>
+      <button id="settings-btn" aria-label="Réglages">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      </button>
       <button id="locate-btn" aria-label="Afficher ma position en temps réel">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <line x1="12" y1="1" x2="12" y2="4"/>
@@ -659,7 +664,7 @@
     var entry = onlineManifest[slug];
     if(!entry) return;
     showToast('Téléchargement de ' + entry.city + '…');
-    fetch('/villes/' + entry.file).then(function(r){
+    fetch('villes/' + entry.file).then(function(r){
       if(!r.ok) throw new Error('http ' + r.status);
       return r.json();
     }).then(function(data){
@@ -784,7 +789,7 @@
   map.on('moveend', renderVisibleList);
 
   Promise.all([
-    fetch('/villes/hambourg.json').then(function(r){
+    fetch('villes/hambourg.json').then(function(r){
       if(!r.ok) throw new Error('http ' + r.status);
       return r.json();
     }).then(function(data){
@@ -793,7 +798,7 @@
     }).catch(function(){
       showToast('Impossible de charger les données de Hambourg — vérifie ta connexion.');
     }),
-    fetch('/villes/index.json').then(function(r){
+    fetch('villes/index.json').then(function(r){
       if(!r.ok) throw new Error('http ' + r.status);
       return r.json();
     }).then(function(list){
@@ -872,35 +877,6 @@
 
   /* ---------------- Réglages audio (popup centré) ---------------- */
   var settingsBtn = document.getElementById('settings-btn');
-  function renderLocalCitiesManager(){
-    var box = document.getElementById('local-cities-box');
-    if(!box) return;
-    var localSlugs = Object.keys(cityRegistry).filter(function(slug){ return !cityRegistry[slug].builtin; });
-    if(!localSlugs.length){
-      box.innerHTML = '<p class="modal-hint">Aucune ville locale chargée depuis un fichier JSON.</p>';
-      return;
-    }
-    var html = '<ul class="city-list">';
-    localSlugs.forEach(function(slug){
-      var c = cityRegistry[slug];
-      html += '<li class="city-item"><span class="city-name">' + c.city + '</span>' +
-        '<span class="city-count">' + c.pois.length + ' lieux</span>' +
-        '<button class="local-delete-btn" data-slug="' + slug + '" aria-label="Supprimer ' + c.city + '">🗑</button></li>';
-    });
-    html += '</ul>';
-    box.innerHTML = html;
-    Array.prototype.forEach.call(box.querySelectorAll('.local-delete-btn'), function(btn){
-      btn.addEventListener('click', function(){
-        var slug = btn.dataset.slug;
-        var name = cityRegistry[slug] ? cityRegistry[slug].city : slug;
-        delete cityRegistry[slug];
-        persistCities();
-        if(activeCitySlug === slug){ activateCity(cityRegistry.hambourg ? 'hambourg' : Object.keys(cityRegistry)[0]); }
-        showToast(name + ' supprimée.');
-        renderLocalCitiesManager();
-      });
-    });
-  }
 
   settingsBtn.addEventListener('click', function(){
     openModal(
@@ -915,14 +891,10 @@
           '<input type="range" id="pitch-slider" min="0.5" max="1.8" step="0.1" value="'+speechPitch+'">' +
         '</div>' +
       '</div>' +
-      '<h2 class="section-title">Mes villes locales</h2>' +
-      '<div id="local-cities-box"></div>' +
       '<p class="token-notice">Token expiré<br>' +
         '<a href="https://github.com/settings/personal-access-tokens/18895724" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/18895724</a>' +
       '</p>'
     );
-
-    renderLocalCitiesManager();
 
     var rateSlider = document.getElementById('rate-slider');
     var pitchSlider = document.getElementById('pitch-slider');
@@ -1116,7 +1088,7 @@
   /* ---------------- Service worker (offline app shell) ---------------- */
   if('serviceWorker' in navigator){
     window.addEventListener('load', function(){
-      navigator.serviceWorker.register('/sw.js').catch(function(){ /* pas grave si indisponible */ });
+      navigator.serviceWorker.register('sw.js').catch(function(){ /* pas grave si indisponible */ });
     });
   }
 
