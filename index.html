@@ -45,6 +45,24 @@
   ul{list-style:none;margin:0;padding:0;}
 
   #app{position:fixed;inset:0;overflow:hidden;}
+  #app-loading{
+    position:absolute;inset:0;z-index:3000;
+    background:var(--navy);
+    display:flex;align-items:center;justify-content:center;
+    transition:opacity .25s ease;
+  }
+  #app-loading.hidden{opacity:0;pointer-events:none;}
+  .app-loading-mark{
+    font-size:34px;color:var(--white);
+    animation:app-loading-pulse 1.3s ease-in-out infinite;
+  }
+  @keyframes app-loading-pulse{
+    0%, 100%{ opacity:.45; transform:scale(1); }
+    50%{ opacity:1; transform:scale(1.08); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .app-loading-mark{animation:none;}
+  }
   #map{position:absolute;inset:0;z-index:1;}
 
   /* ---------- Top bar ---------- */
@@ -102,20 +120,21 @@
   .chip .chip-glyph{font-size:13px;line-height:1;}
   .chip.active{background:var(--navy);color:var(--white);}
 
-  /* ---------- Legend ---------- */
-  .legend{
+  /* ---------- Route buttons ---------- */
+  #route-buttons{
     position:absolute;left:16px;right:16px;z-index:500;
     top:118px;
-    display:flex;align-items:center;gap:8px;
-    font-size:11px;color:var(--white);
-    text-shadow:0 1px 3px rgba(0,0,0,.6);
-    pointer-events:none;
+    display:flex;gap:8px;
   }
-  .legend-bar{
-    width:70px;height:8px;border-radius:4px;flex:0 0 auto;
-    background:linear-gradient(90deg, #C5B285, #1A150C);
-    box-shadow:0 1px 3px rgba(0,0,0,.4);
+  .route-btn{
+    flex:1 1 0;
+    padding:9px 4px;border-radius:999px;
+    background:rgba(255,255,255,.92);color:var(--ink);
+    font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;
+    box-shadow:0 2px 6px rgba(0,0,0,.18);
+    transition:background .15s, color .15s;
   }
+  .route-btn.active{background:var(--navy);color:var(--white);}
 
   /* ---------- Toast ---------- */
   .toast{
@@ -326,6 +345,15 @@
     .pin.blink{animation:none;}
   }
 
+  .route-stop{background:transparent;border:none;}
+  .route-stop-num{
+    display:flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;
+    background:var(--navy);color:var(--white);
+    font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;
+    border:2px solid var(--white);box-shadow:0 1px 4px rgba(0,0,0,.4);
+  }
+
   .user-marker{background:transparent;border:none;}
   .user-dot{
     position:relative;display:block;width:14px;height:14px;
@@ -358,6 +386,7 @@
 
 <div id="app">
   <div id="map"></div>
+  <div id="app-loading"><span class="app-loading-mark">⚓</span></div>
 
   <header id="topbar">
     <div class="left-group">
@@ -387,7 +416,13 @@
   </header>
 
   <nav id="filters" aria-label="Filtrer par thème"></nav>
-  <div class="legend"><span class="legend-bar"></span><span>Clair = moindre intérêt · foncé = incontournable</span></div>
+
+  <nav id="route-buttons" aria-label="Générer un parcours">
+    <button class="route-btn" data-minutes="60">1h</button>
+    <button class="route-btn" data-minutes="120">2h</button>
+    <button class="route-btn" data-minutes="180">3h</button>
+    <button class="route-btn" data-minutes="240">4h</button>
+  </nav>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
@@ -565,6 +600,7 @@
     if(typeof stopSpeech === 'function') stopSpeech();
     if(typeof stopBlink === 'function') stopBlink();
     if(typeof closeModal === 'function') closeModal();
+    if(typeof clearRoute === 'function') clearRoute();
 
     activeCitySlug = slug;
     try{ localStorage.setItem(ACTIVE_CITY_KEY, slug); } catch(e){}
@@ -585,6 +621,9 @@
       c.classList.toggle('active', c.dataset.cat === 'all');
     });
     applyFilter();
+
+    var loadingEl = document.getElementById('app-loading');
+    if(loadingEl){ loadingEl.classList.add('hidden'); }
   }
 
   /* ---------------- Modal (popup centré) ---------------- */
@@ -685,6 +724,12 @@
       activateCity(slug);
     }).catch(function(){
       showToast('Impossible de télécharger ' + entry.city + ' pour le moment.');
+      var loadingEl = document.getElementById('app-loading');
+      if(loadingEl && !loadingEl.classList.contains('hidden') && cityRegistry.hambourg){
+        activateCity('hambourg'); // repli si l'échec survient pendant l'amorçage initial
+      } else if(loadingEl){
+        loadingEl.classList.add('hidden');
+      }
     });
   }
 
@@ -842,6 +887,8 @@
       activateCity('hambourg');
     } else {
       showToast('Aucune ville disponible pour le moment.');
+      var loadingEl = document.getElementById('app-loading');
+      if(loadingEl){ loadingEl.classList.add('hidden'); }
     }
   });
 
@@ -1173,6 +1220,120 @@
     } else if(userMarker){
       map.flyTo(userMarker.getLatLng(), NEIGHBORHOOD_ZOOM, { duration:0.6 });
     }
+  });
+
+  /* ---------------- Parcours (1h / 2h / 3h / 4h) ---------------- */
+  var routeLayer = null;
+  var activeRouteMinutes = null;
+  var WALK_SPEED_M_PER_MIN = 80; // ~4.8 km/h, rythme touriste
+  var VISIT_MINUTES = 18;        // temps moyen passé sur place par lieu
+
+  function haversineMeters(a, b){
+    var R = 6371000;
+    var toRad = function(d){ return d * Math.PI / 180; };
+    var dLat = toRad(b.lat - a.lat);
+    var dLng = toRad(b.lng - a.lng);
+    var lat1 = toRad(a.lat), lat2 = toRad(b.lat);
+    var h = Math.sin(dLat/2)*Math.sin(dLat/2) + Math.cos(lat1)*Math.cos(lat2)*Math.sin(dLng/2)*Math.sin(dLng/2);
+    return R * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1-h));
+  }
+
+  // Priorité à l'intérêt : on essaie toujours le lieu le mieux noté restant en premier ;
+  // s'il ne rentre pas dans le temps restant, on tente le suivant, etc.
+  function planRoute(start, budgetMinutes){
+    var remaining = budgetMinutes;
+    var current = { lat:start.lat, lng:start.lng };
+    var candidates = pois.slice().sort(function(a,b){ return b.interest - a.interest; });
+    var used = {};
+    var route = [];
+
+    while(true){
+      var picked = null, pickedCost = 0;
+      for(var i=0;i<candidates.length;i++){
+        var poi = candidates[i];
+        if(used[poi.id]) continue;
+        var distM = haversineMeters(current, poi);
+        var cost = (distM / WALK_SPEED_M_PER_MIN) + VISIT_MINUTES;
+        if(cost <= remaining){ picked = poi; pickedCost = cost; break; }
+      }
+      if(!picked) break;
+      route.push(picked);
+      used[picked.id] = true;
+      remaining -= pickedCost;
+      current = { lat: picked.lat, lng: picked.lng };
+    }
+    return route;
+  }
+
+  function clearRoute(){
+    if(routeLayer){ map.removeLayer(routeLayer); routeLayer = null; }
+    activeRouteMinutes = null;
+    Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(b){
+      b.classList.remove('active');
+    });
+  }
+
+  function drawRoute(start, route){
+    clearRoute();
+    if(!route.length) return;
+    routeLayer = L.layerGroup().addTo(map);
+
+    var latlngs = [[start.lat, start.lng]];
+    route.forEach(function(poi){ latlngs.push([poi.lat, poi.lng]); });
+
+    L.polyline(latlngs, {
+      color:'#16232F', weight:4, opacity:.85, dashArray:'1,10', lineCap:'round'
+    }).addTo(routeLayer);
+
+    route.forEach(function(poi, idx){
+      var icon = L.divIcon({
+        className:'route-stop',
+        html:'<span class="route-stop-num">'+(idx+1)+'</span>',
+        iconSize:[26,26], iconAnchor:[13,13]
+      });
+      var m = L.marker([poi.lat, poi.lng], { icon:icon, zIndexOffset:900 }).addTo(routeLayer);
+      m.on('click', function(){ openDetail(poi.id); });
+    });
+
+    map.fitBounds(L.latLngBounds(latlngs), { padding:[50,90] });
+  }
+
+  function getUserPositionForRoute(callback){
+    if(userMarker){ callback(userMarker.getLatLng()); return; }
+    if(!('geolocation' in navigator)){
+      showToast('Géolocalisation non disponible sur ce navigateur.');
+      return;
+    }
+    showToast('Localisation en cours…');
+    navigator.geolocation.getCurrentPosition(function(pos){
+      var latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+      if(watchId === null){ startTracking(); } // suivi en direct pour le reste du parcours
+      callback(latlng);
+    }, onPositionError, { enableHighAccuracy:true, timeout:15000, maximumAge:5000 });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(btn){
+    btn.addEventListener('click', function(){
+      var minutes = parseInt(btn.dataset.minutes, 10);
+      if(activeRouteMinutes === minutes){ clearRoute(); return; }
+
+      getUserPositionForRoute(function(start){
+        var route = planRoute(start, minutes);
+        if(!route.length){
+          showToast('Aucun lieu ne rentre dans ce créneau depuis ta position.');
+          return;
+        }
+        drawRoute(start, route);
+        activeRouteMinutes = minutes;
+        Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(b){
+          b.classList.toggle('active', b === btn);
+        });
+
+        var totalKm = 0, prev = start;
+        route.forEach(function(poi){ totalKm += haversineMeters(prev, poi) / 1000; prev = poi; });
+        showToast('Parcours ' + (minutes/60) + 'h : ' + route.length + ' lieu' + (route.length > 1 ? 'x' : '') + ', environ ' + totalKm.toFixed(1) + ' km à pied.');
+      });
+    });
   });
 
   /* ---------------- Service worker (offline app shell) ---------------- */
