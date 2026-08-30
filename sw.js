@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hamburg-poi-v6';
+var CACHE_NAME = 'hamburg-poi-v7';
 
 // Chemins calculés depuis la portée (scope) du service worker plutôt que
 // depuis la racine du domaine : indispensable quand l'app est servie sous
@@ -29,7 +29,7 @@ self.addEventListener('fetch', function(event){
 
   // Ne jamais mettre en cache les tuiles de carte en direct — respecte la politique
   // d'usage des tuiles d'OpenStreetMap (pas de mise en cache tierce prolongée).
-  if(url.indexOf('basemaps.cartocdn.com') !== -1 || url.indexOf('tile.openstreetmap.org') !== -1){
+  if(url.indexOf('tile.openstreetmap.org') !== -1){
     return;
   }
 
