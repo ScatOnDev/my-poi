@@ -107,7 +107,7 @@
   }
   .legend-bar{
     width:70px;height:8px;border-radius:4px;flex:0 0 auto;
-    background:linear-gradient(90deg, #EBD6D4, #4A1218);
+    background:linear-gradient(90deg, #C5B285, #1A150C);
     box-shadow:0 1px 3px rgba(0,0,0,.4);
   }
 
@@ -471,8 +471,8 @@
 
   function colorForInterest(interest){
     var t = (interestMax === interestMin) ? 1 : (interest - interestMin) / (interestMax - interestMin);
-    var light = [235,214,212]; // #EBD6D4 — moindre intérêt
-    var dark  = [74,18,24];    // #4A1218 — incontournable
+    var light = [197,178,133]; // #C5B285 — moutarde visible (ancien niveau 3, pas trop pâle)
+    var dark  = [26,21,12];    // #1A150C — quasi noir
     var r = Math.round(light[0] + (dark[0]-light[0])*t);
     var g = Math.round(light[1] + (dark[1]-light[1])*t);
     var b = Math.round(light[2] + (dark[2]-light[2])*t);
