@@ -1,7 +1,7 @@
 {
-  "name": "Hambourg — Guide POI",
-  "short_name": "Hambourg POI",
-  "description": "Carte interactive des lieux incontournables de Hambourg, avec géolocalisation en temps réel et lecture audio des descriptions.",
+  "name": "Mon Guide Touristique",
+  "short_name": "Mon Guide",
+  "description": "Carte interactive des lieux incontournables, avec géolocalisation en temps réel et lecture audio des descriptions.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
