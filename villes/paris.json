@@ -1,6 +1,9 @@
 {
   "city": "Paris",
-  "center": { "lat": 48.8566, "lng": 2.3522 },
+  "center": {
+    "lat": 48.8566,
+    "lng": 2.3522
+  },
   "zoom": 12,
   "pois": [
     {
@@ -423,5 +426,6 @@
       "teaser": "Esplanade du Palais de Chaillot offrant la vue la plus emblématique et photographiée sur la tour Eiffel.",
       "desc": "Aménagée à l'emplacement d'un ancien palais construit pour l'Exposition universelle de 1878, l'esplanade du Trocadéro, officiellement nommée parvis des Droits de l'Homme, s'étend entre les deux ailes incurvées du Palais de Chaillot, construit lui pour l'exposition de 1937. Sa position en hauteur, juste en face de la tour Eiffel de l'autre côté de la Seine, en fait le point de vue le plus photographié de la capitale, en particulier au moment où la tour scintille chaque heure à la tombée de la nuit. Les fontaines du jardin du Trocadéro, en contrebas, complètent la composition avec leurs jeux d'eau qui remontent parfois jusqu'à plusieurs dizaines de mètres de hauteur en été. Le Palais de Chaillot abrite par ailleurs plusieurs musées, dont celui de l'Homme et celui de l'Architecture, moins fréquentés que l'esplanade elle-même. L'affluence y est considérable à toute heure, particulièrement au coucher du soleil : prévoyez de partager le lieu avec de nombreux photographes et vendeurs ambulants, et gardez un œil sur vos affaires dans la foule."
     }
-  ]
+  ],
+  "timezone": "Europe/Paris"
 }
