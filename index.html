@@ -186,18 +186,27 @@
     z-index:950;
     background:var(--white);border-radius:12px;
     padding:12px 14px;box-shadow:0 6px 20px rgba(0,0,0,.3);
-    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    display:flex;flex-direction:column;align-items:center;gap:10px;
     transition:opacity .2s, transform .2s;
   }
   .start-point-bar.hidden{opacity:0;pointer-events:none;transform:translateY(8px);}
-  .start-point-bar span{flex:1 1 100%;font-size:13px;color:var(--ink);font-weight:500;}
-  .start-point-actions{display:flex;gap:8px;flex:1 1 100%;}
+  .start-point-bar span{font-size:13px;color:var(--ink);font-weight:500;text-align:center;}
+  .start-point-actions{display:flex;gap:8px;justify-content:center;}
   .start-point-actions button{
-    flex:1 1 0;padding:8px;border-radius:8px;
+    flex:0 0 auto;min-width:96px;padding:8px 20px;border-radius:8px;
     font-size:12.5px;font-weight:600;
   }
   #start-point-confirm{background:var(--navy);color:var(--white);}
   #start-point-cancel{background:var(--sand);color:var(--ink);}
+
+  /* ---------- Center flag (mode positionnement par déplacement de carte) ---------- */
+  .center-flag{
+    position:absolute;left:50%;top:50%;z-index:1100;
+    transform:translate(-50%,-100%);
+    pointer-events:none;font-size:30px;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.5));
+  }
+  .center-flag.hidden{display:none;}
 
   /* ---------- Bottom sheet ---------- */
   .sheet{
@@ -488,6 +497,8 @@
   </div>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <div id="center-flag" class="center-flag hidden"><span>🚩</span></div>
 
   <div id="start-point-bar" class="start-point-bar hidden">
     <span id="start-point-text">Partir d'ici pour ton parcours ?</span>
@@ -1298,13 +1309,14 @@
 
   /* ---------------- Point de départ fictif (appui long sur la carte) ---------------- */
   var fictionalStart = null;       // {lat,lng} actif une fois confirmé
-  var fictionalStartMarker = null; // le drapeau sur la carte
-  var pendingFlagLatLng = null;    // position du drapeau tant que non confirmé/annulé
+  var fictionalStartMarker = null; // drapeau posé sur la carte une fois confirmé
+  var positioningActive = false;   // mode "on déplace la carte sous le drapeau fixe"
 
   var startPointBar = document.getElementById('start-point-bar');
   var startPointText = document.getElementById('start-point-text');
   var startPointConfirmBtn = document.getElementById('start-point-confirm');
   var startPointCancelBtn = document.getElementById('start-point-cancel');
+  var centerFlagEl = document.getElementById('center-flag');
 
   function showStartPointBar(text, confirmLabel){
     startPointText.textContent = text;
@@ -1315,46 +1327,54 @@
     startPointBar.classList.add('hidden');
   }
 
+  // Appui long : centre la carte sur le point touché, puis affiche un drapeau fixe
+  // au centre de l'écran — l'utilisateur affine la position en déplaçant la carte
+  // en dessous (comme un dépose-épingle classique), plutôt qu'en glissant le drapeau.
   function placeFlag(latlng){
-    if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); }
+    if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); fictionalStartMarker = null; }
+    map.panTo(latlng, { animate:true, duration:0.35 });
+    positioningActive = true;
+    centerFlagEl.classList.remove('hidden');
+
+    showStartPointBar("Déplace la carte pour ajuster, puis confirme", 'Confirmer');
+    startPointConfirmBtn.onclick = confirmPositioning;
+    startPointCancelBtn.onclick = cancelPositioning;
+  }
+
+  function confirmPositioning(){
+    var center = map.getCenter();
+    fictionalStart = { lat: center.lat, lng: center.lng };
+    positioningActive = false;
+    centerFlagEl.classList.add('hidden');
+    hideStartPointBar();
+    dropConfirmedFlag(fictionalStart);
+    showToast('Point de départ défini — les parcours partiront d\'ici.');
+  }
+
+  function cancelPositioning(){
+    positioningActive = false;
+    centerFlagEl.classList.add('hidden');
+    hideStartPointBar();
+  }
+
+  function dropConfirmedFlag(latlng){
     var icon = L.divIcon({
       className:'start-flag-marker',
       html:'<span class="start-flag">🚩</span>',
       iconSize:[30,30], iconAnchor:[6,28]
     });
-    fictionalStartMarker = L.marker(latlng, { icon:icon, draggable:true, zIndexOffset:1200 }).addTo(map);
-    pendingFlagLatLng = latlng;
-
-    fictionalStartMarker.on('drag', function(e){ pendingFlagLatLng = e.target.getLatLng(); });
-
+    fictionalStartMarker = L.marker(latlng, { icon:icon, zIndexOffset:1200 }).addTo(map);
     fictionalStartMarker.on('click', function(){
-      if(fictionalStart){
-        // déjà confirmé : un tap dessus propose de le retirer
-        showStartPointBar('Retirer ce point de départ ?', 'Retirer');
-        startPointConfirmBtn.onclick = function(){
-          clearFictionalStart();
-          hideStartPointBar();
-        };
-        startPointCancelBtn.onclick = hideStartPointBar;
-      }
+      showStartPointBar('Retirer ce point de départ ?', 'Retirer');
+      startPointConfirmBtn.onclick = function(){ clearFictionalStart(); hideStartPointBar(); };
+      startPointCancelBtn.onclick = hideStartPointBar;
     });
-
-    showStartPointBar("Partir d'ici pour ton parcours ?", 'Confirmer');
-    startPointConfirmBtn.onclick = function(){
-      fictionalStart = { lat: pendingFlagLatLng.lat, lng: pendingFlagLatLng.lng };
-      hideStartPointBar();
-      showToast('Point de départ défini — les parcours partiront d\'ici.');
-    };
-    startPointCancelBtn.onclick = function(){
-      hideStartPointBar();
-      if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); fictionalStartMarker = null; }
-      pendingFlagLatLng = null;
-    };
   }
 
   function clearFictionalStart(){
     fictionalStart = null;
-    pendingFlagLatLng = null;
+    positioningActive = false;
+    centerFlagEl.classList.add('hidden');
     if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); fictionalStartMarker = null; }
     hideStartPointBar();
   }
