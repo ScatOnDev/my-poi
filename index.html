@@ -122,8 +122,9 @@
 
   /* ---------- Route slider ---------- */
   #route-slider-wrap{
-    position:absolute;left:16px;right:16px;z-index:500;
+    position:absolute;left:50%;width:50%;min-width:220px;z-index:500;
     top:118px;
+    transform:translateX(-50%);
     background:rgba(255,255,255,.94);
     border-radius:14px;
     padding:10px 14px 8px;
@@ -151,8 +152,8 @@
   }
   #route-slider::-moz-range-track{background:transparent;}
   .route-walker{
-    position:absolute;top:50%;transform:translate(-50%,-50%);
-    font-size:22px;pointer-events:none;
+    position:absolute;top:50%;transform:translate(-50%,-50%) scaleX(-1);
+    font-size:32px;pointer-events:none;
     filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));
   }
   .route-slider-label-row{
@@ -1358,37 +1359,56 @@
     hideStartPointBar();
   }
 
-  // Détection d'appui long (pas d'événement natif équivalent sur Leaflet) :
-  // on déclenche après un délai si le doigt/curseur n'a pas bougé ni relâché entre-temps.
+  // Détection d'appui long : Leaflet ne relaie pas fiablement les événements tactiles
+  // vers map.on('mousedown'), donc on écoute directement le DOM du conteneur de carte,
+  // en gérant explicitement tactile ET souris.
   var LONG_PRESS_MS = 550;
   var LONG_PRESS_TOLERANCE_PX = 12;
-  var longPressTimer = null;
 
-  map.on('mousedown', function(e){
-    var startPoint = map.latLngToContainerPoint(e.latlng);
-    longPressTimer = setTimeout(function(){
-      longPressTimer = null;
-      cleanupLongPressListeners();
-      placeFlag(e.latlng);
-    }, LONG_PRESS_MS);
+  function eventToLatLng(e){
+    var pt = (e.touches && e.touches.length) ? e.touches[0] : e;
+    return map.mouseEventToLatLng(pt);
+  }
 
-    function onMove(ev){
-      var p = map.latLngToContainerPoint(ev.latlng);
-      if(p.distanceTo(startPoint) > LONG_PRESS_TOLERANCE_PX){ cancelLongPress(); }
+  (function setupLongPress(){
+    var mapContainer = map.getContainer();
+    var timer = null;
+    var startPoint = null;
+
+    function onMove(e){
+      if(!startPoint) return;
+      var p = map.latLngToContainerPoint(eventToLatLng(e));
+      if(p.distanceTo(startPoint) > LONG_PRESS_TOLERANCE_PX){ onEnd(); }
     }
-    function cancelLongPress(){
-      if(longPressTimer){ clearTimeout(longPressTimer); longPressTimer = null; }
-      cleanupLongPressListeners();
+    function onEnd(){
+      if(timer){ clearTimeout(timer); timer = null; }
+      startPoint = null;
+      document.removeEventListener('touchmove', onMove);
+      document.removeEventListener('mousemove', onMove);
+      document.removeEventListener('touchend', onEnd);
+      document.removeEventListener('touchcancel', onEnd);
+      document.removeEventListener('mouseup', onEnd);
     }
-    function cleanupLongPressListeners(){
-      map.off('mousemove', onMove);
-      map.off('mouseup', cancelLongPress);
-      map.off('dragstart', cancelLongPress);
+    function onStart(e){
+      if(e.touches && e.touches.length > 1) return; // laisser le pincer-zoomer tranquille
+      var latlng = eventToLatLng(e);
+      startPoint = map.latLngToContainerPoint(latlng);
+      timer = setTimeout(function(){
+        timer = null;
+        onEnd();
+        placeFlag(latlng);
+      }, LONG_PRESS_MS);
+      document.addEventListener('touchmove', onMove, { passive:true });
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('touchend', onEnd);
+      document.addEventListener('touchcancel', onEnd);
+      document.addEventListener('mouseup', onEnd);
     }
-    map.on('mousemove', onMove);
-    map.on('mouseup', cancelLongPress);
-    map.on('dragstart', cancelLongPress);
-  });
+
+    mapContainer.addEventListener('touchstart', onStart, { passive:true });
+    mapContainer.addEventListener('mousedown', onStart);
+  })();
+
   map.on('contextmenu', function(e){ e.originalEvent.preventDefault(); });
 
   /* ---------------- Parcours (1h / 2h / 3h / 4h) ---------------- */
