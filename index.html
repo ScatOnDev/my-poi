@@ -249,12 +249,21 @@
     border-bottom:1px solid var(--sand-deep);
     cursor:pointer;
   }
+  .thumb-slot{
+    flex:0 0 auto;width:44px;height:44px;
+    display:flex;align-items:center;justify-content:center;
+    margin-top:2px;
+  }
   #poi-list li .pin-mini{
     flex:0 0 auto;width:30px;height:30px;border-radius:50% 50% 50% 0;
     transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;
-    margin-top:2px;box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
+    box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
   }
   #poi-list li .pin-mini span{transform:rotate(45deg);font-size:13px;}
+  .poi-thumb{
+    width:44px;height:44px;border-radius:10px;object-fit:cover;
+    box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
+  }
   #poi-list li .li-text h3{margin:2px 0 3px;font-size:15.5px;font-weight:600;letter-spacing:.01em;}
   #poi-list li .li-text p{margin:0;font-size:12.5px;line-height:1.4;color:#4a4640;}
   #poi-list li .li-tags{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px;}
@@ -889,6 +898,40 @@
   /* ---------------- List (uniquement les lieux visibles à l'écran) ---------------- */
   var listEl = document.getElementById('poi-list');
 
+  // Miniatures via l'API publique Wikipedia (thumbnail officiel de l'article, si disponible) —
+  // simple lien direct vers l'image hébergée par Wikimedia, jamais téléchargée ni redistribuée.
+  // Dégradation silencieuse vers le badge coloré si rien n'est trouvé.
+  var thumbnailCache = {}; // poi.id -> URL (string) | null (déjà tenté, sans résultat)
+
+  function applyThumbnail(poiId, url){
+    if(!url) return;
+    var slots = document.querySelectorAll('.thumb-slot[data-poi-id="' + poiId + '"]');
+    Array.prototype.forEach.call(slots, function(slot){
+      slot.innerHTML = '<img class="poi-thumb" src="' + url + '" alt="" loading="lazy">';
+    });
+  }
+
+  function fetchWikiThumbnail(poi){
+    if(poi.id in thumbnailCache){ applyThumbnail(poi.id, thumbnailCache[poi.id]); return; }
+    thumbnailCache[poi.id] = null; // évite les requêtes en double pendant le chargement
+    var title = encodeURIComponent(poi.name);
+
+    function tryLang(lang, isRetry){
+      fetch('https://' + lang + '.wikipedia.org/api/rest_v1/page/summary/' + title)
+        .then(function(r){ if(!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(function(data){
+          var url = (data.thumbnail && data.thumbnail.source) ? data.thumbnail.source : null;
+          if(!url && !isRetry){ tryLang('en', true); return; }
+          thumbnailCache[poi.id] = url;
+          applyThumbnail(poi.id, url);
+        })
+        .catch(function(){
+          if(!isRetry){ tryLang('en', true); }
+        });
+    }
+    tryLang('fr', false);
+  }
+
   function renderVisibleList(){
     var bounds = map.getBounds();
     var visiblePois = pois.filter(function(p){
@@ -904,7 +947,7 @@
         var green = colorForInterest(poi.interest);
         var li = document.createElement('li');
         li.innerHTML =
-          '<span class="pin-mini" style="background:'+green+'"><span>'+meta.glyph+'</span></span>' +
+          '<span class="thumb-slot" data-poi-id="'+poi.id+'"><span class="pin-mini" style="background:'+green+'"><span>'+meta.glyph+'</span></span></span>' +
           '<span class="li-text">' +
             '<span class="li-tags">' +
               '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
@@ -915,6 +958,7 @@
           '</span>';
         li.addEventListener('click', function(){ openDetail(poi.id); });
         listEl.appendChild(li);
+        fetchWikiThumbnail(poi);
       });
     }
 
@@ -1273,6 +1317,15 @@
     locateBtn.classList.remove('active');
   }
 
+  var GEOLOCATION_CITY_RADIUS_KM = 40; // au-delà, on considère que la position réelle n'a rien à voir avec la ville affichée
+
+  function isNearActiveCity(latlng){
+    var data = cityRegistry[activeCitySlug];
+    if(!data || !data.center) return true; // par prudence, ne bloque rien si l'info manque
+    var distKm = haversineMeters(latlng, data.center) / 1000;
+    return distKm <= GEOLOCATION_CITY_RADIUS_KM;
+  }
+
   function onPosition(pos){
     var lat = pos.coords.latitude, lng = pos.coords.longitude;
     if(!userMarker){
@@ -1281,7 +1334,12 @@
       userMarker.setLatLng([lat,lng]);
     }
     if(firstFix){
-      map.flyTo([lat,lng], NEIGHBORHOOD_ZOOM, { duration:0.7 });
+      if(isNearActiveCity({lat:lat, lng:lng})){
+        map.flyTo([lat,lng], NEIGHBORHOOD_ZOOM, { duration:0.7 });
+      } else {
+        var cityName = cityRegistry[activeCitySlug] ? cityRegistry[activeCitySlug].city : 'cette ville';
+        showToast('Ta position réelle est loin de ' + cityName + ' — la carte ne bouge pas. Appui long pour choisir un point de départ ici.');
+      }
       firstFix = false;
     }
   }
@@ -1299,15 +1357,22 @@
     stopTracking();
   }
 
-  // Chaque appui recentre et zoome au niveau quartier. Le premier appui démarre
-  // aussi le suivi en direct (point bleu), qui reste actif en arrière-plan.
+  // Chaque appui recentre et zoome au niveau quartier — uniquement si cette position
+  // est bien dans la zone de la ville affichée. Le premier appui démarre aussi le
+  // suivi en direct (point bleu), qui reste actif en arrière-plan.
   // Un tap ici abandonne aussi un éventuel point de départ fictif au profit de la vraie position.
   locateBtn.addEventListener('click', function(){
     clearFictionalStart();
     if(watchId === null){
       startTracking();
     } else if(userMarker){
-      map.flyTo(userMarker.getLatLng(), NEIGHBORHOOD_ZOOM, { duration:0.6 });
+      var latlng = userMarker.getLatLng();
+      if(isNearActiveCity(latlng)){
+        map.flyTo(latlng, NEIGHBORHOOD_ZOOM, { duration:0.6 });
+      } else {
+        var cityName = cityRegistry[activeCitySlug] ? cityRegistry[activeCitySlug].city : 'cette ville';
+        showToast('Ta position réelle est loin de ' + cityName + ' — la carte ne bouge pas.');
+      }
     }
   });
 
@@ -1542,7 +1607,17 @@
 
   function getUserPositionForRoute(callback){
     if(fictionalStart){ callback(L.latLng(fictionalStart.lat, fictionalStart.lng)); return; }
-    if(userMarker){ callback(userMarker.getLatLng()); return; }
+
+    function useIfNearCity(latlng){
+      if(!isNearActiveCity(latlng)){
+        var cityName = cityRegistry[activeCitySlug] ? cityRegistry[activeCitySlug].city : 'cette ville';
+        showToast('Ta position GPS est loin de ' + cityName + ' — fais un appui long sur la carte pour choisir un point de départ ici.');
+        return;
+      }
+      callback(latlng);
+    }
+
+    if(userMarker){ useIfNearCity(userMarker.getLatLng()); return; }
     if(!('geolocation' in navigator)){
       showToast('Géolocalisation non disponible — fais un appui long sur la carte pour choisir un point de départ.');
       return;
@@ -1551,7 +1626,7 @@
     navigator.geolocation.getCurrentPosition(function(pos){
       var latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
       if(watchId === null){ startTracking(); } // suivi en direct pour le reste du parcours
-      callback(latlng);
+      useIfNearCity(latlng);
     }, onPositionError, { enableHighAccuracy:true, timeout:15000, maximumAge:5000 });
   }
 
