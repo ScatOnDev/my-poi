@@ -286,20 +286,17 @@
     font-size:10.5px;font-weight:600;
     letter-spacing:.04em;
   }
-  .detail-header{
-    display:flex;align-items:center;gap:12px;
-    margin:2px 34px 16px 0;
-  }
+  .detail-header-tags{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:2px 56px 14px 0;}
   .listen-btn-round{
-    flex:0 0 auto;width:46px;height:46px;border-radius:50%;
+    position:absolute;top:10px;right:10px;
+    width:44px;height:44px;border-radius:50%;
     background:var(--navy);color:var(--white);
     display:flex;align-items:center;justify-content:center;
     font-size:16px;
-    box-shadow:0 2px 6px rgba(0,0,0,.2);
+    box-shadow:0 2px 6px rgba(0,0,0,.25);
     transition:background .15s;
   }
   .listen-btn-round.active{background:#0B3D1F;}
-  .detail-header-tags{display:flex;flex-direction:column;gap:6px;}
 
   .audio-controls{
     display:flex;gap:16px;
@@ -367,7 +364,8 @@
     display:flex;align-items:center;justify-content:center;
     font-size:15px;line-height:1;
   }
-  .modal-card h2{font-size:21px;margin:4px 30px 8px 0;letter-spacing:.01em;}
+  .modal-card.no-close-x .modal-close{display:none;}
+  .modal-card h2{font-size:21px;margin:4px 40px 8px 0;letter-spacing:.01em;}
   .modal-card h2.section-title{font-size:16px;margin:22px 0 8px;padding-top:16px;border-top:1px solid var(--sand-deep);}
   .city-item-online .city-count{color:#5B4B8A;font-weight:600;}
   .local-delete-btn{font-size:16px;padding:4px 6px;margin-left:6px;}
@@ -735,6 +733,7 @@
 
   function openModal(html){
     modalContent.innerHTML = html;
+    document.querySelector('.modal-card').classList.remove('no-close-x');
     modalOverlay.classList.remove('hidden');
   }
   function closeModal(){
@@ -1064,12 +1063,10 @@
     collapseSheet();
 
     openModal(
-      '<div class="detail-header">' +
-        '<button class="listen-btn-round" id="listen-btn" aria-label="Écouter la description à voix haute">▶</button>' +
-        '<div class="detail-header-tags">' +
-          '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
-          '<span class="interest-tag" style="color:'+green+'">'+interestLabel(poi.interest)+'</span>' +
-        '</div>' +
+      '<button class="listen-btn-round" id="listen-btn" aria-label="Écouter la description à voix haute">▶</button>' +
+      '<div class="detail-header-tags">' +
+        '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
+        '<span class="interest-tag" style="color:'+green+'">'+interestLabel(poi.interest)+'</span>' +
       '</div>' +
       '<h2>'+poi.name+'</h2>' +
       '<span class="thumb-slot detail-thumb" data-poi-id="'+poi.id+'"></span>' +
@@ -1081,6 +1078,7 @@
       '<p class="coords">'+poi.lat.toFixed(4)+'° N, '+poi.lng.toFixed(4)+'° E</p>'
     );
 
+    document.querySelector('.modal-card').classList.add('no-close-x');
     fetchWikiThumbnail(poi);
 
     var listenBtn = document.getElementById('listen-btn');
