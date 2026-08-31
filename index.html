@@ -286,16 +286,20 @@
     font-size:10.5px;font-weight:600;
     letter-spacing:.04em;
   }
-  .listen-btn{
-    display:inline-flex;align-items:center;gap:5px;
-    padding:4px 12px;border-radius:999px;
+  .detail-header{
+    display:flex;align-items:center;gap:12px;
+    margin:2px 34px 16px 0;
+  }
+  .listen-btn-round{
+    flex:0 0 auto;width:46px;height:46px;border-radius:50%;
     background:var(--navy);color:var(--white);
-    font-size:11.5px;font-weight:600;letter-spacing:.03em;
-    margin-left:auto;
+    display:flex;align-items:center;justify-content:center;
+    font-size:16px;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
     transition:background .15s;
   }
-  .listen-btn.active{background:#0B3D1F;}
-  .listen-btn .icon{font-size:11px;}
+  .listen-btn-round.active{background:#0B3D1F;}
+  .detail-header-tags{display:flex;flex-direction:column;gap:6px;}
 
   .audio-controls{
     display:flex;gap:16px;
@@ -1060,11 +1064,13 @@
     collapseSheet();
 
     openModal(
-      '<span class="li-tags">' +
-        '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
-        '<span class="interest-tag" style="color:'+green+'">'+interestLabel(poi.interest)+'</span>' +
-        '<button class="listen-btn" id="listen-btn" aria-label="Écouter la description à voix haute"><span class="icon">▶</span><span class="listen-label">Écouter</span></button>' +
-      '</span>' +
+      '<div class="detail-header">' +
+        '<button class="listen-btn-round" id="listen-btn" aria-label="Écouter la description à voix haute">▶</button>' +
+        '<div class="detail-header-tags">' +
+          '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
+          '<span class="interest-tag" style="color:'+green+'">'+interestLabel(poi.interest)+'</span>' +
+        '</div>' +
+      '</div>' +
       '<h2>'+poi.name+'</h2>' +
       '<span class="thumb-slot detail-thumb" data-poi-id="'+poi.id+'"></span>' +
       '<p class="desc">'+poi.desc+'</p>' +
@@ -1141,8 +1147,8 @@
     var btn = document.getElementById('listen-btn');
     if(!btn) return;
     btn.classList.toggle('active', speaking);
-    btn.querySelector('.icon').textContent = speaking ? '■' : '▶';
-    btn.querySelector('.listen-label').textContent = speaking ? 'Arrêter' : 'Écouter';
+    btn.textContent = speaking ? '■' : '▶';
+    btn.setAttribute('aria-label', speaking ? 'Arrêter la lecture' : 'Écouter la description à voix haute');
   }
 
   function stopSpeech(){
