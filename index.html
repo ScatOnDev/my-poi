@@ -1058,7 +1058,8 @@
     if(!poi) return;
     var meta = catMeta[poi.cat];
     var green = colorForInterest(poi.interest);
-    var photoUrl = 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent(poi.name + ' Hambourg');
+    var activeCityName = (cityRegistry[activeCitySlug] && cityRegistry[activeCitySlug].city) ? cityRegistry[activeCitySlug].city : '';
+    var photoUrl = 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent(poi.name + (activeCityName ? ' ' + activeCityName : ''));
 
     collapseSheet();
 
