@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hamburg-poi-v7';
+var CACHE_NAME = 'hamburg-poi-v8';
 
 // Chemins calculés depuis la portée (scope) du service worker plutôt que
 // depuis la racine du domaine : indispensable quand l'app est servie sous
