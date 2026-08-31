@@ -1274,7 +1274,9 @@
   }
 
   function askGemini(poi){
-    var question = 'Peux-tu me donner des informations intéressantes, quelques anecdotes et de bons conseils de visite sur '+poi.name+' à Hambourg ?';
+    var cityName = (cityRegistry[activeCitySlug] && cityRegistry[activeCitySlug].city) ? cityRegistry[activeCitySlug].city : '';
+    var question = 'Peux-tu me donner des informations intéressantes, quelques anecdotes et de bons conseils de visite sur '+poi.name+
+      (cityName ? ' pour la ville de '+cityName : '') + ' ?';
 
     // On copie D'ABORD, tant que cette page a encore le focus — ouvrir Gemini avant
     // ferait perdre le focus et la copie échouerait silencieusement (presse-papiers vide).
