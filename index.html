@@ -249,19 +249,16 @@
     border-bottom:1px solid var(--sand-deep);
     cursor:pointer;
   }
-  .thumb-slot{
-    flex:0 0 auto;width:44px;height:44px;
-    display:flex;align-items:center;justify-content:center;
-    margin-top:2px;
-  }
   #poi-list li .pin-mini{
     flex:0 0 auto;width:30px;height:30px;border-radius:50% 50% 50% 0;
     transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;
-    box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
+    margin-top:2px;box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
   }
   #poi-list li .pin-mini span{transform:rotate(45deg);font-size:13px;}
+  #poi-list li .li-text{flex:1 1 auto;min-width:0;}
+  .thumb-slot{flex:0 0 auto;}
   .poi-thumb{
-    width:44px;height:44px;border-radius:10px;object-fit:cover;
+    display:block;width:50px;height:50px;border-radius:10px;object-fit:cover;
     box-shadow:0 1px 4px rgba(0,0,0,.25);border:1.5px solid var(--white);
   }
   #poi-list li .li-text h3{margin:2px 0 3px;font-size:15.5px;font-weight:600;letter-spacing:.01em;}
@@ -947,7 +944,7 @@
         var green = colorForInterest(poi.interest);
         var li = document.createElement('li');
         li.innerHTML =
-          '<span class="thumb-slot" data-poi-id="'+poi.id+'"><span class="pin-mini" style="background:'+green+'"><span>'+meta.glyph+'</span></span></span>' +
+          '<span class="pin-mini" style="background:'+green+'"><span>'+meta.glyph+'</span></span>' +
           '<span class="li-text">' +
             '<span class="li-tags">' +
               '<span class="stamp" style="color:'+meta.color+'">'+meta.label+'</span>' +
@@ -955,7 +952,8 @@
             '</span>' +
             '<h3>'+poi.name+'</h3>' +
             '<p>'+poi.teaser+'</p>' +
-          '</span>';
+          '</span>' +
+          '<span class="thumb-slot" data-poi-id="'+poi.id+'"></span>';
         li.addEventListener('click', function(){ openDetail(poi.id); });
         listEl.appendChild(li);
         fetchWikiThumbnail(poi);
