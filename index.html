@@ -120,21 +120,52 @@
   .chip .chip-glyph{font-size:13px;line-height:1;}
   .chip.active{background:var(--navy);color:var(--white);}
 
-  /* ---------- Route buttons ---------- */
-  #route-buttons{
+  /* ---------- Route slider ---------- */
+  #route-slider-wrap{
     position:absolute;left:16px;right:16px;z-index:500;
     top:118px;
-    display:flex;gap:8px;
+    background:rgba(255,255,255,.94);
+    border-radius:14px;
+    padding:10px 14px 8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.18);
   }
-  .route-btn{
-    flex:1 1 0;
-    padding:9px 4px;border-radius:999px;
-    background:rgba(255,255,255,.92);color:var(--ink);
-    font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;
-    box-shadow:0 2px 6px rgba(0,0,0,.18);
-    transition:background .15s, color .15s;
+  .route-slider-ticks{
+    display:flex;justify-content:space-between;
+    font-family:'Oswald',sans-serif;font-size:10.5px;font-weight:600;
+    color:#8a8478;letter-spacing:.03em;
+    padding:0 13px;margin-bottom:2px;
   }
-  .route-btn.active{background:var(--navy);color:var(--white);}
+  .route-slider-track{position:relative;height:32px;display:flex;align-items:center;}
+  #route-slider{
+    -webkit-appearance:none;appearance:none;
+    width:100%;height:4px;border-radius:2px;
+    background:var(--sand-deep);outline:none;margin:0;
+  }
+  #route-slider::-webkit-slider-thumb{
+    -webkit-appearance:none;width:30px;height:30px;border-radius:50%;
+    background:transparent;cursor:grab;
+  }
+  #route-slider::-moz-range-thumb{
+    width:30px;height:30px;border-radius:50%;
+    background:transparent;border:none;cursor:grab;
+  }
+  #route-slider::-moz-range-track{background:transparent;}
+  .route-walker{
+    position:absolute;top:50%;transform:translate(-50%,-50%);
+    font-size:22px;pointer-events:none;
+    filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));
+  }
+  .route-slider-label-row{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+  }
+  .route-slider-label{
+    font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:var(--navy);
+  }
+  .route-clear-btn{
+    font-size:11.5px;color:#8a8478;font-weight:500;
+    padding:2px 4px;
+  }
+  .route-clear-btn.hidden{display:none;}
 
   /* ---------- Toast ---------- */
   .toast{
@@ -147,6 +178,25 @@
     z-index:900;transition:opacity .25s, transform .25s;
   }
   .toast.hidden{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(6px);}
+
+  /* ---------- Start point bar ---------- */
+  .start-point-bar{
+    position:absolute;left:16px;right:16px;bottom:calc(var(--sheet-collapsed) + 18px);
+    z-index:950;
+    background:var(--white);border-radius:12px;
+    padding:12px 14px;box-shadow:0 6px 20px rgba(0,0,0,.3);
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    transition:opacity .2s, transform .2s;
+  }
+  .start-point-bar.hidden{opacity:0;pointer-events:none;transform:translateY(8px);}
+  .start-point-bar span{flex:1 1 100%;font-size:13px;color:var(--ink);font-weight:500;}
+  .start-point-actions{display:flex;gap:8px;flex:1 1 100%;}
+  .start-point-actions button{
+    flex:1 1 0;padding:8px;border-radius:8px;
+    font-size:12.5px;font-weight:600;
+  }
+  #start-point-confirm{background:var(--navy);color:var(--white);}
+  #start-point-cancel{background:var(--sand);color:var(--ink);}
 
   /* ---------- Bottom sheet ---------- */
   .sheet{
@@ -354,6 +404,13 @@
     border:2px solid var(--white);box-shadow:0 1px 4px rgba(0,0,0,.4);
   }
 
+  .start-flag-marker{background:transparent;border:none;}
+  .start-flag{
+    font-size:28px;line-height:1;display:block;
+    filter:drop-shadow(0 2px 3px rgba(0,0,0,.5));
+    cursor:grab;
+  }
+
   .user-marker{background:transparent;border:none;}
   .user-dot{
     position:relative;display:block;width:14px;height:14px;
@@ -417,14 +474,27 @@
 
   <nav id="filters" aria-label="Filtrer par thème"></nav>
 
-  <nav id="route-buttons" aria-label="Générer un parcours">
-    <button class="route-btn" data-minutes="60">1h</button>
-    <button class="route-btn" data-minutes="120">2h</button>
-    <button class="route-btn" data-minutes="180">3h</button>
-    <button class="route-btn" data-minutes="240">4h</button>
-  </nav>
+  <div id="route-slider-wrap" aria-label="Durée du parcours">
+    <div class="route-slider-ticks"><span>1h</span><span>2h</span><span>3h</span><span>4h</span></div>
+    <div class="route-slider-track">
+      <input type="range" id="route-slider" min="60" max="240" step="15" value="120">
+      <span id="route-walker" class="route-walker">🚶</span>
+    </div>
+    <div class="route-slider-label-row">
+      <span id="route-slider-label" class="route-slider-label">2h</span>
+      <button id="route-clear-btn" class="route-clear-btn hidden">✕ Effacer le parcours</button>
+    </div>
+  </div>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <div id="start-point-bar" class="start-point-bar hidden">
+    <span id="start-point-text">Partir d'ici pour ton parcours ?</span>
+    <div class="start-point-actions">
+      <button id="start-point-confirm">Confirmer</button>
+      <button id="start-point-cancel">Annuler</button>
+    </div>
+  </div>
 
   <section id="sheet" class="sheet collapsed" aria-label="Liste des lieux visibles à l'écran">
     <button id="sheet-handle" class="sheet-handle" aria-expanded="false">
@@ -601,6 +671,7 @@
     if(typeof stopBlink === 'function') stopBlink();
     if(typeof closeModal === 'function') closeModal();
     if(typeof clearRoute === 'function') clearRoute();
+    if(typeof clearFictionalStart === 'function') clearFictionalStart();
 
     activeCitySlug = slug;
     try{ localStorage.setItem(ACTIVE_CITY_KEY, slug); } catch(e){}
@@ -1200,11 +1271,11 @@
   }
 
   function onPositionError(err){
-    var msg = 'Localisation indisponible.';
+    var msg = 'Localisation indisponible. Astuce : appui long sur la carte pour choisir un point de départ.';
     if(err.code === err.PERMISSION_DENIED){
-      msg = 'Localisation refusée — vérifiez les autorisations du navigateur et du système.';
+      msg = 'Localisation refusée — ou fais un appui long sur la carte pour choisir un point de départ à la main.';
     } else if(err.code === err.POSITION_UNAVAILABLE){
-      msg = 'Position introuvable pour le moment.';
+      msg = 'Position introuvable — ou fais un appui long sur la carte pour choisir un point de départ.';
     } else if(err.code === err.TIMEOUT){
       msg = 'La localisation prend trop de temps, réessayez.';
     }
@@ -1214,13 +1285,111 @@
 
   // Chaque appui recentre et zoome au niveau quartier. Le premier appui démarre
   // aussi le suivi en direct (point bleu), qui reste actif en arrière-plan.
+  // Un tap ici abandonne aussi un éventuel point de départ fictif au profit de la vraie position.
   locateBtn.addEventListener('click', function(){
+    clearFictionalStart();
     if(watchId === null){
       startTracking();
     } else if(userMarker){
       map.flyTo(userMarker.getLatLng(), NEIGHBORHOOD_ZOOM, { duration:0.6 });
     }
   });
+
+  /* ---------------- Point de départ fictif (appui long sur la carte) ---------------- */
+  var fictionalStart = null;       // {lat,lng} actif une fois confirmé
+  var fictionalStartMarker = null; // le drapeau sur la carte
+  var pendingFlagLatLng = null;    // position du drapeau tant que non confirmé/annulé
+
+  var startPointBar = document.getElementById('start-point-bar');
+  var startPointText = document.getElementById('start-point-text');
+  var startPointConfirmBtn = document.getElementById('start-point-confirm');
+  var startPointCancelBtn = document.getElementById('start-point-cancel');
+
+  function showStartPointBar(text, confirmLabel){
+    startPointText.textContent = text;
+    startPointConfirmBtn.textContent = confirmLabel;
+    startPointBar.classList.remove('hidden');
+  }
+  function hideStartPointBar(){
+    startPointBar.classList.add('hidden');
+  }
+
+  function placeFlag(latlng){
+    if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); }
+    var icon = L.divIcon({
+      className:'start-flag-marker',
+      html:'<span class="start-flag">🚩</span>',
+      iconSize:[30,30], iconAnchor:[6,28]
+    });
+    fictionalStartMarker = L.marker(latlng, { icon:icon, draggable:true, zIndexOffset:1200 }).addTo(map);
+    pendingFlagLatLng = latlng;
+
+    fictionalStartMarker.on('drag', function(e){ pendingFlagLatLng = e.target.getLatLng(); });
+
+    fictionalStartMarker.on('click', function(){
+      if(fictionalStart){
+        // déjà confirmé : un tap dessus propose de le retirer
+        showStartPointBar('Retirer ce point de départ ?', 'Retirer');
+        startPointConfirmBtn.onclick = function(){
+          clearFictionalStart();
+          hideStartPointBar();
+        };
+        startPointCancelBtn.onclick = hideStartPointBar;
+      }
+    });
+
+    showStartPointBar("Partir d'ici pour ton parcours ?", 'Confirmer');
+    startPointConfirmBtn.onclick = function(){
+      fictionalStart = { lat: pendingFlagLatLng.lat, lng: pendingFlagLatLng.lng };
+      hideStartPointBar();
+      showToast('Point de départ défini — les parcours partiront d\'ici.');
+    };
+    startPointCancelBtn.onclick = function(){
+      hideStartPointBar();
+      if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); fictionalStartMarker = null; }
+      pendingFlagLatLng = null;
+    };
+  }
+
+  function clearFictionalStart(){
+    fictionalStart = null;
+    pendingFlagLatLng = null;
+    if(fictionalStartMarker){ map.removeLayer(fictionalStartMarker); fictionalStartMarker = null; }
+    hideStartPointBar();
+  }
+
+  // Détection d'appui long (pas d'événement natif équivalent sur Leaflet) :
+  // on déclenche après un délai si le doigt/curseur n'a pas bougé ni relâché entre-temps.
+  var LONG_PRESS_MS = 550;
+  var LONG_PRESS_TOLERANCE_PX = 12;
+  var longPressTimer = null;
+
+  map.on('mousedown', function(e){
+    var startPoint = map.latLngToContainerPoint(e.latlng);
+    longPressTimer = setTimeout(function(){
+      longPressTimer = null;
+      cleanupLongPressListeners();
+      placeFlag(e.latlng);
+    }, LONG_PRESS_MS);
+
+    function onMove(ev){
+      var p = map.latLngToContainerPoint(ev.latlng);
+      if(p.distanceTo(startPoint) > LONG_PRESS_TOLERANCE_PX){ cancelLongPress(); }
+    }
+    function cancelLongPress(){
+      if(longPressTimer){ clearTimeout(longPressTimer); longPressTimer = null; }
+      cleanupLongPressListeners();
+    }
+    function cleanupLongPressListeners(){
+      map.off('mousemove', onMove);
+      map.off('mouseup', cancelLongPress);
+      map.off('dragstart', cancelLongPress);
+    }
+    map.on('mousemove', onMove);
+    map.on('mouseup', cancelLongPress);
+    map.on('dragstart', cancelLongPress);
+  });
+  map.on('contextmenu', function(e){ e.originalEvent.preventDefault(); });
 
   /* ---------------- Parcours (1h / 2h / 3h / 4h) ---------------- */
   var routeLayer = null;
@@ -1268,21 +1437,27 @@
   function clearRoute(){
     if(routeLayer){ map.removeLayer(routeLayer); routeLayer = null; }
     activeRouteMinutes = null;
-    Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(b){
-      b.classList.remove('active');
-    });
+    var clearBtn = document.getElementById('route-clear-btn');
+    if(clearBtn){ clearBtn.classList.add('hidden'); }
   }
 
-  function drawRoute(start, route){
+  function drawRoute(start, route, walkingLatLngs){
     clearRoute();
     if(!route.length) return;
     routeLayer = L.layerGroup().addTo(map);
 
-    var latlngs = [[start.lat, start.lng]];
-    route.forEach(function(poi){ latlngs.push([poi.lat, poi.lng]); });
+    var lineLatLngs;
+    if(walkingLatLngs && walkingLatLngs.length > 1){
+      lineLatLngs = walkingLatLngs; // vrai tracé le long des rues
+    } else {
+      lineLatLngs = [[start.lat, start.lng]];
+      route.forEach(function(poi){ lineLatLngs.push([poi.lat, poi.lng]); }); // repli : ligne droite
+    }
 
-    L.polyline(latlngs, {
-      color:'#16232F', weight:4, opacity:.85, dashArray:'1,10', lineCap:'round'
+    L.polyline(lineLatLngs, {
+      color:'#16232F', weight:4, opacity:.85,
+      dashArray: walkingLatLngs ? null : '1,10', // pointillés seulement pour le repli ligne droite
+      lineCap:'round'
     }).addTo(routeLayer);
 
     route.forEach(function(poi, idx){
@@ -1295,13 +1470,37 @@
       m.on('click', function(){ openDetail(poi.id); });
     });
 
-    map.fitBounds(L.latLngBounds(latlngs), { padding:[50,90] });
+    var boundsPoints = lineLatLngs.concat(route.map(function(p){ return [p.lat, p.lng]; }));
+    map.fitBounds(L.latLngBounds(boundsPoints), { padding:[50,90] });
+  }
+
+  // Serveur public OSRM (FOSSGIS), gratuit et sans clé — le même moteur que celui
+  // utilisé sur openstreetmap.org pour ses propres itinéraires piétons.
+  var OSRM_FOOT_ENDPOINT = 'https://routing.openstreetmap.de/routed-foot/route/v1/foot/';
+
+  function fetchWalkingGeometry(start, route){
+    var points = [{lat:start.lat, lng:start.lng}].concat(route);
+    var coordStr = points.map(function(p){ return p.lng + ',' + p.lat; }).join(';');
+    var url = OSRM_FOOT_ENDPOINT + coordStr + '?overview=full&geometries=geojson';
+    var opts = {};
+    if(window.AbortSignal && AbortSignal.timeout){ opts.signal = AbortSignal.timeout(10000); }
+
+    return fetch(url, opts).then(function(r){
+      if(!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    }).then(function(data){
+      if(data.code !== 'Ok' || !data.routes || !data.routes[0]){ throw new Error('réponse OSRM invalide'); }
+      var r0 = data.routes[0];
+      var latlngs = r0.geometry.coordinates.map(function(c){ return [c[1], c[0]]; }); // geojson [lng,lat] -> Leaflet [lat,lng]
+      return { latlngs: latlngs, distanceM: r0.distance, durationS: r0.duration };
+    });
   }
 
   function getUserPositionForRoute(callback){
+    if(fictionalStart){ callback(L.latLng(fictionalStart.lat, fictionalStart.lng)); return; }
     if(userMarker){ callback(userMarker.getLatLng()); return; }
     if(!('geolocation' in navigator)){
-      showToast('Géolocalisation non disponible sur ce navigateur.');
+      showToast('Géolocalisation non disponible — fais un appui long sur la carte pour choisir un point de départ.');
       return;
     }
     showToast('Localisation en cours…');
@@ -1312,29 +1511,65 @@
     }, onPositionError, { enableHighAccuracy:true, timeout:15000, maximumAge:5000 });
   }
 
-  Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(btn){
-    btn.addEventListener('click', function(){
-      var minutes = parseInt(btn.dataset.minutes, 10);
-      if(activeRouteMinutes === minutes){ clearRoute(); return; }
+  function formatDuration(minutes){
+    var h = Math.floor(minutes / 60);
+    var m = minutes % 60;
+    return m === 0 ? h + 'h' : h + 'h' + (m < 10 ? '0' : '') + m;
+  }
 
-      getUserPositionForRoute(function(start){
-        var route = planRoute(start, minutes);
-        if(!route.length){
-          showToast('Aucun lieu ne rentre dans ce créneau depuis ta position.');
-          return;
-        }
-        drawRoute(start, route);
+  var routeSlider = document.getElementById('route-slider');
+  var routeWalker = document.getElementById('route-walker');
+  var routeSliderLabel = document.getElementById('route-slider-label');
+  var routeClearBtn = document.getElementById('route-clear-btn');
+
+  function updateWalkerPosition(){
+    var min = parseFloat(routeSlider.min), max = parseFloat(routeSlider.max), val = parseFloat(routeSlider.value);
+    var percent = (val - min) / (max - min);
+    var trackWidth = routeSlider.offsetWidth;
+    var half = 15;
+    var leftPx = half + percent * (trackWidth - half * 2);
+    routeWalker.style.left = leftPx + 'px';
+  }
+
+  routeSlider.addEventListener('input', function(){
+    routeSliderLabel.textContent = formatDuration(parseInt(routeSlider.value, 10));
+    updateWalkerPosition();
+  });
+
+  // Le parcours n'est (re)calculé qu'au relâchement, pas pendant le glissement,
+  // pour éviter les à-coups liés à l'appel réseau vers OSRM.
+  routeSlider.addEventListener('change', function(){
+    var minutes = parseInt(routeSlider.value, 10);
+
+    getUserPositionForRoute(function(start){
+      var route = planRoute(start, minutes);
+      if(!route.length){
+        showToast('Aucun lieu ne rentre dans ce créneau depuis ta position.');
+        return;
+      }
+
+      fetchWalkingGeometry(start, route).then(function(geo){
+        drawRoute(start, route, geo.latlngs);
         activeRouteMinutes = minutes;
-        Array.prototype.forEach.call(document.querySelectorAll('.route-btn'), function(b){
-          b.classList.toggle('active', b === btn);
-        });
-
+        routeClearBtn.classList.remove('hidden');
+        var km = (geo.distanceM / 1000).toFixed(1);
+        var mins = Math.round(geo.durationS / 60);
+        showToast('Parcours ' + formatDuration(minutes) + ' : ' + route.length + ' lieu' + (route.length > 1 ? 'x' : '') + ', ' + km + ' km à pied (' + mins + ' min de marche réelle).');
+      }).catch(function(){
+        drawRoute(start, route, null);
+        activeRouteMinutes = minutes;
+        routeClearBtn.classList.remove('hidden');
         var totalKm = 0, prev = start;
         route.forEach(function(poi){ totalKm += haversineMeters(prev, poi) / 1000; prev = poi; });
-        showToast('Parcours ' + (minutes/60) + 'h : ' + route.length + ' lieu' + (route.length > 1 ? 'x' : '') + ', environ ' + totalKm.toFixed(1) + ' km à pied.');
+        showToast('Parcours ' + formatDuration(minutes) + ' : ' + route.length + ' lieu' + (route.length > 1 ? 'x' : '') + ', ~' + totalKm.toFixed(1) + ' km à vol d\'oiseau (itinéraire piéton indisponible pour le moment).');
       });
     });
   });
+
+  routeClearBtn.addEventListener('click', clearRoute);
+  window.addEventListener('resize', updateWalkerPosition);
+  updateWalkerPosition();
+  routeSliderLabel.textContent = formatDuration(parseInt(routeSlider.value, 10));
 
   /* ---------------- Service worker (offline app shell) ---------------- */
   if('serviceWorker' in navigator){
