@@ -120,51 +120,55 @@
   .chip .chip-glyph{font-size:13px;line-height:1;}
   .chip.active{background:var(--navy);color:var(--white);}
 
-  /* ---------- Route slider ---------- */
+  /* ---------- Route slider (vertical, côté gauche) ---------- */
   #route-slider-wrap{
-    position:absolute;left:50%;width:50%;min-width:220px;z-index:500;
-    top:118px;
-    transform:translateX(-50%);
+    position:absolute;left:12px;top:130px;z-index:500;
+    width:44px;
     background:rgba(255,255,255,.94);
     border-radius:14px;
-    padding:10px 14px 8px;
+    padding:12px 4px 10px;
     box-shadow:0 2px 8px rgba(0,0,0,.18);
+    display:flex;flex-direction:column;align-items:center;gap:8px;
   }
-  .route-slider-ticks{
-    display:flex;justify-content:space-between;
-    font-family:'Oswald',sans-serif;font-size:10.5px;font-weight:600;
-    color:#8a8478;letter-spacing:.03em;
-    padding:0 13px;margin-bottom:2px;
+  .route-slider-label-v{
+    font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;color:var(--navy);
+    white-space:nowrap;
   }
-  .route-slider-track{position:relative;height:32px;display:flex;align-items:center;}
+  .route-slider-track-v{
+    position:relative;width:100%;height:210px;
+    display:flex;justify-content:center;
+  }
   #route-slider{
     -webkit-appearance:none;appearance:none;
-    width:100%;height:4px;border-radius:2px;
+    position:absolute;top:50%;left:50%;
+    width:210px;height:3px;border-radius:2px;
     background:var(--sand-deep);outline:none;margin:0;
+    transform:translate(-50%,-50%) rotate(90deg);
   }
   #route-slider::-webkit-slider-thumb{
-    -webkit-appearance:none;width:30px;height:30px;border-radius:50%;
+    -webkit-appearance:none;width:28px;height:28px;border-radius:50%;
     background:transparent;cursor:grab;
   }
   #route-slider::-moz-range-thumb{
-    width:30px;height:30px;border-radius:50%;
+    width:28px;height:28px;border-radius:50%;
     background:transparent;border:none;cursor:grab;
   }
   #route-slider::-moz-range-track{background:transparent;}
   .route-walker{
-    position:absolute;top:50%;transform:translate(-50%,-50%) scaleX(-1);
-    font-size:32px;pointer-events:none;
+    position:absolute;left:50%;top:0;
+    transform:translate(-50%,-50%) scaleX(-1);
+    font-size:28px;pointer-events:none;
     filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));
   }
-  .route-slider-label-row{
-    display:flex;align-items:center;justify-content:space-between;gap:8px;
-  }
-  .route-slider-label{
-    font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;color:var(--navy);
+  .route-slider-ticks-v{
+    position:absolute;left:100%;top:0;height:100%;margin-left:5px;
+    display:flex;flex-direction:column;justify-content:space-between;
+    font-family:'Oswald',sans-serif;font-size:9px;font-weight:600;
+    color:#8a8478;letter-spacing:.02em;
   }
   .route-clear-btn{
-    font-size:11.5px;color:#8a8478;font-weight:500;
-    padding:2px 4px;
+    font-size:10.5px;color:#8a8478;font-weight:600;
+    padding:2px 4px;line-height:1.3;
   }
   .route-clear-btn.hidden{display:none;}
 
@@ -487,15 +491,13 @@
   <nav id="filters" aria-label="Filtrer par thème"></nav>
 
   <div id="route-slider-wrap" aria-label="Durée du parcours">
-    <div class="route-slider-ticks"><span>1h</span><span>2h</span><span>3h</span><span>4h</span></div>
-    <div class="route-slider-track">
+    <div id="route-slider-label" class="route-slider-label-v">2h</div>
+    <div class="route-slider-track-v">
       <input type="range" id="route-slider" min="60" max="240" step="15" value="120">
       <span id="route-walker" class="route-walker">🚶</span>
+      <div class="route-slider-ticks-v"><span>1h</span><span>2h</span><span>3h</span><span>4h</span></div>
     </div>
-    <div class="route-slider-label-row">
-      <span id="route-slider-label" class="route-slider-label">2h</span>
-      <button id="route-clear-btn" class="route-clear-btn hidden">✕ Effacer le parcours</button>
-    </div>
+    <button id="route-clear-btn" class="route-clear-btn hidden" aria-label="Effacer le parcours">✕</button>
   </div>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
@@ -1564,13 +1566,14 @@
   var routeSliderLabel = document.getElementById('route-slider-label');
   var routeClearBtn = document.getElementById('route-clear-btn');
 
+  var ROUTE_TRACK_LENGTH_PX = 210; // doit correspondre à la largeur de #route-slider avant rotation (CSS)
+
   function updateWalkerPosition(){
     var min = parseFloat(routeSlider.min), max = parseFloat(routeSlider.max), val = parseFloat(routeSlider.value);
     var percent = (val - min) / (max - min);
-    var trackWidth = routeSlider.offsetWidth;
-    var half = 15;
-    var leftPx = half + percent * (trackWidth - half * 2);
-    routeWalker.style.left = leftPx + 'px';
+    var half = 14;
+    var topPx = half + percent * (ROUTE_TRACK_LENGTH_PX - half * 2);
+    routeWalker.style.top = topPx + 'px';
   }
 
   routeSlider.addEventListener('input', function(){
