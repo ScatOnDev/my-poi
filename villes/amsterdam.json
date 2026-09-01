@@ -1,0 +1,367 @@
+{
+  "city": "Amsterdam",
+  "center": { "lat": 52.3702, "lng": 4.8952 },
+  "zoom": 12,
+  "pois": [
+    {
+      "id": "royal-palace-amsterdam",
+      "name": "Palais Royal d'Amsterdam",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 52.3731,
+      "lng": 4.8925,
+      "teaser": "Ancien hôtel de ville du Siècle d'or hollandais, transformé en résidence royale sur la place du Dam.",
+      "desc": "Construit au XVIIe siècle comme hôtel de ville d'Amsterdam, à l'apogée du Siècle d'or hollandais, l'édifice fut transformé en palais royal sous le règne de Louis Bonaparte, frère de Napoléon installé sur le trône de Hollande, avant de devenir résidence officielle de la famille royale néerlandaise. Sa façade classique en pierre, plutôt sobre comparée aux canons baroques de l'époque, contraste avec l'intérieur fastueux, en particulier la grande salle des Citoyens, immense espace de marbre orné de cartes célestes et terrestres qui témoignait de l'ambition maritime et commerciale de la ville au moment de sa construction. Le palais reste utilisé aujourd'hui pour des réceptions officielles et n'est ouvert au public qu'en dehors de ces événements, ce qui impose de vérifier le calendrier avant de s'y rendre. Il domine la place du Dam, cœur historique et symbolique d'Amsterdam depuis la fondation de la ville. La visite complète peut se faire en une heure environ, avec un audioguide qui détaille l'histoire complexe de ce bâtiment aux multiples fonctions successives."
+    },
+    {
+      "id": "westerkerk",
+      "name": "Westerkerk",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 52.3751,
+      "lng": 4.8838,
+      "teaser": "Plus grande église protestante des Pays-Bas, dont le clocher domine le quartier du Jordaan.",
+      "desc": "Achevée en 1631, la Westerkerk demeure la plus grande église protestante construite aux Pays-Bas et l'un des exemples les plus aboutis de l'architecture religieuse du Siècle d'or hollandais. Son clocher, surmonté de la couronne impériale offerte par l'empereur Maximilien à la ville, culmine à plus de quatre-vingt-cinq mètres et reste visible depuis une grande partie du centre historique. Rembrandt, qui vécut non loin de là, y aurait été inhumé dans une tombe anonyme, comme le voulait la coutume protestante de l'époque pour les défunts sans fortune particulière. L'église se dresse juste en face de la maison d'Anne Frank, dont le journal évoque à plusieurs reprises le carillon de la Westerkerk, entendu depuis la cachette familiale. L'intérieur, dépouillé selon les principes calvinistes, frappe par ses dimensions et la clarté de sa lumière naturelle. La montée au clocher, possible lors de visites guidées limitées en nombre, offre une vue rare sur les toits du Jordaan et les canaux environnants. Réservez cette ascension à l'avance, les créneaux étant restreints et rapidement complets en été."
+    },
+    {
+      "id": "oude-kerk",
+      "name": "Oude Kerk",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 52.3747,
+      "lng": 4.8986,
+      "teaser": "Plus ancien bâtiment conservé d'Amsterdam, église du XIIIe siècle au cœur du quartier rouge.",
+      "desc": "Fondée au début du XIIIe siècle, la Oude Kerk est le plus ancien édifice encore debout à Amsterdam, antérieure de plusieurs siècles à la fondation officielle de la ville sous sa forme actuelle. Située en plein cœur du quartier rouge, l'église offre un contraste saisissant avec les vitrines environnantes, illustrant la coexistence historique entre commerce, y compris le commerce du sexe, et vie religieuse dans cette partie de la ville depuis des siècles. Le sol de l'édifice, pavé de plusieurs milliers de pierres tombales, servait autrefois de lieu d'inhumation pour les marchands et notables de la ville, dont l'épouse de Rembrandt, Saskia van Uylenburgh. L'église a perdu l'essentiel de son mobilier religieux d'origine lors des vagues iconoclastes du XVIe siècle, ce qui explique la sobriété relative de son intérieur aujourd'hui, régulièrement utilisé pour des expositions d'art contemporain qui dialoguent avec l'architecture gothique. La tour, accessible en visite guidée, offre une vue intéressante sur les toits du centre historique. Une visite ici permet de mieux comprendre les strates historiques souvent méconnues du quartier rouge."
+    },
+    {
+      "id": "nieuwe-kerk",
+      "name": "Nieuwe Kerk",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 52.3731,
+      "lng": 4.8926,
+      "teaser": "Église gothique du XVe siècle sur la place du Dam, lieu des investitures royales néerlandaises.",
+      "desc": "Malgré son nom qui signifie littéralement nouvelle église, la Nieuwe Kerk date en réalité du XVe siècle et doit sa dénomination au fait qu'elle succédait alors à la Oude Kerk comme deuxième paroisse de la ville. L'édifice a perdu sa flèche originale, jamais reconstruite après un incendie, ce qui explique sa silhouette un peu tronquée face au Palais Royal voisin. Depuis 1815, tous les monarques néerlandais y sont investis lors d'une cérémonie officielle, même si les Pays-Bas ne pratiquent pas de couronnement à proprement parler mais une prestation de serment. L'église a cessé toute activité religieuse régulière et sert aujourd'hui principalement d'espace pour de grandes expositions temporaires, souvent consacrées à l'art, l'histoire ou la photographie, ce qui impose de vérifier le programme en cours avant de prévoir sa visite. L'intérieur gothique, avec son orgue baroque richement sculpté, reste impressionnant même sans exposition particulière. Sa position sur la place du Dam en fait une étape facile à combiner avec la visite du palais royal juste à côté."
+    },
+    {
+      "id": "begijnhof",
+      "name": "Begijnhof",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 52.3699,
+      "lng": 4.8907,
+      "teaser": "Cour intérieure médiévale préservée, ancien béguinage aujourd'hui havre de paix caché en plein centre-ville.",
+      "desc": "Fondé au XIVe siècle pour accueillir les béguines, ces femmes pieuses vivant en communauté sans prononcer de vœux monastiques définitifs, le Begijnhof forme aujourd'hui l'une des cours intérieures les mieux préservées d'Amsterdam, dissimulée derrière une porte discrète à deux pas de la très fréquentée Kalverstraat. Les maisons qui entourent la pelouse centrale datent pour la plupart des XVIIe et XVIIIe siècles, à l'exception d'une façade en bois du début du XVe siècle, l'une des rares subsistant encore dans la ville après les grands incendies successifs. Une petite chapelle catholique clandestine, aménagée discrètement à l'époque où le culte catholique était interdit aux Pays-Bas protestants, complète cet ensemble chargé d'histoire religieuse. Le lieu reste habité aujourd'hui, principalement par des femmes seules, ce qui impose aux visiteurs de garder le silence et de respecter l'intimité des résidentes. Le contraste entre le calme absolu de la cour et l'agitation de la rue commerçante toute proche en fait l'une des surprises les plus appréciées d'une première visite du centre historique."
+    },
+    {
+      "id": "dam-square",
+      "name": "Place du Dam",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 52.373,
+      "lng": 4.8925,
+      "teaser": "Place centrale et historique d'Amsterdam, berceau de la ville autour du barrage originel sur l'Amstel.",
+      "desc": "La place du Dam doit son nom au barrage construit au XIIIe siècle sur la rivière Amstel, à l'origine même du nom et de la fondation de la ville d'Amsterdam. Aujourd'hui cœur géographique et symbolique du centre historique, la place rassemble plusieurs monuments majeurs, dont le Palais Royal et la Nieuwe Kerk, autour d'un vaste espace ouvert qui sert traditionnellement de lieu de rassemblement pour les célébrations nationales comme pour les manifestations. Le Monument national, imposante colonne de pierre blanche élevée après la Seconde Guerre mondiale en hommage aux victimes néerlandaises du conflit, en occupe le centre et reste un point de repère pour tous les grands rassemblements commémoratifs. La place, très fréquentée à toute heure, mélange artistes de rue, terrasses de café et grands magasins, dans une ambiance résolument urbaine et cosmopolite. C'est le point de départ naturel pour explorer à pied l'ensemble du centre historique, à quelques minutes seulement de la gare centrale. Prévoyez simplement de partager l'espace avec une forte affluence, particulièrement en haute saison touristique."
+    },
+    {
+      "id": "munttoren",
+      "name": "Munttoren",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 52.3676,
+      "lng": 4.8907,
+      "teaser": "Tour médiévale reconvertie en beffroi baroque, marquant l'entrée sud du centre historique près du marché aux fleurs.",
+      "desc": "Vestige d'une ancienne porte fortifiée de la ville médiévale détruite par un incendie au XVIIe siècle, la Munttoren doit son nom à l'atelier monétaire qui y fut temporairement installé lors d'une occupation militaire du siècle précédent. Le sommet baroque actuel, ajouté après l'incendie, tranche visiblement avec la base médiévale plus austère, illustrant la manière dont la ville a souvent recyclé et transformé son patrimoine bâti au fil des siècles plutôt que de tout reconstruire à neuf. Le carillon installé dans la tour sonne encore régulièrement, ajoutant une dimension sonore reconnaissable au quartier environnant. La tour marque symboliquement l'entrée sud du centre historique, à la jonction entre plusieurs canaux et juste à côté du célèbre marché flottant aux fleurs. Sans être une attraction majeure en soi, elle constitue un repère pratique pour s'orienter et un joli sujet de photographie, en particulier depuis le pont qui l'encadre entre deux bras de canal. Une pause rapide suffit pour l'apprécier avant de poursuivre vers le Rijksmuseum ou le quartier du Jordaan."
+    },
+    {
+      "id": "montelbaanstoren",
+      "name": "Montelbaanstoren",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 52.3703,
+      "lng": 4.9034,
+      "teaser": "Tour de guet du XVIe siècle au bord de l'Oudeschans, autrefois maillon des fortifications défensives de la ville.",
+      "desc": "Édifiée au XVIe siècle pour défendre l'accès est de la ville contre d'éventuelles attaques maritimes, la Montelbaanstoren faisait partie d'un système plus vaste de fortifications aujourd'hui presque entièrement disparu, à l'exception de cette tour et de quelques vestiges épars. Sa flèche octogonale, ajoutée quelques décennies après la construction initiale, aurait été dessinée par le même architecte responsable de plusieurs autres monuments emblématiques de la ville, donnant à l'ensemble une élégance qui contraste avec sa fonction défensive d'origine. Rembrandt aurait fréquemment dessiné cette tour depuis les quais environnants, dont plusieurs études subsistent aujourd'hui dans des collections muséales. La tour surplombe le canal Oudeschans, dans un secteur plus résidentiel et moins fréquenté par les touristes que le centre historique proprement dit, ce qui en fait une étape agréable pour qui souhaite s'écarter des foules. Les quais environnants, bordés de maisons de marchands du Siècle d'or, se prêtent à une promenade tranquille combinant patrimoine architectural et ambiance de canal authentique, loin de l'agitation de Dam ou du quartier rouge."
+    },
+    {
+      "id": "beurs-van-berlage",
+      "name": "Beurs van Berlage",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 52.3745,
+      "lng": 4.8952,
+      "teaser": "Ancienne Bourse de commerce, chef-d'œuvre architectural de la fin du XIXe siècle signé Berlage.",
+      "desc": "Conçue par l'architecte Hendrik Petrus Berlage et achevée en 1903, l'ancienne Bourse de commerce d'Amsterdam marque une rupture nette avec le style éclectique dominant à l'époque, annonçant par sa sobriété et l'usage assumé de la brique apparente les courants architecturaux modernes qui allaient s'épanouir aux Pays-Bas dans les décennies suivantes. L'édifice a cessé sa fonction boursière au milieu du XXe siècle pour devenir un espace polyvalent, accueillant aujourd'hui expositions, concerts et événements d'entreprise dans ses vastes salles à charpente métallique apparente. La frise sculptée qui court le long des façades intérieures illustre l'histoire du commerce et de la navigation hollandaise, thème central de l'identité économique de la ville depuis le Siècle d'or. Le bâtiment reste moins connu des visiteurs internationaux que les grands musées voisins, ce qui en fait une découverte architecturale appréciée des amateurs d'histoire de l'art plus pointus. L'accès à l'intérieur dépend largement du calendrier des événements en cours, la Bourse fonctionnant davantage comme un lieu de location d'espace que comme un musée permanent ouvert quotidiennement."
+    },
+    {
+      "id": "zuiderkerk",
+      "name": "Zuiderkerk",
+      "cat": "patrimoine",
+      "interest": 2,
+      "lat": 52.3696,
+      "lng": 4.9002,
+      "teaser": "Première église construite spécifiquement pour le culte protestant à Amsterdam, aujourd'hui centre d'information sur l'urbanisme.",
+      "desc": "Achevée au tout début du XVIIe siècle, la Zuiderkerk fut la première église d'Amsterdam conçue dès l'origine pour le culte protestant, contrairement aux édifices plus anciens simplement récupérés après la Réforme. Sa tour élégante, que Christopher Wren serait venu observer avant de dessiner certaines églises londoniennes après le grand incendie de 1666, reste l'un des éléments les plus photographiés du quartier. L'église a cessé toute activité religieuse depuis plusieurs décennies et sert aujourd'hui de centre d'information municipal consacré à l'urbanisme et au logement à Amsterdam, un usage assez inattendu pour un lieu de culte historique mais révélateur de la pragmatique néerlandaise en matière de patrimoine bâti. Le quartier environnant, dans le sud du centre historique, a connu d'importantes transformations urbaines au XXe siècle, ce que l'exposition permanente permet justement de comprendre. La tour se visite en été lors de créneaux guidés limités, offrant une vue dégagée sur les toits environnants. C'est une étape à réserver aux visiteurs curieux d'urbanisme plutôt qu'un incontournable de premier plan."
+    },
+    {
+      "id": "rijksmuseum",
+      "name": "Rijksmuseum",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 52.36,
+      "lng": 4.8852,
+      "teaser": "Musée national néerlandais, abritant La Ronde de nuit de Rembrandt et les chefs-d'œuvre du Siècle d'or.",
+      "desc": "Inauguré dans son bâtiment actuel en 1885, le Rijksmuseum rassemble la plus importante collection d'art et d'histoire des Pays-Bas, avec un accent particulier sur la peinture du Siècle d'or hollandais qui fait sa renommée internationale. La Ronde de nuit de Rembrandt, monumentale composition installée dans la salle d'honneur au terme d'un parcours chronologique savamment orchestré, en constitue l'incontestable point d'orgue, aux côtés de toiles de Vermeer, dont La Laitière, et de nombreux autres maîtres de l'âge d'or néerlandais. Le bâtiment lui-même, de style néo-Renaissance flamande, a fait l'objet d'une rénovation complète achevée en 2013, qui a notamment permis de rouvrir un passage cycliste traversant littéralement le musée en son centre, particularité unique parmi les grands musées mondiaux. Les collections s'étendent bien au-delà de la peinture, avec des arts décoratifs, de l'artisanat asiatique et une importante section consacrée à l'histoire militaire et navale du pays. Réservez impérativement un billet horodaté en ligne, l'affluence étant considérable toute l'année, et prévoyez au minimum deux heures pour apprécier les collections principales sans se presser."
+    },
+    {
+      "id": "van-gogh-museum",
+      "name": "Van Gogh Museum",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 52.3584,
+      "lng": 4.8811,
+      "teaser": "Plus grande collection au monde d'œuvres de Vincent van Gogh, retraçant l'ensemble de sa carrière artistique.",
+      "desc": "Ouvert en 1973 grâce à la donation de la famille du frère du peintre, le Van Gogh Museum conserve la plus vaste collection au monde d'œuvres de Vincent van Gogh, avec plus de deux cents peintures et plusieurs centaines de dessins et lettres qui permettent de suivre l'évolution complète de son style, des débuts sombres inspirés des paysans hollandais jusqu'à l'explosion de couleurs de la période provençale. Le parcours chronologique met aussi en lumière la relation étroite et prolifique entre Vincent et son frère Théo, marchand d'art qui le soutint financièrement et moralement toute sa vie durant, à travers une abondante correspondance conservée au musée. Des toiles emblématiques comme Les Tournesols, La Chambre à Arles ou plusieurs autoportraits figurent parmi les pièces maîtresses de la collection permanente. Le bâtiment moderne, agrandi par une extension elliptique inaugurée en 1999, contraste volontairement avec l'architecture classique des musées voisins. La réservation en ligne d'un billet horodaté est indispensable, ce musée comptant parmi les plus visités des Pays-Bas malgré une capacité d'accueil plus restreinte que le Rijksmuseum voisin."
+    },
+    {
+      "id": "stedelijk-museum",
+      "name": "Stedelijk Museum",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 52.3579,
+      "lng": 4.8794,
+      "teaser": "Musée d'art moderne et contemporain, reconnaissable à son extension blanche surnommée la baignoire.",
+      "desc": "Fondé à la fin du XIXe siècle, le Stedelijk Museum s'est imposé au fil du temps comme l'une des références européennes en matière d'art moderne et contemporain, avec des collections couvrant l'ensemble du XXe siècle jusqu'aux créations les plus récentes. Malevitch, Chagall, Mondrian ou Warhol y côtoient une riche sélection d'artistes néerlandais contemporains, dans un parcours qui mêle peinture, design et arts appliqués, ce dernier domaine constituant une spécificité assumée du musée depuis ses origines. L'extension contemporaine inaugurée en 2012, une structure blanche aux lignes fluides rapidement surnommée la baignoire par les habitants d'Amsterdam en raison de sa forme, a suscité des réactions aussi vives que celles ayant accueilli en son temps la pyramide du Louvre à Paris. Le musée occupe une position centrale sur la Museumplein, à deux pas du Rijksmuseum et du Van Gogh Museum, ce qui permet d'enchaîner facilement les trois visites dans la même journée pour les amateurs d'art les plus motivés. Les expositions temporaires, souvent audacieuses, complètent utilement la collection permanente et méritent de vérifier la programmation avant la visite."
+    },
+    {
+      "id": "anne-frank-huis",
+      "name": "Maison d'Anne Frank",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 52.3752,
+      "lng": 4.884,
+      "teaser": "Cachette où la famille Frank se dissimula durant l'Occupation, aujourd'hui musée poignant sur la persécution nazie.",
+      "desc": "C'est dans cette maison du canal Prinsengracht que la famille Frank et quatre autres personnes se cachèrent pendant plus de deux ans à partir de 1942, derrière une bibliothèque pivotante dissimulant l'entrée de l'annexe secrète, avant d'être découverts et déportés en 1944. La jeune Anne y tint son journal, publié après-guerre par son père Otto, seul survivant de la famille, et devenu depuis l'un des témoignages les plus lus au monde sur la persécution des Juifs durant la Seconde Guerre mondiale. Les pièces de l'annexe ont été laissées volontairement vides de mobilier, sur demande d'Otto Frank lui-même, pour préserver l'intensité brute du lieu plutôt que d'en faire une reconstitution muséale classique. Des extraits du journal, des photographies de famille et des objets personnels ponctuent le parcours, qui se termine par une réflexion plus large sur les persécutions et les discriminations contemporaines. L'émotion ressentie sur place dépasse largement celle d'une visite muséale habituelle. La réservation en ligne, plusieurs semaines à l'avance en haute saison, est absolument indispensable : aucun billet n'est vendu sur place."
+    },
+    {
+      "id": "rembrandthuis",
+      "name": "Museum Het Rembrandthuis",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 52.3684,
+      "lng": 4.9013,
+      "teaser": "Maison où Rembrandt vécut et travailla, reconstituée avec son atelier, sa collection et sa presse à graver.",
+      "desc": "Rembrandt van Rijn acheta cette maison en 1639, alors au sommet de sa réussite, et y vécut près de vingt ans avant sa faillite qui le contraignit à vendre le bien et une grande partie de ses collections personnelles. Grâce à un inventaire détaillé dressé lors de cette liquidation, la maison a pu être reconstituée avec un souci de fidélité rare, meubles, tableaux et objets curieux venant recréer l'atmosphère dans laquelle le peintre travaillait et recevait ses élèves. L'atelier, avec sa lumière naturelle soigneusement orientée et ses pigments préparés selon les techniques de l'époque, permet de comprendre concrètement les méthodes de travail du maître hollandais. Une presse à graver d'époque, toujours fonctionnelle, sert à des démonstrations régulières illustrant l'art de l'eau-forte, technique dans laquelle Rembrandt excellait tout particulièrement. Le musée conserve aussi une collection quasi complète de ses gravures, offrant un aperçu plus intime de son œuvre que les grandes toiles exposées au Rijksmuseum. La visite, plus modeste en surface que les grands musées voisins, séduit justement par cette proximité rare avec le quotidien de l'artiste."
+    },
+    {
+      "id": "nemo-science-museum",
+      "name": "NEMO Science Museum",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 52.3742,
+      "lng": 4.9122,
+      "teaser": "Musée des sciences interactif dans un bâtiment vert en forme de coque de navire, au bord de l'IJ.",
+      "desc": "Conçu par l'architecte italien Renzo Piano et inauguré en 1997, le bâtiment du NEMO Science Museum évoque la coque verte d'un navire émergeant des eaux du port, un clin d'œil assumé au passé maritime de la ville. À l'intérieur, le musée propose sur plusieurs niveaux des expériences interactives consacrées aux sciences et aux techniques, pensées avant tout pour un public familial et scolaire, entre ateliers de chimie ludique, démonstrations physiques et explorations du corps humain. Le lieu privilégie résolument la manipulation directe à la contemplation passive, dans une approche pédagogique qui séduit particulièrement les enfants curieux, même si certains adultes y trouvent également matière à redécouvrir des principes scientifiques de base sous un angle inattendu. Le toit en pente du bâtiment, aménagé en terrasse publique accessible gratuitement, offre l'une des plus belles vues sur le centre historique et le port, agrémentée en été de jeux d'eau appréciés des familles. La visite complète du musée nécessite une demi-journée pour les familles avec enfants, moins pour un adulte pressé de simplement profiter de la terrasse."
+    },
+    {
+      "id": "de-wallen",
+      "name": "De Wallen (quartier rouge)",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 52.3745,
+      "lng": 4.8986,
+      "teaser": "Plus ancien quartier d'Amsterdam, célèbre pour ses vitrines rouges et son architecture médiévale préservée.",
+      "desc": "Installé autour des plus anciens canaux de la ville depuis le Moyen Âge, De Wallen doit sa réputation internationale à la prostitution vitrine légalement encadrée qui s'y pratique depuis des siècles, faisant de ce quartier l'un des plus visités et des plus commentés d'Amsterdam. Au-delà de cette image souvent réductrice, le secteur conserve certaines des ruelles et façades les plus anciennes de la ville, entre la Oude Kerk millénaire et des maisons de marchands du Siècle d'or, dans un dédale de petites rues et de canaux particulièrement photogéniques la nuit venue. Les autorités municipales ont engagé ces dernières années une politique de diversification économique du quartier, cherchant à réduire le tourisme de masse lié au sexe et à l'alcool au profit d'une offre culturelle plus large, avec plusieurs galeries et petits musées thématiques ouverts récemment. La visite, souvent réduite à une simple traversée nocturne curieuse, gagne en réalité à être faite de jour pour apprécier pleinement l'architecture historique du secteur. Le respect de l'intimité des travailleuses du sexe, notamment en s'abstenant de les photographier, reste une règle stricte et rigoureusement appliquée."
+    },
+    {
+      "id": "jordaan",
+      "name": "Jordaan",
+      "cat": "culture",
+      "interest": 4,
+      "lat": 52.3745,
+      "lng": 4.88,
+      "teaser": "Ancien quartier ouvrier devenu l'un des secteurs les plus prisés d'Amsterdam, entre ruelles fleuries et petites galeries.",
+      "desc": "Aménagé au XVIIe siècle pour loger artisans, ouvriers et immigrants huguenots fuyant les persécutions religieuses en France, le Jordaan a longtemps été l'un des quartiers les plus populaires et les plus densément peuplés d'Amsterdam, loin de l'opulence du quartier des canaux voisin destiné à la bourgeoisie marchande. Cette identité ouvrière, encore perceptible dans le tracé serré des rues et la modestie relative des façades comparée au Grachtengordel, a progressivement laissé place depuis les années 1970 à une gentrification marquée, transformant le quartier en l'un des secteurs résidentiels les plus recherchés et les plus chers de la ville. Petites galeries d'art, boutiques vintage, ateliers d'artisans et cafés bruns traditionnels, ces pubs typiquement néerlandais aux murs patinés par des décennies de fumée de pipe, composent aujourd'hui l'essentiel de son atmosphère, particulièrement agréable pour une flânerie sans itinéraire précis. Le marché Noordermarkt, qui se tient certains jours de la semaine sur la place devant la Noorderkerk, complète cette ambiance de village urbain. Une visite en semaine, hors des grandes affluences touristiques du week-end, permet d'apprécier pleinement le caractère encore authentique du quartier."
+    },
+    {
+      "id": "concertgebouw",
+      "name": "Concertgebouw",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 52.3564,
+      "lng": 4.879,
+      "teaser": "Salle de concert légendaire du XIXe siècle, réputée pour l'acoustique exceptionnelle de sa grande salle.",
+      "desc": "Inaugurée en 1888, la salle du Concertgebouw compte parmi les meilleures salles de concert au monde sur le plan acoustique, une réputation forgée au fil de plus d'un siècle de représentations et régulièrement confirmée par les musiciens et chefs d'orchestre internationaux qui s'y produisent. L'Orchestre royal du Concertgebouw, résident historique des lieux, figure lui-même parmi les formations symphoniques les plus respectées d'Europe, entretenant une tradition d'excellence directement liée à la qualité exceptionnelle de la salle qui l'accueille. L'architecture néoclassique du bâtiment, avec sa façade ornée et son fronton doré portant le nom d'Apollon, dieu grec des arts, reflète les ambitions culturelles affichées de la bourgeoisie amstellodamoise de la fin du XIXe siècle. Des concerts gratuits, proposés certains midis de la semaine, permettent de découvrir la salle sans nécessairement assister à une représentation payante en soirée. La programmation, riche et variée, couvre aussi bien le répertoire classique traditionnel que des créations contemporaines, attirant un public aussi bien local qu'international. Réservez vos billets bien à l'avance pour les concerts du soir, particulièrement demandés en période de festival."
+    },
+    {
+      "id": "moco-museum",
+      "name": "Moco Museum",
+      "cat": "culture",
+      "interest": 2,
+      "lat": 52.3583,
+      "lng": 4.8827,
+      "teaser": "Musée privé consacré à l'art urbain et contemporain, avec des œuvres de Banksy et d'artistes modernes.",
+      "desc": "Installé dans une villa du XIXe siècle en bordure de la Museumplein, le Moco Museum se distingue des grandes institutions muséales voisines par une programmation entièrement tournée vers l'art moderne et contemporain, avec un accent particulier sur le street art et des artistes comme Banksy, dont le musée présente régulièrement l'une des plus importantes collections privées exposées au public. Le contraste entre l'architecture bourgeoise du bâtiment d'origine et les œuvres souvent subversives ou provocatrices qui y sont accrochées crée un effet volontairement décalé, assumé par les organisateurs comme un parti pris esthétique et commercial. Le musée, de taille bien plus modeste que ses voisins prestigieux, se visite en une heure environ et attire un public généralement plus jeune, sensible à l'art urbain et aux formats d'exposition immersifs récemment ajoutés. Certains critiques reprochent au lieu une approche jugée trop commerciale de l'art contemporain, tandis que d'autres saluent son accessibilité pour un public non spécialiste. C'est une option complémentaire aux grands musées voisins pour qui dispose d'un peu de temps supplémentaire sur la Museumplein."
+    },
+    {
+      "id": "grachtengordel",
+      "name": "Grachtengordel (ceinture de canaux)",
+      "cat": "fluvial",
+      "interest": 5,
+      "lat": 52.368,
+      "lng": 4.8852,
+      "teaser": "Réseau de canaux concentriques du XVIIe siècle, classé à l'UNESCO, structure emblématique du centre d'Amsterdam.",
+      "desc": "Conçue au début du XVIIe siècle dans le cadre d'un plan d'urbanisme visionnaire pour l'époque, la ceinture de canaux concentriques d'Amsterdam, formée principalement par les canaux Herengracht, Keizersgracht et Prinsengracht, a permis d'organiser l'expansion rapide de la ville tout en facilitant le transport commercial par voie d'eau, essentiel à la prospérité du Siècle d'or hollandais. Ce réseau, inscrit au patrimoine mondial de l'UNESCO depuis 2010, reste aujourd'hui bordé de maisons de marchands aux façades étroites et hautes, caractéristiques par leurs pignons ornés et leurs systèmes de poulies encore visibles, utilisés autrefois pour hisser les meubles par les fenêtres faute d'escaliers suffisamment larges. Se promener le long de ces canaux, à pied ou à vélo, offre l'une des expériences les plus authentiques de la ville, en particulier tôt le matin avant l'arrivée des groupes touristiques. Une croisière commentée en bateau permet une découverte différente, depuis l'eau, particulièrement appréciée à la tombée de la nuit lorsque les maisons s'illuminent. Les quais restent praticables toute l'année, même si l'affluence cycliste impose une vigilance constante aux piétons moins habitués à cette circulation dense."
+    },
+    {
+      "id": "magere-brug",
+      "name": "Magere Brug (Pont Maigre)",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 52.3646,
+      "lng": 4.8958,
+      "teaser": "Pont à bascule en bois du XVIIe siècle enjambant l'Amstel, l'un des plus photographiés de la ville.",
+      "desc": "Malgré son nom qui évoque sa silhouette élancée, le Magere Brug tel qu'on le connaît aujourd'hui est en réalité une reconstruction du XXe siècle fidèle au style des ponts en bois traditionnels qui enjambaient autrefois la plupart des canaux amstellodamois avant leur remplacement progressif par des structures métalliques ou en béton. Ce pont à bascule, actionné manuellement par un gardien lors du passage des bateaux, relie les deux rives de l'Amstel juste au sud du centre historique, dans un secteur résidentiel plus calme que le cœur touristique de la ville. Illuminé chaque soir par des centaines d'ampoules qui soulignent sa structure de bois, il compte parmi les ponts les plus photographiés d'Amsterdam, en particulier au crépuscule lorsque la lumière se reflète sur l'Amstel. La légende locale, sans doute apocryphe, veut que deux sœurs vivant de part et d'autre du fleuve aient financé sa construction pour se rendre visite plus facilement. La traversée à pied, gratuite et rapide, permet d'admirer au passage les grandes péniches amarrées le long des quais et l'Hermitage voisin."
+    },
+    {
+      "id": "amstel-rivier",
+      "name": "L'Amstel",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 52.36,
+      "lng": 4.899,
+      "teaser": "Rivière qui a donné son nom à la ville, aujourd'hui bordée de terrasses et de péniches résidentielles.",
+      "desc": "C'est de cette rivière que la ville d'Amsterdam tire directement son nom, hérité du barrage construit au XIIIe siècle à l'endroit où se trouve aujourd'hui la place du Dam. Plus large et plus dégagée que les canaux concentriques du centre historique, l'Amstel traverse la ville du sud au nord avant de se jeter dans l'IJ, offrant des perspectives différentes sur Amsterdam, moins denses en monuments mais plus paisibles, en particulier dans sa partie méridionale où défilent les grandes maisons bourgeoises du début du XXe siècle. De nombreuses péniches résidentielles, certaines aménagées avec un grand soin décoratif, sont amarrées le long des berges, illustrant un mode de vie particulier et recherché à Amsterdam, où le prix du foncier flottant peut parfois dépasser celui des logements terrestres équivalents. Plusieurs terrasses de café, installées directement au bord de l'eau, permettent de profiter du passage des bateaux tout en admirant la brasserie Heineken historique un peu plus au sud. Une balade ou une session de vélo le long des berges complète agréablement la découverte plus dense du centre historique."
+    },
+    {
+      "id": "ndsm-werf",
+      "name": "NDSM-werf",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 52.4008,
+      "lng": 4.8964,
+      "teaser": "Ancien chantier naval reconverti en friche culturelle sur la rive nord de l'IJ, accessible en ferry gratuit.",
+      "desc": "Autrefois l'un des plus grands chantiers navals d'Europe, le site NDSM sur la rive nord de l'IJ a périclité avec le déclin de l'industrie navale néerlandaise à la fin du XXe siècle, avant d'être progressivement investi par des artistes, des collectifs créatifs et des entrepreneurs culturels attirés par ses vastes hangars industriels désaffectés et ses loyers alors très abordables. Le site conserve une esthétique résolument brute et industrielle, entre grues rouillées, containers reconvertis en ateliers et fresques monumentales de street art, très différente de l'image de carte postale du centre historique situé de l'autre côté de l'eau. Des marchés créatifs, des festivals de musique électronique et des expositions d'art urbain y sont régulièrement organisés, attirant un public plus jeune et alternatif que les quartiers touristiques traditionnels. L'accès se fait facilement et gratuitement depuis le centre-ville par l'un des ferries municipaux qui traversent l'IJ en quelques minutes seulement, une traversée qui offre elle-même une belle perspective sur la skyline moderne du nord d'Amsterdam. Le site continue son développement urbain, avec de nouveaux logements et bureaux qui côtoient progressivement les friches culturelles historiques."
+    },
+    {
+      "id": "pontjes-ij",
+      "name": "Ferries gratuits de l'IJ",
+      "cat": "fluvial",
+      "interest": 2,
+      "lat": 52.3785,
+      "lng": 4.9005,
+      "teaser": "Traversées en bateau entièrement gratuites reliant le centre historique aux quartiers en plein essor du nord.",
+      "desc": "Derrière la gare centrale d'Amsterdam, plusieurs lignes de ferries municipaux traversent gratuitement le fleuve IJ pour relier le centre historique aux quartiers d'Amsterdam-Noord, en plein développement depuis une vingtaine d'années après des décennies de déclin industriel. Ces bateaux, empruntés quotidiennement par des milliers de cyclistes et de piétons locaux autant que par des touristes curieux, offrent en quelques minutes seulement une perspective inattendue sur la skyline du centre historique, avec ses clochers caractéristiques qui s'éloignent progressivement à mesure que le bateau avance. La traversée elle-même ne dure que quelques minutes mais constitue une activité appréciée en soi, en particulier au coucher du soleil lorsque la lumière rase illumine l'eau et les façades environnantes. Une fois sur la rive nord, plusieurs quartiers méritent le détour, du site industriel reconverti de NDSM à la tour panoramique A'DAM Lookout, offrant un aperçu d'un Amsterdam plus contemporain et moins touristique que le centre historique. Ces ferries fonctionnent en continu, y compris tard le soir, ce qui en fait une option pratique et gratuite pour explorer cette partie moins connue de la ville."
+    },
+    {
+      "id": "vondelpark",
+      "name": "Vondelpark",
+      "cat": "nature",
+      "interest": 4,
+      "lat": 52.3579,
+      "lng": 4.8686,
+      "teaser": "Plus grand et plus populaire parc d'Amsterdam, aménagé à l'anglaise au XIXe siècle, cœur de la vie locale.",
+      "desc": "Aménagé à partir de 1865 dans le style paysager anglais alors en vogue, le Vondelpark, nommé en hommage au poète néerlandais Joost van den Vondel, s'est rapidement imposé comme le parc le plus fréquenté d'Amsterdam et reste aujourd'hui un lieu de vie essentiel pour les habitants de la ville. Ses larges pelouses, ses étangs sinueux et ses allées ombragées accueillent chaque jour joggeurs, familles en pique-nique, musiciens de rue et cyclistes, dans une ambiance résolument décontractée qui contraste avec la densité du centre historique tout proche. Un théâtre en plein air propose gratuitement des spectacles et des concerts durant les mois d'été, attirant un public local aussi bien que touristique. Plusieurs cafés et un restaurant historique installé dans un ancien pavillon du parc permettent de faire une pause prolongée sans quitter les lieux. Le parc traverse une bonne partie du quartier des musées, ce qui en fait une étape naturelle pour se détendre entre deux visites culturelles sur la Museumplein voisine. Un vélo, facilement loué en ville, reste le moyen le plus agréable de parcourir l'ensemble du parc, qui s'étend sur plus de deux kilomètres de longueur."
+    },
+    {
+      "id": "hortus-botanicus",
+      "name": "Hortus Botanicus",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 52.3676,
+      "lng": 4.9096,
+      "teaser": "L'un des plus anciens jardins botaniques du monde, fondé au XVIIe siècle pour les plantes médicinales.",
+      "desc": "Fondé en 1638 pour cultiver des plantes médicinales destinées aux médecins et apothicaires de la ville, le Hortus Botanicus d'Amsterdam compte parmi les plus anciens jardins botaniques encore en activité au monde, ayant directement bénéficié de l'exceptionnel réseau commercial maritime néerlandais pour importer des espèces venues des quatre coins du globe dès le Siècle d'or. Le jardin conserve encore aujourd'hui des spécimens historiques remarquables, dont un palmier tricentenaire logé dans une serre construite spécialement autour de lui tant sa hauteur avait fini par dépasser les structures existantes. Les différentes serres thématiques, consacrées respectivement aux plantes tropicales, désertiques et carnivores, offrent un parcours varié malgré la taille relativement modeste du jardin comparée à d'autres institutions botaniques européennes. Situé à deux pas du quartier juif historique et du zoo Artis, le Hortus Botanicus reste étonnamment méconnu des visiteurs pressés, ce qui en fait une pause verdoyante et tranquille, particulièrement appréciée les jours de pluie grâce à ses nombreux espaces couverts. Une petite serre à papillons, ajoutée plus récemment, complète l'ensemble pour le plus grand plaisir des familles avec enfants."
+    },
+    {
+      "id": "amsterdamse-bos",
+      "name": "Amsterdamse Bos",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 52.32,
+      "lng": 4.83,
+      "teaser": "Vaste forêt artificielle créée dans les années 1930, plus grand espace vert de l'agglomération amstellodamoise.",
+      "desc": "Aménagé dans les années 1930 dans le cadre d'un programme de travaux publics destiné à lutter contre le chômage de l'époque, l'Amsterdamse Bos constitue aujourd'hui le plus vaste espace vert de l'agglomération, largement plus étendu que le Vondelpark et pourtant nettement moins fréquenté par les visiteurs internationaux, ce qui en fait un lieu privilégié pour les habitants en quête de calme. La forêt, entièrement plantée de main d'homme sur d'anciens polders, propose des kilomètres de sentiers pour la marche, le vélo et même l'aviron sur son plan d'eau artificiel dédié aux compétitions internationales. Un petit troupeau de bisons européens, réintroduit ces dernières années dans une zone semi-sauvage clôturée, ajoute une dimension inattendue à la visite pour les amateurs de faune. Une ferme pédagogique, très appréciée des familles avec jeunes enfants, complète l'offre de ce parc résolument tourné vers les loisirs de plein air plutôt que vers le patrimoine architectural. Situé un peu à l'écart du centre-ville, l'accès se fait facilement en tram ou à vélo, l'option la plus adaptée pour profiter pleinement de l'étendue du site."
+    },
+    {
+      "id": "westerpark",
+      "name": "Westerpark",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 52.387,
+      "lng": 4.87,
+      "teaser": "Ancien site gazier reconverti en parc urbain créatif, entre pelouses, food trucks et anciens réservoirs industriels.",
+      "desc": "Aménagé sur le site d'une ancienne usine à gaz désaffectée à la fin du XXe siècle, le Westerpark illustre la capacité d'Amsterdam à reconvertir son patrimoine industriel en espaces de vie contemporains plutôt que de le raser purement et simplement. Les anciens bâtiments et réservoirs de l'usine, préservés et réhabilités, abritent aujourd'hui cinémas indépendants, salles de concert, restaurants et ateliers créatifs, tandis que les vastes pelouses environnantes accueillent pique-niques, marchés hebdomadaires et festivals en plein air durant la belle saison. Ce mélange d'espace vert traditionnel et de programmation culturelle continue distingue nettement le Westerpark des autres grands parcs de la ville, davantage centrés sur la simple détente. Le quartier environnant, longtemps populaire et industriel, a connu ces dernières années une forte gentrification, avec l'arrivée de nombreux jeunes actifs attirés par cette offre culturelle et l'ambiance encore relativement décontractée par rapport au centre historique. Moins fréquenté par les touristes internationaux que le Vondelpark, le Westerpark offre un aperçu plus authentique du quotidien amstellodamois contemporain, particulièrement animé les week-ends de marché aux puces."
+    },
+    {
+      "id": "sarphatipark",
+      "name": "Sarphatipark",
+      "cat": "nature",
+      "interest": 2,
+      "lat": 52.3567,
+      "lng": 4.8977,
+      "teaser": "Petit parc paisible du quartier De Pijp, apprécié des habitants pour une pause loin des foules touristiques.",
+      "desc": "Bien plus modeste en superficie que le Vondelpark, le Sarphatipark compense sa taille réduite par une atmosphère résolument locale, au cœur du quartier animé de De Pijp connu pour sa diversité culturelle et son célèbre marché Albert Cuyp tout proche. Nommé en hommage à Samuel Sarphati, médecin et urbaniste du XIXe siècle qui contribua largement à moderniser Amsterdam, le parc rassemble un étang central, des pelouses ombragées et quelques monuments commémoratifs, dans un cadre à taille humaine idéal pour une pause rapide entre deux visites. Le quartier environnant, autrefois populaire et aujourd'hui largement gentrifié, concentre une offre particulièrement riche de cafés, restaurants ethniques et boutiques indépendantes, ce qui permet de combiner facilement la visite du parc avec une découverte plus large du quartier De Pijp. Contrairement aux grands parcs plus centraux, le Sarphatipark reste fréquenté presque exclusivement par les habitants du quartier, offrant un aperçu authentique de la vie amstellodamoise loin de l'agitation touristique. Une pause ici complète agréablement une visite du marché Albert Cuyp voisin, en particulier les jours de forte chaleur où l'ombre des arbres est appréciable."
+    },
+    {
+      "id": "negen-straatjes",
+      "name": "De Negen Straatjes (les Neuf Rues)",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 52.3712,
+      "lng": 4.885,
+      "teaser": "Réseau de petites rues commerçantes entre trois canaux, réputé pour ses boutiques indépendantes et concept stores.",
+      "desc": "Ce réseau de neuf petites rues perpendiculaires, tendu entre les canaux Prinsengracht, Keizersgracht et Herengracht, concentre depuis plusieurs décennies l'une des offres commerciales les plus prisées d'Amsterdam pour les amateurs de boutiques indépendantes, loin des grandes enseignes internationales qui dominent le centre-ville plus touristique. Concept stores de mode, boutiques vintage, librairies spécialisées, chocolatiers artisanaux et petites galeries d'art se succèdent dans ces rues aux façades historiques, créant une atmosphère à la fois commerçante et résolument pittoresque, très différente de celle des grands axes commerciaux classiques. Le quartier, à cheval sur le Jordaan et le centre des canaux, se prête particulièrement bien à une flânerie sans itinéraire précis, où chaque rue traversée réserve son lot de découvertes inattendues. De nombreux cafés et petits restaurants permettent de faire des pauses régulières entre deux boutiques, dans une ambiance décontractée appréciée aussi bien des habitants que des visiteurs en quête d'un shopping plus authentique. Le week-end reste le moment le plus animé, tandis qu'une visite en semaine permet de profiter des boutiques dans un calme relatif, plus propice à la découverte tranquille."
+    },
+    {
+      "id": "kalverstraat",
+      "name": "Kalverstraat",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 52.37,
+      "lng": 4.893,
+      "teaser": "Principale artère commerçante piétonne du centre-ville, reliant la place du Dam à la Munttoren.",
+      "desc": "Piétonnisée sur toute sa longueur, la Kalverstraat relie la place du Dam à la Munttoren et concentre depuis des générations l'essentiel du commerce grand public d'Amsterdam, entre grandes enseignes internationales de mode, magasins de sport et boutiques de souvenirs destinées aux visiteurs de passage. Historiquement dédiée au commerce du bétail, comme son nom l'indique, la rue a connu sa transformation commerciale moderne dès le XIXe siècle et reste aujourd'hui l'une des artères les plus fréquentées de la ville, particulièrement animée le samedi et durant les soldes saisonnières. L'entrée discrète du Begijnhof, à mi-parcours, offre un contraste saisissant avec l'agitation commerciale environnante, rappelant que le centre historique conserve malgré tout ses poches de tranquillité au milieu du tumulte. Moins pittoresque que les Neuf Rues voisines, la Kalverstraat séduit surtout pour son efficacité et sa concentration de magasins accessibles, plutôt que pour son cachet architectural. C'est une option pratique pour un shopping rapide et sans détour, en particulier pour les besoins du quotidien plutôt que pour une expérience de flânerie prolongée."
+    },
+    {
+      "id": "albert-cuypmarkt",
+      "name": "Albert Cuypmarkt",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 52.3567,
+      "lng": 4.8926,
+      "teaser": "Plus grand marché de rue quotidien des Pays-Bas, cœur populaire et multiculturel du quartier De Pijp.",
+      "desc": "Installé depuis le début du XXe siècle le long de la rue Albert Cuyp, ce marché quotidien compte parmi les plus grands et les plus anciens marchés de rue des Pays-Bas, avec plus de deux cents étals proposant aussi bien fruits et légumes que textiles, épices, fromages ou spécialités de rue comme les fameux stroopwafels préparés sous les yeux des passants. Le marché reflète fidèlement la diversité culturelle du quartier De Pijp environnant, longtemps considéré comme populaire et ouvrier, aujourd'hui largement gentrifié mais ayant conservé cette identité multiculturelle affirmée à travers l'offre commerciale du marché. L'ambiance, sonore et colorée, contraste volontairement avec le calme plus policé du centre historique et des grands musées voisins, offrant un aperçu plus quotidien et populaire de la vie amstellodamoise. De nombreux cafés et petits restaurants bordent la rue, permettant de prolonger la visite par une pause gourmande après avoir parcouru les étals. Le marché fonctionne tous les jours sauf le dimanche, avec une affluence maximale le samedi matin : privilégiez plutôt un jour de semaine pour circuler plus aisément entre les étals."
+    },
+    {
+      "id": "bloemenmarkt",
+      "name": "Bloemenmarkt",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 52.3672,
+      "lng": 4.8917,
+      "teaser": "Marché aux fleurs flottant unique au monde, installé sur des péniches amarrées le long du Singel.",
+      "desc": "Installé depuis le XIXe siècle sur des péniches amarrées en permanence le long du canal Singel, le Bloemenmarkt constitue le seul marché aux fleurs flottant au monde, une particularité qui attire chaque année une foule considérable de visiteurs, parfois au détriment de son authenticité originelle progressivement recentrée sur les souvenirs touristiques plutôt que sur les fleurs elles-mêmes. Les bulbes de tulipes, emblème floral incontournable des Pays-Bas, y sont vendus en abondance sous des formes variées, séchés et conditionnés pour l'exportation vers l'étranger, où les réglementations douanières limitent généralement l'importation de plantes vivantes. Les étals proposent aussi des graines, des compositions florales et divers produits dérivés à motifs de tulipes, du textile à la vaisselle. Si le lieu a perdu une partie de son caractère commercial d'origine face à l'afflux touristique, il reste un passage rapide et coloré agréable entre la Munttoren et la place du Dam, sur l'un des itinéraires les plus naturels du centre historique. Pour un achat de bulbes plus authentique et à meilleur prix, mieux vaut cependant se renseigner sur les marchés spécialisés moins centraux fréquentés par les habitants eux-mêmes."
+    },
+    {
+      "id": "a-dam-lookout",
+      "name": "A'DAM Lookout",
+      "cat": "panorama",
+      "interest": 4,
+      "lat": 52.3838,
+      "lng": 4.9006,
+      "teaser": "Plateforme d'observation au sommet d'une ancienne tour de bureaux, avec la balançoire suspendue la plus haute d'Europe.",
+      "desc": "Installée au sommet d'un ancien immeuble de bureaux datant des années 1960, sur la rive nord de l'IJ juste en face de la gare centrale, la plateforme d'observation A'DAM Lookout offre depuis plus de cent mètres de hauteur l'une des vues les plus complètes sur Amsterdam, embrassant à la fois le centre historique compact, le port moderne et les polders environnants jusqu'à l'horizon par temps clair. L'attraction phare du lieu reste une balançoire suspendue dans le vide au-dessus du toit, régulièrement présentée comme la plus haute d'Europe, sensation forte réservée aux visiteurs n'ayant pas le vertige et prête à affronter la file d'attente qui peut s'y former en haute saison. Un bar rotatif, installé un étage plus bas, permet de profiter de la vue de manière plus tranquille en sirotant un verre, l'ensemble du bâtiment effectuant une rotation lente sur lui-même. L'accès se fait facilement depuis le centre-ville grâce au ferry gratuit qui traverse l'IJ en quelques minutes seulement. Réservez votre billet en ligne pour éviter l'attente, particulièrement longue les week-ends ensoleillés et en fin de journée au moment du coucher du soleil."
+    },
+    {
+      "id": "oba-bibliotheek",
+      "name": "Bibliothèque OBA",
+      "cat": "panorama",
+      "interest": 2,
+      "lat": 52.3735,
+      "lng": 4.9126,
+      "teaser": "Plus grande bibliothèque publique des Pays-Bas, avec un café-terrasse au dernier étage offrant une vue gratuite sur la ville.",
+      "desc": "Inaugurée en 2007 près de la gare centrale, la grande bibliothèque publique d'Amsterdam, connue sous son acronyme néerlandais OBA, compte parmi les plus vastes d'Europe et propose bien plus qu'un simple espace de lecture, avec salles de concert, expositions temporaires et ateliers ouverts à tous les publics. Le septième et dernier étage abrite un café-restaurant dont la terrasse, accessible gratuitement sans même avoir besoin d'emprunter le moindre livre, offre une vue dégagée et largement méconnue sur le centre historique et le quartier du port environnant, une alternative discrète aux points de vue plus fréquentés et souvent payants de la ville. L'endroit reste principalement fréquenté par les habitants, étudiants venus réviser ou simples curieux en quête d'une pause tranquille avec vue, ce qui en fait une découverte appréciée des visiteurs cherchant à s'éloigner un moment des foules touristiques du centre. L'architecture intérieure, très lumineuse grâce à ses larges verrières, mérite également le coup d'œil pour les amateurs de design contemporain scandinave, dont s'inspire largement l'aménagement des lieux. Une halte rapide et entièrement gratuite, à combiner facilement avec une visite du quartier de la gare centrale."
+    }
+  ]
+}
