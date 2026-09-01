@@ -1,0 +1,247 @@
+{
+  "city": "Bordeaux",
+  "center": { "lat": 44.8404, "lng": -0.5805 },
+  "zoom": 13,
+  "pois": [
+    {
+      "id": "place-de-la-bourse",
+      "name": "Place de la Bourse",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 44.8414,
+      "lng": -0.5701,
+      "teaser": "Place royale du XVIIIe siècle ouvrant Bordeaux sur la Garonne, symbole absolu de la ville.",
+      "desc": "Édifiée entre 1730 et 1755 sous les intendances de Boucher puis Tourny, la place de la Bourse fut la toute première place ouverte de l'urbanisme français, conçue par l'architecte du roi Jacques Gabriel puis achevée par son fils Ange-Jacques Gabriel. Sa réalisation marque une rupture majeure avec le Bordeaux médiéval encore enfermé derrière ses remparts : plus de vingt maisons et cent cinquante mètres de murailles furent démolis pour ouvrir la ville sur le fleuve. Deux pavillons symétriques l'encadrent, le palais de la Bourse au nord et l'ancien hôtel des Douanes au sud, tous deux toujours affectés à leurs fonctions d'origine. Rebaptisée tour à tour place Royale, place de la Liberté puis place Impériale au gré des régimes politiques, elle a repris son nom actuel après 1848. Inscrite au patrimoine mondial de l'UNESCO, elle se reflète depuis 2006 dans le Miroir d'eau installé juste devant. Le meilleur moment pour la photographier reste tôt le matin ou juste après le coucher du soleil, quand les façades s'illuminent et que l'affluence touristique retombe."
+    },
+    {
+      "id": "cathedrale-saint-andre",
+      "name": "Cathédrale Saint-André",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 44.8378,
+      "lng": -0.5775,
+      "teaser": "Cathédrale gothique consacrée en 1096, lieu du mariage d'Aliénor d'Aquitaine avec le futur roi de France.",
+      "desc": "Consacrée dès 1096 par le pape Urbain II en tournée pour prêcher la première croisade, la cathédrale Saint-André a ensuite été reconstruite dans le style gothique entre le XIIe et le XVIe siècle pour atteindre les dimensions imposantes qu'on lui connaît aujourd'hui. C'est dans cette nef qu'Aliénor d'Aquitaine, âgée de seulement quinze ans, épousa en 1137 le futur roi de France Louis VII, union qui allait un temps rattacher l'Aquitaine à la couronne française. Le sol instable du terrain a contraint les bâtisseurs à ériger le clocher, la tour Pey-Berland, à l'écart de l'édifice principal plutôt que d'y adosser son poids. La Révolution transforma la cathédrale en entrepôt de fourrage avant qu'elle ne retrouve sa vocation religieuse. Un trésor liturgique, incluant une Crucifixion attribuée à Rembrandt, se visite certains après-midis. L'édifice fait partie du patrimoine mondial de l'UNESCO au titre des chemins de Saint-Jacques-de-Compostelle. Prévoyez une pause à l'ombre de la place Pey-Berland, particulièrement agréable en fin de matinée."
+    },
+    {
+      "id": "grosse-cloche",
+      "name": "Grosse Cloche",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 44.8353,
+      "lng": -0.5714,
+      "teaser": "Ancienne porte fortifiée et beffroi médiéval, l'un des rares monuments civils conservés de Bordeaux.",
+      "desc": "Surnom donné à une porte du rempart médiéval devenue le beffroi de l'ancien hôtel de ville, la Grosse Cloche compte parmi les très rares monuments civils que Bordeaux a conservés du Moyen Âge, avec la porte Cailhau. Également appelée porte Saint-Éloi ou porte Saint-James, en référence au chemin de Saint-Jacques-de-Compostelle qui y passait, elle est surmontée d'une girouette représentant un léopard, sans doute hérité du blason des rois d'Angleterre à l'époque où Bordeaux était sous domination anglaise. La cloche elle-même, baptisée Armande-Louise, n'est pas la cloche d'origine mais la sixième à occuper cet emplacement au fil des siècles. Elle sonne aujourd'hui à midi le premier dimanche de chaque mois ainsi que lors de commémorations officielles. La porte enjambe toujours la rue Saint-James, formant un passage étroit typique du Bordeaux ancien, entre le quartier Saint-Pierre et le cours Victor-Hugo. Les tours et anciens cachots se visitent lors de dates limitées entre avril et septembre, une expérience à réserver aux amateurs d'histoire médiévale plutôt qu'aux visites rapides."
+    },
+    {
+      "id": "porte-cailhau",
+      "name": "Porte Cailhau",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 44.8387,
+      "lng": -0.5686,
+      "teaser": "Porte-arc de triomphe du XVe siècle, vestige des remparts, offrant une vue sur le Pont de Pierre.",
+      "desc": "Bâtie entre 1493 et 1496, la porte Cailhau commémore la victoire de Charles VIII à la bataille de Fornoue en Italie, dont une statue du roi orne toujours la façade côté fleuve, aux côtés du cardinal d'Épinay et de saint Jean, patron de la Jurade. Vestige des anciens remparts aujourd'hui disparus, elle formait autrefois l'entrée d'une première enceinte protégeant le palais de l'Ombrière, résidence des ducs d'Aquitaine puis siège du Parlement de Bordeaux jusqu'à sa destruction en 1791. Ses toitures coniques élancées, ses fenêtres à meneaux et ses sculptures la distinguent nettement des autres portes fortifiées de la ville. L'intérieur, aménagé sur quatre niveaux, propose une exposition sur l'art de la taille de pierre ainsi que des jeux et vidéos pour les familles. Depuis le sommet, la vue plonge sur le Pont de Pierre, le plus ancien pont de la ville. Une anecdote locale, largement reprise par les guides, veut que Charles VIII soit mort en se cognant la tête contre un linteau bas, un clin d'œil que rappelle une inscription sur place."
+    },
+    {
+      "id": "basilique-saint-michel",
+      "name": "Basilique Saint-Michel",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 44.8344,
+      "lng": -0.565,
+      "teaser": "Deuxième plus grande église de Bordeaux, gothique flamboyant, dont la crypte abrita jadis des momies exposées.",
+      "desc": "Construite du XIVe au XVIe siècle dans le style gothique flamboyant, la basilique Saint-Michel est la deuxième plus grande église catholique de Bordeaux et a donné son nom à tout le quartier qui s'est développé autour d'elle, longtemps peuplé de portefaix, d'artisans et de marins débarquant le bois et le sel des gabares venues du Quercy. Comme la cathédrale Saint-André, elle possède un clocher totalement indépendant du sanctuaire, une disposition destinée à limiter les vibrations des cloches sur les fondations fragiles du bâtiment. Sa crypte servit longtemps d'ossuaire, puis au XIXe siècle de lieu d'exposition pour des corps naturellement momifiés, exhumés lors de l'aménagement de la place Meynard, alors ancien cimetière paroissial. Ces momies, au nombre d'une soixantaine, attirèrent en leur temps des visiteurs illustres comme Victor Hugo ou Gustave Flaubert. Bombardée dans la nuit du 19 au 20 juin 1940, la basilique a depuis retrouvé son état d'origine. Le quartier Saint-Michel environnant, cosmopolite et vivant, accueille chaque dimanche matin un marché aux puces animé."
+    },
+    {
+      "id": "basilique-saint-seurin",
+      "name": "Basilique Saint-Seurin",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 44.8433,
+      "lng": -0.5858,
+      "teaser": "Église romane fondée à l'aube du XIe siècle, la plus ancienne des trois monuments bordelais classés à l'UNESCO.",
+      "desc": "Bâtie au tout début du XIe siècle sur un site funéraire paléochrétien, la basilique Saint-Seurin est le plus ancien des trois grands édifices religieux de Bordeaux inscrits au patrimoine mondial de l'UNESCO au titre des chemins de Saint-Jacques-de-Compostelle, aux côtés de la cathédrale Saint-André et de la basilique Saint-Michel. Son architecture romane, plus sobre que le gothique flamboyant de ses consœurs, témoigne d'une période antérieure de l'histoire religieuse bordelaise. La crypte, accessible en visite, conserve des sarcophages mérovingiens et des vestiges archéologiques remontant à l'Antiquité tardive, faisant de ce sous-sol l'un des sites archéologiques les plus riches du centre-ville. L'édifice se situe légèrement à l'écart du cœur touristique, dans un quartier résidentiel plus calme, ce qui en fait une visite moins fréquentée mais tout aussi instructive sur les origines chrétiennes de la ville. La légende locale veut que Roland, héros de la chanson de geste, y ait été enterré avec son fidèle cor. Comptez une trentaine de minutes pour l'église et la crypte, en particulier si des fouilles archéologiques sont visibles ce jour-là."
+    },
+    {
+      "id": "grand-theatre-bordeaux",
+      "name": "Grand Théâtre de Bordeaux",
+      "cat": "patrimoine",
+      "interest": 5,
+      "lat": 44.8425,
+      "lng": -0.5736,
+      "teaser": "Opéra néoclassique inauguré en 1780, avec ses douze colonnes corinthiennes dominant la place de la Comédie.",
+      "desc": "Dessiné par l'architecte Victor Louis et inauguré en 1780, le Grand Théâtre de Bordeaux compte parmi les plus beaux opéras néoclassiques d'Europe, avec sa façade portée par douze colonnes corinthiennes surmontées de statues représentant neuf muses et trois déesses. L'édifice fut érigé à l'emplacement d'un ancien temple gallo-romain, les piliers de Tutelle, dont la mémoire perdure dans le nom d'une rue voisine. À l'intérieur, un escalier monumental menant à une salle ornée de bleu, d'or et de marbre blanc aurait directement inspiré Charles Garnier pour l'Opéra de Paris quelques décennies plus tard. La ballerine Marie Taglioni comme le jeune chorégraphe Marius Petipa y firent leurs débuts, et le ballet La Fille mal gardée y fut créé en 1789. Restauré dans les années 1990 pour retrouver ses couleurs d'origine, le théâtre abrite aujourd'hui l'Opéra national de Bordeaux. Une visite guidée permet d'admirer l'intérieur hors représentation, mais assister à un spectacle du soir reste la meilleure façon d'en vivre pleinement l'atmosphère."
+    },
+    {
+      "id": "palais-rohan",
+      "name": "Palais Rohan (Hôtel de Ville)",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 44.8379,
+      "lng": -0.5793,
+      "teaser": "Ancien palais archiépiscopal du XVIIIe siècle devenu mairie, célèbre pour son escalier d'honneur sculpté.",
+      "desc": "Construit à partir de 1771 pour l'archevêque Ferdinand Maximilien Mériadec de Rohan afin de remplacer l'ancien palais épiscopal médiéval, cet édifice néoclassique a connu de multiples usages avant de devenir l'Hôtel de Ville de Bordeaux en 1835 : résidence archiépiscopale, siège du tribunal révolutionnaire, préfecture, puis palais impérial lors du passage de Napoléon Ier en 1808. Derrière sa façade sobre de style Louis XVI se cache un escalier d'honneur considéré comme un chef-d'œuvre de la taille de pierre, ainsi que d'anciens salons qui conduisent à la salle du conseil municipal aménagée en 1889. Le palais se dresse juste à côté de la cathédrale Saint-André, place Pey-Berland, et abrite dans ses ailes latérales le musée des Beaux-Arts. La mairie ne se visite que le mercredi, dans le cadre de visites guidées organisées par l'office de tourisme. Le jardin à l'arrière, plus confidentiel, offre une parenthèse verte au cœur de l'administration municipale."
+    },
+    {
+      "id": "porte-de-bourgogne",
+      "name": "Porte de Bourgogne",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 44.8361,
+      "lng": -0.5661,
+      "teaser": "Arc monumental du XVIIIe siècle marquant l'entrée historique de la ville, face au Pont de Pierre.",
+      "desc": "Édifiée entre 1750 et 1755 par l'architecte André Portier sur ordre de l'intendant Tourny, la porte de Bourgogne, aussi appelée porte des Salinières, remplaça l'ancienne porte médiévale du même secteur et marquait l'entrée officielle de Bordeaux sur la route venant de Paris. Son dessin classique, inspiré des arcs de triomphe romains, illustre les ambitions urbanistiques du XVIIIe siècle bordelais, période durant laquelle la ville s'est largement transformée pour s'ouvrir sur son fleuve. Un temps rebaptisée porte Napoléon pour célébrer la venue de l'Empereur en 1808, elle a retrouvé son nom d'origine par la suite. Située place Bir-Hakeim, exactement dans l'axe du Pont de Pierre, elle offre une perspective particulièrement soignée entre les deux monuments. Le quartier alentour marque la transition entre le centre historique Saint-Pierre et le quartier Saint-Michel plus au sud. La porte est mise en valeur chaque soir par un éclairage coloré, bleu et vert d'un côté, blanc et orange de l'autre, qui vaut le détour à la tombée de la nuit."
+    },
+    {
+      "id": "monument-aux-girondins",
+      "name": "Monument aux Girondins",
+      "cat": "patrimoine",
+      "interest": 4,
+      "lat": 44.8453,
+      "lng": -0.5747,
+      "teaser": "Colonne monumentale de 43 mètres, place des Quinconces, dédiée aux députés girondins victimes de la Terreur.",
+      "desc": "Érigé entre 1894 et 1902 à la mémoire des députés girondins guillotinés pendant la Terreur révolutionnaire, ce monument-fontaine se dresse au centre de l'hémicycle occidental de la place des Quinconces, l'une des plus vastes places d'Europe avec ses douze hectares. Une colonne de pierre haute de 43 mètres, coiffée d'une statue en bronze de la Liberté brisant ses chaînes, domine l'ensemble sculptural, complété par deux vastes bassins ornés de groupes allégoriques représentant le Triomphe de la République d'un côté et la Chute de la Monarchie de l'autre. Le projet, initialement pensé indépendamment d'une fontaine commandée au sculpteur Bartholdi puis finalement cédée à la ville de Lyon, a fini par fusionner les deux ambitions en un seul ensemble monumental. La place elle-même, aménagée entre 1810 et 1828 sur le site de l'ancien château Trompette, doit son nom aux arbres plantés en quinconces. Face au fleuve se dressent deux colonnes rostrales dédiées au commerce et à la navigation. Le lieu accueille régulièrement foires, cirques et grands rassemblements populaires."
+    },
+    {
+      "id": "place-saint-pierre",
+      "name": "Place Saint-Pierre",
+      "cat": "patrimoine",
+      "interest": 3,
+      "lat": 44.8395,
+      "lng": -0.5715,
+      "teaser": "Cœur historique et vivant du vieux Bordeaux, sur le site de l'ancien port gallo-romain de la ville.",
+      "desc": "Aménagée sur le site de l'ancien port gallo-romain de Burdigala, la place Saint-Pierre constitue depuis l'Antiquité un point d'ancrage du quartier le plus ancien de Bordeaux, aujourd'hui reconnaissable à ses maisons à colombages et à ses façades de pierre blonde resserrées autour de l'église Saint-Pierre qui lui donne son nom. Le quartier Saint-Pierre a longtemps concentré les activités portuaires et commerçantes de la ville, comme en témoignent les portes fortifiées voisines, Porte Cailhau et Porte de Bourgogne, qui régulaient jadis l'accès au fleuve. Restaurée et largement piétonnisée, la place accueille aujourd'hui de nombreuses terrasses de restaurants et de bars, très animées en soirée, en particulier durant les mois d'été. Son atmosphère contraste avec la grandeur classique de la toute proche place de la Bourse, offrant un visage plus intime et médiéval du centre historique. C'est un point de passage naturel pour qui explore à pied le secteur classé à l'UNESCO, entre les quais de la Garonne et les grandes artères commerçantes du centre-ville."
+    },
+    {
+      "id": "capc-musee-art-contemporain",
+      "name": "CAPC Musée d'Art Contemporain",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 44.8481,
+      "lng": -0.5718,
+      "teaser": "Musée d'art contemporain installé dans un ancien entrepôt colonial du XIXe siècle, l'Entrepôt Lainé.",
+      "desc": "Fondé en 1973 sous le nom de Centre d'arts plastiques contemporains, le CAPC occupe depuis 1990 l'Entrepôt Lainé, un ancien entrepôt de denrées coloniales construit en 1824 par Claude Deschamps, l'architecte du Pont de Pierre. Le bâtiment, restauré par les architectes Denis Valode et Jean Pistre en collaboration avec la designer Andrée Putman, conserve deux immenses nefs évoquant des basiliques romaines, aujourd'hui consacrées aux expositions temporaires d'art contemporain émergent. La collection permanente rassemble plus de mille six cents œuvres d'environ deux cents artistes, parmi lesquels Christian Boltanski, Keith Haring ou Richard Long, dont certaines pièces installées in situ demeurent visibles en permanence à travers le bâtiment. Labellisé Musée de France depuis 2002 puis Centre d'art contemporain d'intérêt national en 2021, le CAPC organise aussi un espace pensé spécialement pour les jeunes enfants. Situé dans le quartier des Chartrons, entre les quais et le Jardin public, le musée se prête à une visite d'une à deux heures. L'entrée est gratuite le premier dimanche de chaque mois, hors juillet et août."
+    },
+    {
+      "id": "musee-aquitaine",
+      "name": "Musée d'Aquitaine",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 44.8355,
+      "lng": -0.576,
+      "teaser": "Musée retraçant vingt-cinq mille ans d'histoire de Bordeaux et de l'Aquitaine, de la préhistoire à nos jours.",
+      "desc": "Installé dans les anciens bâtiments de la faculté des lettres, eux-mêmes édifiés sur le site du couvent des Feuillants où fut un temps inhumé Montaigne, le musée d'Aquitaine conserve plus de soixante-dix mille pièces retraçant l'histoire de Bordeaux et de sa région depuis la préhistoire jusqu'à l'époque contemporaine. Les collections couvrent la préhistoire, l'Antiquité gallo-romaine puis médiévale, avant de consacrer d'importantes salles à l'âge d'or du commerce bordelais aux XVIIIe et XIXe siècles, période intimement liée au commerce triangulaire et à la traite négrière, dont le musée aborde frontalement l'histoire à travers ses collections. Cinq mille pièces d'art africain et océanien témoignent par ailleurs du passé portuaire cosmopolite de la ville. Le musée occupe une position centrale à deux pas de la cathédrale Saint-André et de la tour Pey-Berland, ce qui en fait une étape naturelle après la visite du centre historique religieux. Comptez au minimum une heure et demie pour parcourir l'ensemble des salles, davantage pour les passionnés d'histoire locale."
+    },
+    {
+      "id": "musee-beaux-arts",
+      "name": "Musée des Beaux-Arts",
+      "cat": "culture",
+      "interest": 3,
+      "lat": 44.8377,
+      "lng": -0.5798,
+      "teaser": "Musée de peinture logé dans les ailes du Palais Rohan, avec cinq siècles d'art européen.",
+      "desc": "Installé dans les deux galeries latérales du Palais Rohan, actuelle mairie de Bordeaux, le musée des Beaux-Arts présente une collection de peintures couvrant cinq siècles d'art européen, du XVe siècle à nos jours, avec des œuvres de Titien, Rubens, Delacroix ou encore Odilon Redon, peintre symboliste natif de la ville. Le parcours, réparti entre les deux ailes du palais de part et d'autre du jardin, invite à une déambulation chronologique où chaque salle correspond à une période artistique distincte. Moins fréquenté que les grands musées parisiens, l'établissement permet une visite posée, sans affluence excessive, au cœur même du centre administratif de la ville. Sa position, entre la cathédrale Saint-André et le jardin de la mairie, en fait une étape naturelle après la découverte du patrimoine religieux du secteur Pey-Berland. Le musée organise régulièrement des expositions temporaires qui viennent enrichir le parcours permanent : mieux vaut consulter le programme avant de s'y rendre, la galerie consacrée aux expositions n'étant ouverte qu'à ces occasions."
+    },
+    {
+      "id": "cite-du-vin",
+      "name": "Cité du Vin",
+      "cat": "culture",
+      "interest": 5,
+      "lat": 44.8625,
+      "lng": -0.5503,
+      "teaser": "Musée immersif consacré à l'histoire et aux cultures du vin dans le monde, avec belvédère panoramique.",
+      "desc": "Inaugurée en 2016 dans le quartier de Bacalan, la Cité du Vin propose un parcours immersif retraçant l'histoire du vin à travers les civilisations et les continents, loin de se limiter au seul vignoble bordelais. Conçu par l'agence d'architectes XTU, le bâtiment à la silhouette arrondie et dorée, souvent comparé à un tourbillon de vin dans un verre, s'impose comme l'un des repères visuels les plus reconnaissables du nouveau Bordeaux le long des quais. Réparti sur dix niveaux, le parcours principal mobilise dispositifs sensoriels, projections et bornes interactives disponibles en huit langues pour explorer les techniques, les rituels et les enjeux économiques liés au vin à travers l'histoire humaine. Le belvédère du huitième étage, culminant à trente-cinq mètres, offre un panorama à trois cent soixante degrés sur la ville et la Garonne, accompagné d'une dégustation de vin incluse dans le billet. Comptez deux à trois heures pour l'ensemble de la visite. La Cité du Vin se rejoint facilement depuis le centre historique par la ligne B du tramway, en une dizaine de minutes."
+    },
+    {
+      "id": "rue-sainte-catherine",
+      "name": "Rue Sainte-Catherine",
+      "cat": "shopping",
+      "interest": 4,
+      "lat": 44.842,
+      "lng": -0.5735,
+      "teaser": "Rue piétonne de 1,2 kilomètre, souvent présentée comme la plus longue artère commerçante d'Europe.",
+      "desc": "Tracée sur l'ancien cardo romain, la rue Sainte-Catherine relie sur 1,2 kilomètre la place de la Comédie et son Grand Théâtre à la place de la Victoire, formant l'un des deux grands axes historiques qui structurent le centre de Bordeaux. Devenue progressivement piétonne entre 1976 et 1984, elle est aujourd'hui régulièrement présentée comme la plus longue rue commerçante piétonne d'Europe, un titre disputé mais qui témoigne en tout cas de son rôle central dans la vie économique bordelaise. Enseignes internationales, boutiques de mode et grandes chaînes s'y succèdent sur toute sa longueur, tandis que les rues transversales, plus étroites, abritent des commerces indépendants et des façades plus anciennes. L'artère traverse plusieurs quartiers aux ambiances différentes, du triangle d'or élégant près de la Comédie jusqu'aux abords plus populaires de la place de la Victoire. Très fréquentée toute l'année, la rue atteint son affluence maximale le samedi et pendant les soldes. Prévoyez de la patience aux heures de pointe, la largeur de la rue restant modeste malgré son trafic piéton considérable."
+    },
+    {
+      "id": "marche-des-capucins",
+      "name": "Marché des Capucins",
+      "cat": "shopping",
+      "interest": 3,
+      "lat": 44.833,
+      "lng": -0.5665,
+      "teaser": "Plus grand marché couvert de Bordeaux, surnommé le ventre de la ville, face à la flèche Saint-Michel.",
+      "desc": "Installé sur la place des Capucins, face à la flèche de la basilique Saint-Michel, ce marché couvert compte parmi les plus anciens et les plus importants de Bordeaux, surnommé familièrement le ventre de la ville en référence à son rôle nourricier historique pour toute l'agglomération. Les halles actuelles, construites dans les années 1880 dans un esprit proche de celui de Baltard, ont remplacé une première structure en bois, avant que le marché ne se recentre progressivement sur son emplacement actuel au début des années 2000. Plus d'une soixantaine de commerçants y proposent fruits, légumes, fromages, poissons, charcuteries et spécialités venues d'ailleurs, aux côtés d'un espace consacré aux produits biologiques et régionaux. Le premier étage du parking voisin offre un point de vue surprenant sur l'agitation colorée des étals, une astuce appréciée des photographes de passage. Situé dans le quartier Saint-Michel, cosmopolite et vivant, le marché se prête aussi bien à des emplettes qu'à une pause gourmande sur place. Privilégiez une visite matinale, l'activité retombant nettement après le début d'après-midi."
+    },
+    {
+      "id": "miroir-eau",
+      "name": "Miroir d'eau",
+      "cat": "fluvial",
+      "interest": 5,
+      "lat": 44.8416,
+      "lng": -0.5691,
+      "teaser": "Plus grand miroir d'eau du monde, face à la place de la Bourse, alternant reflet et effet de brume.",
+      "desc": "Inauguré en 2006 sur les quais de la Garonne, juste en face de la place de la Bourse, le Miroir d'eau s'étend sur 3 450 mètres carrés et constitue, selon ses concepteurs, le plus vaste bassin réfléchissant au monde. Conçu par le paysagiste Michel Corajoud dans le cadre du grand réaménagement des quais bordelais, il fut réalisé par le fontainier Jean-Max Llorca et l'architecte Pierre Gangnet, qui ont réutilisé un ancien entrepôt souterrain pour y loger la machinerie et le réservoir de huit cents mètres cubes. Le dispositif alterne, par cycles d'un quart d'heure, un effet miroir avec deux centimètres d'eau sur une dalle de granit, puis un effet de brume artificielle pouvant s'élever jusqu'à deux mètres de hauteur. Corajoud s'est inspiré de la place Saint-Marc à Venise, submergée lors des grandes marées, pour créer cette réinterprétation contemporaine. Le miroir est interrompu chaque hiver pour éviter les dégâts liés au gel. Les enfants s'y amusent particulièrement lors des épisodes de brume, et la vue nocturne sur les façades illuminées qui s'y reflètent reste l'une des images les plus emblématiques de Bordeaux."
+    },
+    {
+      "id": "pont-de-pierre",
+      "name": "Pont de Pierre",
+      "cat": "fluvial",
+      "interest": 4,
+      "lat": 44.8385,
+      "lng": -0.5631,
+      "teaser": "Premier pont construit sur la Garonne à Bordeaux, voulu par Napoléon Ier et achevé en 1822.",
+      "desc": "Voulu par Napoléon Ier pour permettre à ses troupes de franchir rapidement la Garonne pendant la campagne d'Espagne, le Pont de Pierre fut finalement construit sous la Restauration, entre 1819 et 1822, et resta pendant près de cent cinquante ans le seul ouvrage reliant les deux rives de la ville. Composé de dix-sept arches en pierre et brique, un nombre que la légende locale associe malicieusement aux dix-sept lettres du nom Napoléon Bonaparte, il mesure près de 487 mètres et marque juridiquement la frontière entre le domaine maritime et le domaine fluvial de la Garonne. Chaque arche portait autrefois un buste de l'Empereur. Longtemps unique passage entre la rive gauche historique et le quartier de la Bastide, il accueille aujourd'hui la ligne A du tramway ainsi que pistes cyclables et trottoirs, la circulation automobile y ayant été fortement réduite. Les Bordelais ont pris l'habitude d'observer le niveau de la marée sur ses piles, la Garonne restant sensible aux mouvements de l'océan Atlantique à une centaine de kilomètres en aval. Le pont a fêté son bicentenaire en 2022."
+    },
+    {
+      "id": "pont-jacques-chaban-delmas",
+      "name": "Pont Jacques-Chaban-Delmas",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 44.8583,
+      "lng": -0.5518,
+      "teaser": "Pont levant contemporain inauguré en 2013, l'un des plus hauts d'Europe pour ce type d'ouvrage.",
+      "desc": "Inauguré en mars 2013 par le président François Hollande et le maire Alain Juppé, le pont Jacques-Chaban-Delmas doit son nom à l'ancien Premier ministre et maire de Bordeaux qui a durablement marqué la vie politique locale. Ce pont levant, long de 575 mètres, se distingue par son tablier central capable de s'élever jusqu'à 77 mètres de hauteur pour laisser passer les grands navires et paquebots remontant la Garonne, une prouesse technique qui en fait l'un des plus hauts ponts levants d'Europe. Sa construction répondait au besoin de désengorger le trafic du Pont de Pierre tout en préservant la navigation fluviale jusqu'au cœur de la ville. L'ouvrage relie le quartier des Bassins à flot, en pleine reconversion urbaine, à la rive droite et au quartier de la Bastide. Sa silhouette contemporaine, très différente des ponts historiques du centre-ville, s'est rapidement imposée comme un nouveau repère dans le paysage bordelais, en particulier de nuit lorsque son éclairage se reflète dans le fleuve. Les manœuvres de levage, assez rares, attirent toujours un public curieux masse sur les quais."
+    },
+    {
+      "id": "quais-de-bordeaux",
+      "name": "Quais de Bordeaux",
+      "cat": "fluvial",
+      "interest": 3,
+      "lat": 44.845,
+      "lng": -0.568,
+      "teaser": "Près de cinq kilomètres de promenade réaménagée le long de la Garonne, cœur battant du Bordeaux moderne.",
+      "desc": "Longtemps occupés par des entrepôts et des zones de stationnement liés à l'activité portuaire, les quais de la Garonne ont fait l'objet d'un vaste réaménagement mené dans les années 2000 sous la direction du paysagiste Michel Corajoud, qui leur a redonné une vocation entièrement piétonne et paysagère sur près de cinq kilomètres. Jardins, esplanades, terrains de pétanque, skateparks et le fameux Miroir d'eau se succèdent aujourd'hui le long du fleuve, à l'emplacement même où mouillaient jadis des centaines de navires marchands durant l'âge d'or du commerce bordelais. Cette reconversion a largement contribué à l'inscription du centre historique au patrimoine mondial de l'UNESCO en 2007, sous l'appellation Bordeaux, Port de la Lune, en référence à la forme en croissant que dessine la Garonne à cet endroit. L'été, les quais accueillent de grandes manifestations populaires comme Bordeaux fête le vin ou Bordeaux fête le fleuve. Une simple promenade à pied ou à vélo, entre la place des Quinconces et le Pont de Pierre, permet de saisir d'un seul regard l'essentiel du patrimoine architectural de la ville face à l'eau."
+    },
+    {
+      "id": "jardin-public",
+      "name": "Jardin Public",
+      "cat": "nature",
+      "interest": 3,
+      "lat": 44.8478,
+      "lng": -0.576,
+      "teaser": "Premier jardin de France conçu dès l'origine pour être ouvert au public, avec muséum et jardin botanique.",
+      "desc": "Projeté dès 1746 par l'intendant Tourny et dessiné par l'architecte paysagiste Ange-Jacques Gabriel, le Jardin public de Bordeaux fut le tout premier jardin de France pensé dès sa création pour être accessible à tous, contrairement aux jardins royaux réservés à l'aristocratie. D'abord aménagé à la française, il fut entièrement repensé en 1856 dans le style plus romantique du jardin à l'anglaise, qu'il conserve aujourd'hui sur plus de dix hectares en plein centre-ville. Le parc abrite un arboretum, une antenne de la bibliothèque municipale et le Muséum de Bordeaux consacré aux sciences et à la nature, installé dans un ancien hôtel particulier du XVIIIe siècle. Un petit bateau électrique, réplique du historique Petit Mousse, promène les enfants sur le plan d'eau central, tandis qu'un théâtre de marionnettes perpétue une tradition locale bien ancrée. Le jardin botanique, plus ancien qu'il n'y paraît puisqu'il descend du premier jardin médicinal de la ville fondé en 1629, complète cet ensemble verdoyant. C'est un lieu privilégié pour une pause en famille entre deux visites patrimoniales du centre historique."
+    },
+    {
+      "id": "tour-pey-berland",
+      "name": "Tour Pey-Berland",
+      "cat": "panorama",
+      "interest": 4,
+      "lat": 44.8375,
+      "lng": -0.5772,
+      "teaser": "Clocher gothique isolé du XVe siècle, dont le sommet offre l'une des plus belles vues sur Bordeaux.",
+      "desc": "Édifiée entre 1440 et 1500 à l'initiative de l'archevêque Pey Berland, cette tour-clocher se dresse volontairement à l'écart de la cathédrale Saint-André, une disposition destinée à éviter que les vibrations des cloches n'endommagent l'édifice principal, bâti sur un terrain marécageux instable. Vendue comme bien national à la Révolution, elle servit un temps de fabrique de plomb avant de retrouver sa fonction religieuse en 1851. Une statue dorée de Notre-Dame d'Aquitaine, installée en 1863, couronne aujourd'hui son sommet octogonal, visible de loin dans le ciel du centre historique. Après une restauration achevée au début des années 2000, la tour est ouverte à la visite toute l'année, un escalier en colimaçon de plus de deux cents marches menant à une plateforme panoramique. De là-haut, la vue embrasse l'ensemble de la vieille ville classée à l'UNESCO, la place des Quinconces au loin et, par temps clair, les méandres de la Garonne. C'est sans doute le point de vue le plus complet sur Bordeaux, à combiner naturellement avec la visite de la cathédrale et du musée d'Aquitaine tout proches."
+    },
+    {
+      "id": "fleche-saint-michel",
+      "name": "Flèche Saint-Michel",
+      "cat": "panorama",
+      "interest": 4,
+      "lat": 44.8342,
+      "lng": -0.5648,
+      "teaser": "Deuxième plus haut clocher de France, campanile indépendant de la basilique Saint-Michel, ouvert à l'ascension.",
+      "desc": "Culminant à 114 mètres, la flèche Saint-Michel est le plus haut clocher du sud de la France et le quatrième de l'Hexagone, juste derrière ceux de Rouen, Strasbourg et Chartres. Comme la tour Pey-Berland, elle forme un campanile totalement indépendant de la basilique qu'elle accompagne, une solution architecturale adoptée pour préserver la stabilité du sanctuaire voisin. Bâtie au XVe siècle sur un ancien charnier, sa base conserve une crypte qui abrita longtemps des corps momifiés naturellement, exhumés au XIXe siècle et exposés au public jusqu'à leur retrait plus récent. Après une première restauration au XIXe siècle, un vaste chantier engagé en 2021 se poursuit sur plusieurs années pour conforter la structure et restaurer la pierre. L'ascension, quand elle est possible, mène à une plateforme d'où le regard porte sur l'ensemble du quartier Saint-Michel, ses toits colorés et la Garonne toute proche, dans un axe différent de celui offert par la tour Pey-Berland plus au nord. Vérifiez l'état d'ouverture avant de vous déplacer, le site étant susceptible d'être fermé pendant les travaux."
+    }
+  ]
+}
