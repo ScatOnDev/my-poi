@@ -51,8 +51,8 @@
       "name": "Panthéon",
       "cat": "patrimoine",
       "interest": 4,
-      "lat": 48.8462,
-      "lng": 2.3464,
+      "lat": 48.8461,
+      "lng": 2.3458,
       "teaser": "Ancienne église transformée en nécropole des grands hommes, où reposent Voltaire, Marie Curie et Victor Hugo.",
       "desc": "Édifié à l'origine comme église dédiée à sainte Geneviève, patronne de Paris, le Panthéon a été sécularisé pendant la Révolution pour devenir un temple laïc destiné à accueillir les dépouilles des personnalités ayant marqué l'histoire de France. Voltaire, Rousseau, Victor Hugo, Émile Zola, Jean Moulin ou encore Marie Curie, première femme à y reposer par ses propres mérites, comptent parmi les grandes figures inhumées dans sa crypte. L'édifice conserve une architecture néoclassique majestueuse, inspirée des temples antiques, avec un immense dôme visible de loin dans le ciel du Quartier latin. Le pendule de Foucault, suspendu sous la coupole, y a démontré la rotation de la Terre en 1851 et sa réplique continue d'osciller lentement devant les visiteurs. La terrasse du dôme, accessible sur réservation lors de créneaux limités, offre une vue rare à trois cent soixante degrés sur Paris. Comptez une bonne heure pour la visite complète, crypte comprise, et vérifiez à l'avance la disponibilité des billets pour le dôme, souvent limités en nombre."
     },
@@ -171,8 +171,8 @@
       "name": "Institut du Monde Arabe",
       "cat": "culture",
       "interest": 3,
-      "lat": 48.8437,
-      "lng": 2.3563,
+      "lat": 48.8489,
+      "lng": 2.357,
       "teaser": "Institution culturelle dédiée au monde arabe, célèbre pour sa façade high-tech aux moucharabiehs mécaniques.",
       "desc": "Fondé pour promouvoir la connaissance du monde arabe et de sa culture, l'Institut du Monde Arabe se distingue avant tout par son architecture signée Jean Nouvel, dont la façade sud est composée de centaines de diaphragmes métalliques inspirés des moucharabiehs traditionnels, qui s'ouvrent et se referment automatiquement pour réguler la lumière naturelle. Ce dispositif, spectaculaire lorsqu'il fonctionne, reste l'une des innovations architecturales les plus commentées de Paris depuis son inauguration en 1987. Le musée présente une collection couvrant l'histoire, l'art et les sciences du monde arabo-musulman depuis l'Antiquité jusqu'à l'art contemporain. Mais le principal attrait pour beaucoup de visiteurs reste la terrasse du neuvième étage, accessible gratuitement, qui offre l'une des vues les plus dégagées sur l'Île de la Cité, Notre-Dame et le fleuve. Un café-restaurant y est installé, idéal pour une pause avec vue en fin de journée. L'accès à la terrasse ne nécessite pas de billet pour le musée, ce qui en fait une étape rapide et gratuite à ne pas manquer."
     },
@@ -191,8 +191,8 @@
       "name": "Cimetière du Père-Lachaise",
       "cat": "culture",
       "interest": 3,
-      "lat": 48.8617,
-      "lng": 2.3934,
+      "lat": 48.86,
+      "lng": 2.395,
       "teaser": "Plus grand cimetière parisien, véritable musée à ciel ouvert où reposent Chopin, Piaf et Jim Morrison.",
       "desc": "Ouvert en 1804 sur une colline à l'est de Paris, le Père-Lachaise fut le premier grand cimetière paysager moderne et reste aujourd'hui le plus visité au monde, tant pour son atmosphère romantique que pour les célébrités qui y reposent. Chopin, Édith Piaf, Oscar Wilde, Jim Morrison ou encore Molière comptent parmi les figures dont les tombes attirent chaque année des milliers de visiteurs, certaines devenues de véritables lieux de pèlerinage, notamment celle du chanteur des Doors. Au-delà de ces sépultures célèbres, le cimetière se visite aussi pour son architecture funéraire remarquable, entre chapelles néogothiques, mausolées Art nouveau et allées pavées ombragées par des arbres centenaires, qui en font un espace de promenade apprécié même par ceux qui ne cherchent aucune tombe particulière. Le mur des Fédérés rappelle par ailleurs l'exécution des derniers communards en 1871. Le site, très étendu et vallonné, se parcourt idéalement avec un plan détaillé ou une application dédiée, faute de quoi retrouver une tombe précise peut s'avérer difficile. Prévoyez de bonnes chaussures pour les pavés irréguliers."
     },
@@ -241,8 +241,8 @@
       "name": "Pont Neuf",
       "cat": "fluvial",
       "interest": 3,
-      "lat": 48.8566,
-      "lng": 2.3412,
+      "lat": 48.8575,
+      "lng": 2.3417,
       "teaser": "Malgré son nom, le plus ancien pont de Paris encore debout, achevé sous Henri IV.",
       "desc": "Achevé en 1607 sous le règne d'Henri IV, le Pont Neuf porte un nom trompeur puisqu'il s'agit en réalité du plus ancien pont de Paris parmi ceux encore en place aujourd'hui. Il fut aussi le premier pont parisien construit sans maisons ni boutiques sur son tablier, une innovation qui permit pour la première fois d'admirer librement le fleuve depuis l'ouvrage lui-même, et qui en fit rapidement un lieu de badauds, de bateleurs et de marchands ambulants. Le pont enjambe la Seine en deux tronçons de part et d'autre de la pointe occidentale de l'Île de la Cité, où se trouve la statue équestre d'Henri IV, reconstituée après avoir été détruite à la Révolution. De petites niches en demi-lune, aménagées le long du parapet, offrent des points de vue tranquilles sur le fleuve, à l'écart de la circulation. Le square du Vert-Galant, en contrebas à la pointe de l'île, constitue un havre de verdure apprécié pour un pique-nique les pieds presque dans l'eau, avec une vue rapprochée sur les bateaux qui passent."
     },
@@ -261,8 +261,8 @@
       "name": "Bassin de la Villette",
       "cat": "fluvial",
       "interest": 3,
-      "lat": 48.8836,
-      "lng": 2.3823,
+      "lat": 48.8861,
+      "lng": 2.375,
       "teaser": "Plus grand plan d'eau artificiel de Paris, prolongement du canal Saint-Martin, très animé les week-ends d'été.",
       "desc": "Prolongement naturel du canal Saint-Martin vers le nord-est de Paris, le bassin de la Villette constitue le plus vaste plan d'eau artificiel de la capitale, aménagé au début du XIXe siècle dans le cadre du même projet napoléonien d'approvisionnement en eau. Ses larges quais, bien plus dégagés que ceux du canal en amont, en ont fait ces dernières années l'un des lieux de vie en plein air les plus populaires de Paris, avec un cinéma en plein air gratuit chaque été, des cafés flottants et des activités nautiques comme le canoë ou le paddle. Le quartier environnant, longtemps industriel et populaire, s'est considérablement transformé avec l'arrivée de nouveaux habitants attirés par cet accès à l'eau rare dans la capitale. Le bassin mène directement au parc de la Villette et à la Cité des sciences un peu plus au nord, permettant d'enchaîner facilement plusieurs visites dans le même secteur. Les soirées d'été y sont particulièrement animées, avec une ambiance plus locale et décontractée que dans les quartiers touristiques du centre."
     },
@@ -426,6 +426,5 @@
       "teaser": "Esplanade du Palais de Chaillot offrant la vue la plus emblématique et photographiée sur la tour Eiffel.",
       "desc": "Aménagée à l'emplacement d'un ancien palais construit pour l'Exposition universelle de 1878, l'esplanade du Trocadéro, officiellement nommée parvis des Droits de l'Homme, s'étend entre les deux ailes incurvées du Palais de Chaillot, construit lui pour l'exposition de 1937. Sa position en hauteur, juste en face de la tour Eiffel de l'autre côté de la Seine, en fait le point de vue le plus photographié de la capitale, en particulier au moment où la tour scintille chaque heure à la tombée de la nuit. Les fontaines du jardin du Trocadéro, en contrebas, complètent la composition avec leurs jeux d'eau qui remontent parfois jusqu'à plusieurs dizaines de mètres de hauteur en été. Le Palais de Chaillot abrite par ailleurs plusieurs musées, dont celui de l'Homme et celui de l'Architecture, moins fréquentés que l'esplanade elle-même. L'affluence y est considérable à toute heure, particulièrement au coucher du soleil : prévoyez de partager le lieu avec de nombreux photographes et vendeurs ambulants, et gardez un œil sur vos affaires dans la foule."
     }
-  ],
-  "timezone": "Europe/Paris"
+  ]
 }
